@@ -1,3 +1,4 @@
+const simpleGit = require("simple-git");
 const { exec } = require("child_process");
 
 /**
