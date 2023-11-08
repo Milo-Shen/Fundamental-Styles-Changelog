@@ -4,13 +4,12 @@ const os = require("os");
 const path = require("path");
 
 // Import Third Party Libs
-const chalk = require('chalk');
+const chalk = require("chalk");
 const git = require("simple-git")();
 
 // Import self code
 const IO = require("./io");
 const { execCommand } = require("./util");
-
 
 // Paths
 const build_version = +new Date();
@@ -22,4 +21,11 @@ const fundamental_folder = path.resolve(dirname, "fundamental-styles");
 const EOL = os.EOL;
 const encoding = "utf8";
 
-(function (){})()
+(async function () {
+  const isFundamentalAvailable = fs.existsSync(fundamental_folder);
+
+  if (!isFundamentalAvailable) {
+    await git.clone(fundamental_repo, fundamental_folder);
+    console.log(chalk.bold.green(`git clone ${fundamental_repo} successfully !`));
+  }
+})();

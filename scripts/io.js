@@ -123,5 +123,5 @@ module.exports = {
   mkFolderSyncRecursive,
   deleteFolderRecursive,
   safeWriteFile,
-  resetFolderRecursive
+  resetFolderRecursive,
 };

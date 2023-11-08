@@ -40,7 +40,7 @@ function execCommand(command) {
       }
       console.log(`stdout: ${stdout}`);
       resolve(stdout);
-    })
+    }),
   );
 }
 
@@ -66,4 +66,9 @@ const removeComment = (dom) => {
   });
 };
 
-module.exports = { traversal, execCommand, removeComment, removeIllegalAttributes };
+module.exports = {
+  traversal,
+  execCommand,
+  removeComment,
+  removeIllegalAttributes,
+};
