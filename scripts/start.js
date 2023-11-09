@@ -37,4 +37,14 @@ const gitClean = () => {
   }
 
   gitClean();
+
+  let released_versions = await execCommand("npm view fundamental-styles versions --json");
+  released_versions = JSON.parse(released_versions);
+  released_versions = released_versions.filter((x) => !x.includes("rc"));
+  console.log(released_versions);
+
+  // console.log(released_versions);
+  // released_versions = released_versions.filter((x) => !x.includes("rc"));
+
+  console.log(1);
 })();

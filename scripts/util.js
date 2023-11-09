@@ -1,4 +1,6 @@
-const simpleGit = require("simple-git");
+// Import Configuration
+const config = require("./config");
+
 const { exec } = require("child_process");
 
 /**
@@ -39,37 +41,29 @@ function execCommand(command) {
         reject(_error);
         return;
       }
-      console.log(`stdout: ${stdout}`);
       resolve(stdout);
     }),
   );
 }
 
-function removeIllegalAttributes(dom) {
-  let attributes = dom.getAttributeNames();
-  for (let i = 0, len = attributes.length; i < len; i++) {
-    let attribute = attributes[i];
-    if (attribute === '"') {
-      dom.removeAttribute(attribute);
-    }
-  }
-}
+function geMinVersion(version) {
+  let min_version = config.Min_fundamental_Version;
+  let version_num = version.split(".").map((x) => ~~x);
+  let min_version_num = min_version.split(".").map((x) => ~~x);
 
-/**
- * function: remove command from a DOM element
- * @param dom
- */
-const removeComment = (dom) => {
-  dom.childNodes.forEach((node) => {
-    if (node.constructor.name.toLowerCase() === "comment") {
-      node.remove();
+  for (let i = 0; i < 3; i++) {
+    if (version_num[i] === min_version_num[i]) {
+      continue;
     }
-  });
-};
+
+    return version_num[i] > min_version_num[i];
+  }
+
+  return true;
+}
 
 module.exports = {
   traversal,
   execCommand,
-  removeComment,
-  removeIllegalAttributes,
+  geMinVersion,
 };
