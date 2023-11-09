@@ -9,7 +9,7 @@ const simpleGit = require("simple-git");
 
 // Import self code
 const IO = require("./io");
-const { execCommand } = require("./util");
+const { execCommand, geMinVersion } = require("./util");
 
 // Paths
 const build_version = +new Date();
@@ -41,6 +41,7 @@ const gitClean = () => {
   let released_versions = await execCommand("npm view fundamental-styles versions --json");
   released_versions = JSON.parse(released_versions);
   released_versions = released_versions.filter((x) => !x.includes("rc"));
+  released_versions = released_versions.filter(geMinVersion);
   console.log(released_versions);
 
   // console.log(released_versions);
