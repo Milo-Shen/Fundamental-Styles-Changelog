@@ -16,20 +16,23 @@ const build_version = +new Date();
 const dirname = path.dirname(__dirname);
 const fundamental_repo = "https://github.com/SAP/fundamental-styles.git";
 const fundamental_folder = path.resolve(dirname, "fundamental-styles");
-const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories");
-console.log(fiori_stories);
+const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories/Components");
 const work_folder = path.resolve(dirname, "work_folder");
 
 // Constant
 const EOL = os.EOL;
 const encoding = "utf8";
 
-const gitToTag = (tag) => {
-  process.chdir(fundamental_folder);
-  simpleGit().checkout(`v${tag}`);
-  simpleGit().clean(simpleGit.CleanOptions.FORCE);
-  process.chdir(dirname);
-};
+const gitToTag = (tag) =>
+  new Promise((resolve) => {
+    process.chdir(fundamental_folder);
+    simpleGit().checkout(tag, undefined, () => {
+      simpleGit().clean(simpleGit.CleanOptions.FORCE);
+      process.chdir(dirname);
+      console.log(tag);
+      resolve();
+    });
+  });
 
 (async function () {
   // git clone fundamental style repo
@@ -49,6 +52,11 @@ const gitToTag = (tag) => {
   console.log(released_versions);
 
   // download each version of fundamental-styles to work folder
+  IO.resetFolderRecursive(work_folder);
 
-  IO.mkFolderSyncRecursive(work_folder);
+  for (let i = 0; i < released_versions.length; i++) {
+    const tag = `v${released_versions[i]}`;
+    await gitToTag(tag);
+    IO.copyFileRecursive(fiori_stories, path.resolve(work_folder, tag));
+  }
 })();
