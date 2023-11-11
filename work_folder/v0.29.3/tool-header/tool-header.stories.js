@@ -3,17 +3,17 @@ import responsivePaddingsExampleHtml from "./responsive-paddings.example.html?ra
 import menuButtonsExampleHtml from "./menu-buttons.example.html?raw";
 import menuExampleHtml from "./menu.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
-import '../../../src/avatar.scss';
-import '../../../src/button.scss';
-import '../../../src/form-label.scss';
-import '../../../src/icon.scss';
-import '../../../src/input-group.scss';
-import '../../../src/object-status.scss';
-import '../../../src/text.scss';
-import '../../../src/title.scss';
-import '../../../src/tool-header.scss';
+import "../../../src/avatar.scss";
+import "../../../src/button.scss";
+import "../../../src/form-label.scss";
+import "../../../src/icon.scss";
+import "../../../src/input-group.scss";
+import "../../../src/object-status.scss";
+import "../../../src/text.scss";
+import "../../../src/title.scss";
+import "../../../src/tool-header.scss";
 export default {
-  title: 'Components/Tool Header',
+  title: "Components/Tool Header",
   parameters: {
     description: `The tool header is a control that is found in most SAP Cloud Platform products, most commonly as a part of the Tool Page Layout. The tool header inherits its functionality from the overflow toolbar and its visual design from the shell bar.
 
@@ -84,35 +84,38 @@ The tool header supports object status in its semantic form. No industry specifi
 - <code style="color:red;">.fd-tool-header__input-group</code>
 
 `,
-    tags: ['btp', 'theme', 'development']
-  }
+    tags: ["btp", "theme", "development"],
+  },
 };
 export const Primary = () => primaryExampleHtml;
-Primary.storyName = 'Tool Header with Controls';
+Primary.storyName = "Tool Header with Controls";
 export const Menu = () => menuExampleHtml;
-Menu.storyName = 'Tool Header with Side Navigation Menu Button';
+Menu.storyName = "Tool Header with Side Navigation Menu Button";
 Menu.parameters = {
   docs: {
     description: {
-      story: 'The side navigation menu button is used to collapse/expand the side navigation. It is not recommended to use horizontal and responsive paddings when this button is present.'
-    }
-  }
+      story:
+        "The side navigation menu button is used to collapse/expand the side navigation. It is not recommended to use horizontal and responsive paddings when this button is present.",
+    },
+  },
 };
 export const MenuButtons = () => menuButtonsExampleHtml;
-MenuButtons.storyName = 'Tool Header with Menu Buttons';
+MenuButtons.storyName = "Tool Header with Menu Buttons";
 export const ResponsivePaddings = () => responsivePaddingsExampleHtml;
 ResponsivePaddings.parameters = {
   docs: {
     description: {
-      story: 'Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the `fd-tool-header--responsive-paddings` modifier class to the container class. In this case the left and right spacing will change as the screen size changes.'
-    }
-  }
+      story:
+        "Horizontal responsive paddings (based on the screen size) can be applied to the tool header by adding the `fd-tool-header--responsive-paddings` modifier class to the container class. In this case the left and right spacing will change as the screen size changes.",
+    },
+  },
 };
 export const HorizontalPaddings = () => horizontalPaddingsExampleHtml;
 HorizontalPaddings.parameters = {
   docs: {
     description: {
-      story: 'You can add horizontal paddings by applying a modifier class to the container. For example, `.fd-tool-header--sm` modifier class will add 1rem horizontal paddings on the tool bar container.'
-    }
-  }
+      story:
+        "You can add horizontal paddings by applying a modifier class to the container. For example, `.fd-tool-header--sm` modifier class will add 1rem horizontal paddings on the tool bar container.",
+    },
+  },
 };

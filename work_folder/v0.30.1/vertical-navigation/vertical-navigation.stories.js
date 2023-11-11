@@ -5,13 +5,13 @@ import textExampleHtml from "./text.example.html?raw";
 import condensedExampleHtml from "./condensed.example.html?raw";
 import utilityExampleHtml from "./utility.example.html?raw";
 import cozyExampleHtml from "./cozy.example.html?raw";
-import '../../../src/vertical-nav.scss';
-import '../../../src/button.scss';
-import '../../../src/icon.scss';
-import '../../../src/list.scss';
-import '../../../src/popover.scss';
+import "../../../src/vertical-nav.scss";
+import "../../../src/button.scss";
+import "../../../src/icon.scss";
+import "../../../src/list.scss";
+import "../../../src/popover.scss";
 export default {
-  title: 'Components/Vertical Navigation',
+  title: "Components/Vertical Navigation",
   parameters: {
     description: `
 The Vertical Navigation can be used as an alternative to the Horizontal Navigation.<br>
@@ -39,30 +39,30 @@ Vertical navigation can be viewed in three different states:
 - **Off-canvas:** side navigation is completely off-screen, and can be triggered via the menu icon in the shellbar.
 **Note:** It is recommend to use only two states per device.
         `,
-    tags: ['btp', 'theme', 'development']
-  }
+    tags: ["btp", "theme", "development"],
+  },
 };
 export const Cozy = () => cozyExampleHtml;
-Cozy.storyName = 'Default';
+Cozy.storyName = "Default";
 Cozy.parameters = {
   docs: {
     description: {
       story: `
 The default vertical navigation is comprised of several navigation list items.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Utility = () => utilityExampleHtml;
-Utility.storyName = 'Utility Section';
+Utility.storyName = "Utility Section";
 Utility.parameters = {
   docs: {
     description: {
       story: `
 The vertical navigation can also have a bottom-aligned "Utility" section.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Condensed = () => condensedExampleHtml;
 Condensed.parameters = {
@@ -70,48 +70,48 @@ Condensed.parameters = {
     description: {
       story: `
 In condensed mode, only icons are shown unless some navigation items have second levels and the second level is expanded.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Text = () => textExampleHtml;
-Text.storyName = 'Text Only';
+Text.storyName = "Text Only";
 Text.parameters = {
   docs: {
     description: {
       story: `
 A vertical navigation list does not need to have icons. However this is only available in expanded mode.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Indication = () => indicationExampleHtml;
-Indication.storyName = 'Navigation Indication';
+Indication.storyName = "Navigation Indication";
 Indication.parameters = {
   docs: {
     description: {
       story: `
 All the possible combinations of navigation indication are visualized below. When a second level item has been navigated to and the second list has been collapsed, the indicator is shown on the right of the corresponding first level item, but the text and icon color do not change.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Grouping = () => groupingExampleHtml;
 Grouping.parameters = {
   docs: {
     description: {
       story: `The Vertical Navigation items can be further visually grouped using the Group Header List Item.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const GroupingOverflow = () => groupingOverflowExampleHtml;
-GroupingOverflow.storyName = 'Grouping with Overflow';
+GroupingOverflow.storyName = "Grouping with Overflow";
 GroupingOverflow.parameters = {
   docs: {
     description: {
       story: `To clip the content and add a vertical scroll to the Vertical Navigation add the  \`fd-vertical-nav--overflow\` modifier class to the \`fd-vertical-nav\` base class. You need to manually set the max-height of the element on the \`fd-vertical-nav\` level. For example: \`style="max-height: 200px;"\`.
-        `
-    }
-  }
+        `,
+    },
+  },
 };

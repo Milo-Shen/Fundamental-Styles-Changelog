@@ -23,31 +23,31 @@ import noOuterBorderExampleHtml from "./no-outer-border.example.html?raw";
 import borderlessbodyExampleHtml from "./borderlessbody.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
-import '../../../src/button.scss';
-import '../../../src/form-label.scss';
-import '../../../src/fieldset.scss';
-import '../../../src/icon.scss';
-import '../../../src/link.scss';
-import '../../../src/object-status.scss';
-import '../../../src/table.scss';
-import '../../../src/toolbar.scss';
-import '../../../src/pagination.scss';
-import '../../../src/popover.scss';
-import '../../../src/list.scss';
-import '../../../src/toolbar.scss';
-import '../../../src/bar.scss';
-import '../../../src/dialog.scss';
-import '../../../src/input.scss';
-import '../../../src/input-group.scss';
-import '../../../src/checkbox.scss';
-import '../../../src/select.scss';
-import '../../../src/menu.scss';
-import '../../../src/text.scss';
-import '../../../src/object-number.scss';
-import '../../../src/object-marker.scss';
+import "../../../src/button.scss";
+import "../../../src/form-label.scss";
+import "../../../src/fieldset.scss";
+import "../../../src/icon.scss";
+import "../../../src/link.scss";
+import "../../../src/object-status.scss";
+import "../../../src/table.scss";
+import "../../../src/toolbar.scss";
+import "../../../src/pagination.scss";
+import "../../../src/popover.scss";
+import "../../../src/list.scss";
+import "../../../src/toolbar.scss";
+import "../../../src/bar.scss";
+import "../../../src/dialog.scss";
+import "../../../src/input.scss";
+import "../../../src/input-group.scss";
+import "../../../src/checkbox.scss";
+import "../../../src/select.scss";
+import "../../../src/menu.scss";
+import "../../../src/text.scss";
+import "../../../src/object-number.scss";
+import "../../../src/object-marker.scss";
 // INCOMPLETE
 export default {
-  title: 'Components/Table',
+  title: "Components/Table",
   parameters: {
     description: `
 A table contains a set of line items and usually comprises rows (with each row showing one line item) and columns. Line items can contain data of any kind, but also interactive elements, for example, for editing the data, navigating, or triggering actions relating to the line item.
@@ -84,8 +84,31 @@ To display large amounts of data in tabular form, several table components are p
 
 In these cases, use the **Tree** instead.
         `,
-    components: ['button', 'form-label', 'fieldset', 'icon', 'link', 'object-status', 'table', 'toolbar', 'pagination', 'popover', 'list', 'toolbar', 'bar', 'dialog', 'input', 'input-group', 'checkbox', 'select', 'menu', 'text', 'object-number', 'object-marker']
-  }
+    components: [
+      "button",
+      "form-label",
+      "fieldset",
+      "icon",
+      "link",
+      "object-status",
+      "table",
+      "toolbar",
+      "pagination",
+      "popover",
+      "list",
+      "toolbar",
+      "bar",
+      "dialog",
+      "input",
+      "input-group",
+      "checkbox",
+      "select",
+      "menu",
+      "text",
+      "object-number",
+      "object-marker",
+    ],
+  },
 };
 export const Primary = () => primaryExampleHtml;
 Primary.parameters = {
@@ -93,9 +116,9 @@ Primary.parameters = {
     description: {
       story: `
 The primary table contains columns with headers, and rows with links. In the first column, links are displayed. To display links within a table, add the \`fd-link\` class within the table data.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Borderless = () => borderlessExampleHtml;
 Borderless.parameters = {
@@ -106,31 +129,31 @@ Table can be displayed without borders that separate the columns, column headers
 
 **Note:** You can remove borders on individual cells by adding the above-mentioned modifier classes to them only.
 
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Borderlessbody = () => borderlessbodyExampleHtml;
-Borderlessbody.storyName = 'Borderless (body)';
+Borderlessbody.storyName = "Borderless (body)";
 Borderlessbody.parameters = {
   docs: {
     description: {
       story: `
 Table can be displayed without borders that separate the columns and rows only, leaving the column headers with borders. To display a borderless table body, add the  \`fd-table--no-horizontal-borders\` and \`fd-table--no-vertical-borders\` modifier classes to the body element.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const NoOuterBorder = () => noOuterBorderExampleHtml;
-NoOuterBorder.storyName = 'No outer Border';
+NoOuterBorder.storyName = "No outer Border";
 NoOuterBorder.parameters = {
   docs: {
     description: {
       story: `
 Table can be displayed without outer borders, might be needed when used inside some other element. To display a table without outer border, add the \`fd-table--no-outer-border\` modifier class to the main element.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Footer = () => footerExampleHtml;
 Footer.parameters = {
@@ -138,20 +161,20 @@ Footer.parameters = {
     description: {
       story: `
 Table can be displayed with a footer. To display a table footer, add the \`fd-table__footer\` class with a \`tfoot\` element. It must contain the same amount and size of columns as the table head and body containers.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const CondensedFooter = () => condensedFooterExampleHtml;
-CondensedFooter.storyName = 'Footer (condensed)';
+CondensedFooter.storyName = "Footer (condensed)";
 CondensedFooter.parameters = {
   docs: {
     description: {
       story: `
 Similar to the previous example, table can be displayed with a footer in condensed mode (for desktop screens). To display a condensed table, add the \`fd-table--condensed\` modifier class to the main element.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Interactive = () => interactiveExampleHtml;
 Interactive.parameters = {
@@ -164,12 +187,12 @@ Interaction | Modifier class
 :------------- | :------------------
 Activate | \`--activable\`
 Hover | \`--hoverable\`
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const SemanticRows = () => semanticRowsExampleHtml;
-SemanticRows.storyName = 'Semantic';
+SemanticRows.storyName = "Semantic";
 SemanticRows.parameters = {
   docs: {
     description: {
@@ -184,31 +207,31 @@ Valid | \`--valid\`
 Warning | \`--warning\`
 Error | \`--error\`
 Information | \`--information\`
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const FocusableRows = () => focusableRowsExampleHtml;
-FocusableRows.storyName = 'Focusable rows';
+FocusableRows.storyName = "Focusable rows";
 FocusableRows.parameters = {
   docs: {
     description: {
       story: `
 Table can display focusable rows by adding the \`fd-table__row--focusable\` modifier class and a valid \`tabindex\` to the rows. It is not recommended to use focusable rows simultaneously with focusable cells.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const FocusableCells = () => focusableCellsExampleHtml;
-FocusableCells.storyName = 'Focusable cells';
+FocusableCells.storyName = "Focusable cells";
 FocusableCells.parameters = {
   docs: {
     description: {
       story: `
 Table can display focusable cells by adding the \`fd-table__cell--focusable\` modifier class and a valid \`tabindex\` to the cells. It is not recommended to use focusable cells simultaneously with focusable rows.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Checkbox = () => checkboxExampleHtml;
 Checkbox.parameters = {
@@ -219,12 +242,12 @@ Table can display checkboxes to allow the user to perform bulk actions.
 To display checkboxes in table, add the \`fd-table__cell--checkbox\` modifier class to the appropriate cell.
 It is recommended to add the parameter \`aria-selected="true"\` to the row that is selected.
 Also recommended to add class \`fd-table__checkbox\` to the checkbox (input) and \`fd-table__checkbox-label\` class to the checkbox label to have appropriate styles.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const CondensedCheckbox = () => condensedCheckboxExampleHtml;
-CondensedCheckbox.storyName = 'Checkbox (condensed)';
+CondensedCheckbox.storyName = "Checkbox (condensed)";
 CondensedCheckbox.parameters = {
   docs: {
     description: {
@@ -233,9 +256,9 @@ Table can be displayed with checkboxes in condensed mode. To display checkboxes 
 
 
 To display the table in condensed mode, add the \`fd-table--condensed\` modifier class to the table element.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Pagination = () => paginationExampleHtml;
 Pagination.parameters = {
@@ -243,45 +266,45 @@ Pagination.parameters = {
     description: {
       story: `
 Table can be displayed with bottom pagination by adding the \`fd-pagination\` class after the table.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const AdvancedToolbar = () => advancedToolbarExampleHtml;
-AdvancedToolbar.storyName = 'Advanced toolbar';
+AdvancedToolbar.storyName = "Advanced toolbar";
 AdvancedToolbar.parameters = {
   docs: {
     description: {
       story: `
 The table component can be displayed with an advanced **Toolbar**, which allows users to customize their table. In this example, buttons trigger **Dialogs**. To display an advanced toolbar, pair \`fd-dialog\` components with an \`fd-toolbar\` component.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const ContextualMenu = () => contextualMenuExampleHtml;
-ContextualMenu.storyName = 'Contextual menu';
+ContextualMenu.storyName = "Contextual menu";
 ContextualMenu.parameters = {
   docs: {
     description: {
       story: `
 Table can display a contextual menu containing actions if there is not enough space in a given row. It is recommended to use a contextual menu if there are more than three actions. To display table with a contextual menu, add the \`fd-popover\` component to any given cell. See **Popover** for more details.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const MenuHeader = () => menuHeaderExampleHtml;
-MenuHeader.storyName = 'Menu header';
+MenuHeader.storyName = "Menu header";
 MenuHeader.parameters = {
   docs: {
     description: {
       story: `
 Table can display menu options from a popover within headers. The example below demonstrates headers containing customization actions such as _Ascending_ and _Descending_. To display a menu within a header, add the \`fd-table__popover\` class to the header cells.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const FixColumnHeader = () => fixColumnHeaderExampleHtml;
-FixColumnHeader.storyName = 'Fixed header, footer and columns';
+FixColumnHeader.storyName = "Fixed header, footer and columns";
 FixColumnHeader.parameters = {
   docs: {
     description: {
@@ -301,12 +324,12 @@ Then apply \`.fd-table__cell--fixed-end-last\` to every last fixed cell in every
 If you have more than one fixed column on the left or right, you have to set the position left (or right) for the columns starting from 2nd.
 
 It’s important to hardcode the width of the columns, otherwise the cells will be squished.
-    `
+    `,
     },
-  }
+  },
 };
 export const NavIcon = () => navIconExampleHtml;
-NavIcon.storyName = 'Navigation from table rows';
+NavIcon.storyName = "Navigation from table rows";
 NavIcon.parameters = {
   docs: {
     description: {
@@ -314,21 +337,21 @@ NavIcon.parameters = {
 Responsive table allows navigation from a line item. For that purpose you need to add a column with the icon \`sap-icon--slim-arrow-right\` at the end. The entire line needs to be clickable
 
 You have an option to add icon button \`sap-icon--navigation-right-arrow\` as a separate column for non responsive table.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const NavIndicators = () => navIndicatorsExampleHtml;
-NavIndicators.storyName = 'Navigation indicators';
+NavIndicators.storyName = "Navigation indicators";
 NavIndicators.parameters = {
   docs: {
     description: {
       story: `
 
 The table component can display navigation indicators. When multi-selection is used in a master-detail scenario, it is not clear which item was last opened, you can mark it as a “navigated” indicator, as indicated in the second row, to mark an item that is currently open. To display a navigated indicator, add the \`fd-table__cell--navigated\` class to the desired table cell.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const ResponsiveTable = () => responsiveTableExampleHtml;
 ResponsiveTable.parameters = {
@@ -336,12 +359,12 @@ ResponsiveTable.parameters = {
     description: {
       story: `
 The desktop responsive table should contain \`fd-table--responsive\` modifier.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const ResponsiveTablePopInMode = () => responsiveTablePopInModeExampleHtml;
-ResponsiveTablePopInMode.storyName = 'Responsive Table (pop-in mode)';
+ResponsiveTablePopInMode.storyName = "Responsive Table (pop-in mode)";
 ResponsiveTablePopInMode.parameters = {
   docs: {
     description: {
@@ -352,9 +375,9 @@ The responsive table can be displayed in pop-in mode for mobile and tablet scree
 
 **Note:** cells with titles and text should be wrapped in paragraph tags.
 
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const GridTable = () => gridTableExampleHtml;
 GridTable.parameters = {
@@ -365,23 +388,23 @@ Grid tables can contain various input elements inside of cells, such as checkbox
 
 ####Accessibility
 Information about the table such as a title, summary, and/or keyboard navigation instructions should be provided in captions for screen readers. To caption table information, use the \`fd-table__caption\` class.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const NoDataTable = () => noDataTableExampleHtml;
-NoDataTable.storyName = 'Table without data';
+NoDataTable.storyName = "Table without data";
 NoDataTable.parameters = {
   docs: {
     description: {
       story: `
 Table can indicate that there is no data to display.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const GroupRowsInTable = () => groupRowsInTableExampleHtml;
-GroupRowsInTable.storyName = 'Table with group rows';
+GroupRowsInTable.storyName = "Table with group rows";
 GroupRowsInTable.parameters = {
   docs: {
     description: {
@@ -402,12 +425,12 @@ Group cell intended to have glyph which indicates expand/collapsed state, to get
 Intended to have up to 20 levels deep, not more.
 
 Please consider that you need to implement expanding/collapsing functionality by yourself.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const TreeRowsTable = () => treeRowsTableExampleHtml;
-TreeRowsTable.storyName = 'Tree Table';
+TreeRowsTable.storyName = "Tree Table";
 TreeRowsTable.parameters = {
   docs: {
     description: {
@@ -426,7 +449,7 @@ Tree table cells intended to have a glyph which indicates expanded/collapsed sta
 Intended to have up to 20 levels deep, not more.
 
 Please consider that you need to implement expanding/collapsing functionality by yourself.
-    `
-    }
-  }
+    `,
+    },
+  },
 };

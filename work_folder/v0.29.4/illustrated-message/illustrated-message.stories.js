@@ -1,10 +1,10 @@
 import dotExampleHtml from "./dot.example.html?raw";
 import spotExampleHtml from "./spot.example.html?raw";
 import dialogExampleHtml from "./dialog.example.html?raw";
-import '../../../src/illustrated-message.scss';
-import '../../../src/button.scss';
+import "../../../src/illustrated-message.scss";
+import "../../../src/button.scss";
 export default {
-  title: 'Components/Illustrated Message',
+  title: "Components/Illustrated Message",
   parameters: {
     description: `Illustrated messages for SAP Fiori are a simple yet powerful way to engage users and add personality to the experience.
 
@@ -26,8 +26,8 @@ Include a call to action (CTA) button if there is a clear next step.
 * Scene (default) - The largest illustration type, mainly used in full-screen situations. For small screens (less than 600px) the max size of the illustration is 15rem (width) and 11.25rem (height). For all other screens the max size of the illustration is 20rem (width) and 15rem (height).
 * Dialog - \`.fd-illustrated-message--dialog\` medium sized illustrations used in a Dialogs or a Message Box. The illustration size is 10rem.
 * Spot - \`.fd-illustrated-message--spot\` the smallest and most simple product illustrations. They can be used in medium-sized cards or UI elements smaller than full screen. The size of the illustration is 8rem.`,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 const localStyles = `<style>
     :root {
@@ -85,18 +85,19 @@ export const Scene = () => `<div style="width: 100%; display: flex; justify-cont
 </div>
 
 ${localStyles}`;
-Scene.storyName = 'Scene (Large)';
+Scene.storyName = "Scene (Large)";
 Scene.parameters = {
   docs: {
     story: {
-      iframeHeight: 330
+      iframeHeight: 330,
     },
     description: {
       story: `for Large Size (Scene) only, a Container around the Illustration and Text is added. Use a  \`<div>\` element with class  \`.fd-illustrated-message-container\` around the Illustrated Message.
-        `
-    }
+        `,
+    },
   },
-  styles: [`:root {
+  styles: [
+    `:root {
             --sapIllus_BrandColorPrimary: var(--sapContent_Illustrative_Color1);
             --sapIllus_BrandColorSecondary: var(--sapContent_Illustrative_Color2);
             --sapIllus_AccentColor: var(--sapContent_Illustrative_Color3);
@@ -108,44 +109,45 @@ Scene.parameters = {
             --sapIllus_NoColor: none;
             --sapIllus_PatternShadow: url(#sapIllus_PatternShadow);
             --sapIllus_PatternHighlight: url(#sapIllus_PatternHighlight);
-        }`]
+        }`,
+  ],
 };
 export const Dialog = () => dialogExampleHtml;
-Dialog.storyName = 'Dialog (Medium)';
+Dialog.storyName = "Dialog (Medium)";
 Dialog.parameters = {
   docs: {
     story: {
-      iframeHeight: 330
+      iframeHeight: 330,
     },
     description: {
       story: `Add \`.fd-illustrated-message--dialog\` class
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Spot = () => spotExampleHtml;
-Spot.storyName = 'Spot (Small)';
+Spot.storyName = "Spot (Small)";
 Spot.parameters = {
   docs: {
     story: {
-      iframeHeight: 330
+      iframeHeight: 330,
     },
     description: {
       story: `Add \`.fd-illustrated-message--spot\` class
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Dot = () => dotExampleHtml;
-Dot.storyName = 'Dot (Extra Small)';
+Dot.storyName = "Dot (Extra Small)";
 Dot.parameters = {
   docs: {
     story: {
-      iframeHeight: 330
+      iframeHeight: 330,
     },
     description: {
       story: `Add \`.fd-illustrated-message--dot\` class
-        `
-    }
-  }
+        `,
+    },
+  },
 };

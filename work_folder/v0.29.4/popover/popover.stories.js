@@ -4,16 +4,16 @@ import placementExampleHtml from "./placement.example.html?raw";
 import scrollableExampleHtml from "./scrollable.example.html?raw";
 import controlExamplesExampleHtml from "./control-examples.example.html?raw";
 import variantsExampleHtml from "./variants.example.html?raw";
-import '../../../src/avatar.scss';
-import '../../../src/bar.scss';
-import '../../../src/button.scss';
-import '../../../src/icon.scss';
-import '../../../src/menu.scss';
-import '../../../src/popover.scss';
-import '../../../src/segmented-button.scss';
-import '../../../src/layout-grid.scss';
+import "../../../src/avatar.scss";
+import "../../../src/bar.scss";
+import "../../../src/button.scss";
+import "../../../src/icon.scss";
+import "../../../src/menu.scss";
+import "../../../src/popover.scss";
+import "../../../src/segmented-button.scss";
+import "../../../src/layout-grid.scss";
 export default {
-  title: 'Components/Popover',
+  title: "Components/Popover",
   parameters: {
     description: `The popover displays additional information for an object in a compact way without leaving the page. The component contains two essential elements: the control (trigger) and body (content). It can also be paired with a **Menu**, whereas the menu button would trigger a dropdown (body).
 
@@ -36,18 +36,18 @@ export default {
 `,
     docs: {
       story: {
-        iframeHeight: 350
-      }
+        iframeHeight: 350,
+      },
     },
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const Variants = () => variantsExampleHtml;
-Variants.storyName = 'Body variants';
+Variants.storyName = "Body variants";
 Variants.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
+      iframeHeight: 200,
     },
     description: {
       story: `There are several variants of the popover body that can be displayed depending on the use case.
@@ -58,34 +58,34 @@ Header | \`fd-popover__body-header\` | To display a header.
 Footer | \`fd-popover__body-footer\` | To display a footer with actions.
 
 You can also have subheader by using **Bar** component with subheader.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const ControlExamples = () => controlExamplesExampleHtml;
-ControlExamples.storyName = 'Control variants';
+ControlExamples.storyName = "Control variants";
 ControlExamples.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
+      iframeHeight: 200,
     },
     description: {
       story: `As popover's triggers buttons, images, icons, and more can be used. In the example below, the **Avatar** and **Icon** act as triggers.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Scrollable = () => scrollableExampleHtml;
 Scrollable.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
+      iframeHeight: 200,
     },
     description: {
       story: `When the content overflows, the popover body can become scrollable. To achieve this, add element with class \`fd-popover-body__wrapper\` inside the popover body element.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Placement = () => placementExampleHtml;
 Placement.parameters = {
@@ -114,24 +114,24 @@ To align the popover arrow with the trigger apply the following modifier classes
 | \`fd-popover__body--arrow-y-bottom\` | Positions the arrow to the end by vertical line of the popover. |
 
 **note:** \`fd-popover__body--arrow-y--end\` class has been deprecated in favor of \`fd-popover__body--arrow-y-bottom\`!
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const NoArrow = () => noArrowExampleHtml;
 NoArrow.parameters = {
   docs: {
     description: {
       story: `It's possible to hide popover's arrow.
-To achieve this apply the \`fd-popover__body--no-arrow\` modifier class to the popover body element and remove all the arrow modifier classes.`
-    }
-  }
+To achieve this apply the \`fd-popover__body--no-arrow\` modifier class to the popover body element and remove all the arrow modifier classes.`,
+    },
+  },
 };
 export const Resizable = () => resizableExampleHtml;
 Resizable.parameters = {
   docs: {
     description: {
-      story: ``
-    }
-  }
+      story: ``,
+    },
+  },
 };

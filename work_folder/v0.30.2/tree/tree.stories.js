@@ -4,13 +4,13 @@ import navigableExampleHtml from "./navigable.example.html?raw";
 import highlightIndicatorsExampleHtml from "./highlight-indicators.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
-import '../../../src/button.scss';
-import '../../../src/checkbox.scss';
-import '../../../src/icon.scss';
-import '../../../src/radio.scss';
-import '../../../src/tree.scss';
+import "../../../src/button.scss";
+import "../../../src/checkbox.scss";
+import "../../../src/icon.scss";
+import "../../../src/radio.scss";
+import "../../../src/tree.scss";
 export default {
-  title: 'Components/Tree',
+  title: "Components/Tree",
   parameters: {
     description: `Tree allows the user to display and work with a hierarchical set of items. Trees are mostly used in the master list for a master-detail scenario using the **Flexible Column Layout** and in **Popovers** or **Dialogs**. In certain use cases, they can also be used in the **Dynamic Page Layout**.
         Items that contain additional items are called nodes, while items that do not contain any other items are called leaves. If available, a single top-most node is called a root node. Apart from the hierarchical structure of its nodes and leaves, a tree is quite similar to a **List**.
@@ -50,17 +50,17 @@ Navigated&nbsp;&nbsp;&nbsp; | \`is-navigated\` | If a certain tree item has been
 
 <br>
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
-  }
+    tags: ["f3", "a11y", "theme", "development"],
+  },
 };
 export const Primary = () => primaryExampleHtml;
 Primary.parameters = {
   docs: {
     description: {
       story: `
-The primary tree component displays level 1 expanded to show level 2, which is indented by 1.5rem. Only the root tree (ul element) needs to have the \`expanded-level-*\` modifier class to indicate which level is currently expanded.`
-    }
-  }
+The primary tree component displays level 1 expanded to show level 2, which is indented by 1.5rem. Only the root tree (ul element) needs to have the \`expanded-level-*\` modifier class to indicate which level is currently expanded.`,
+    },
+  },
 };
 export const Borderless = () => borderlessExampleHtml;
 Borderless.parameters = {
@@ -71,12 +71,12 @@ Tree can be displayed without borders. To remove the borders from the first leve
 
 ####Icons
 Icons can be added before and/or after the text as children of the \`fd-tree__content\` class.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const HighlightIndicators = () => highlightIndicatorsExampleHtml;
-HighlightIndicators.storyName = 'Highlight indicators';
+HighlightIndicators.storyName = "Highlight indicators";
 HighlightIndicators.parameters = {
   docs: {
     description: {
@@ -95,9 +95,9 @@ Error | \` has-highlight-indicator--error\`
 Success | \` has-highlight-indicator--success\`
 Warning | \` has-highlight-indicator--warning\`
 
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const Navigable = () => navigableExampleHtml;
 Navigable.parameters = {
@@ -115,9 +115,9 @@ To display navigation arrows in tree items, create an element with \`fd-tree__ic
 
 **Note:** In this example, each level indents by 0.25rem more than the previous level (up to level 12).
 
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const Selection = () => selectionExampleHtml;
 Selection.parameters = {
@@ -132,18 +132,18 @@ Form items can be added before or after the \`fd-tree__content\` element. The \`
 - Multi-selection: use **Checkboxes**
 - Single selection: use **Radio buttons**
 
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const TreeWithNoData = () => treeWithNoDataExampleHtml;
-TreeWithNoData.storyName = 'No data';
+TreeWithNoData.storyName = "No data";
 TreeWithNoData.parameters = {
   docs: {
     description: {
       story: `
 If there is no data to display, add the \`fd-tree--no-data\` modifier class to the root tree.
-`
-    }
-  }
+`,
+    },
+  },
 };

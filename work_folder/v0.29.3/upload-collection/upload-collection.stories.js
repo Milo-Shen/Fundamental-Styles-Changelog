@@ -1,18 +1,18 @@
 import noDataExampleHtml from "./no-data.example.html?raw";
 import editExampleHtml from "./edit.example.html?raw";
 import standardExampleHtml from "./standard.example.html?raw";
-import '../../../src/upload-collection.scss';
-import '../../../src/list.scss';
-import '../../../src/icon.scss';
-import '../../../src/link.scss';
-import '../../../src/button.scss';
-import '../../../src/object-status.scss';
-import '../../../src/input.scss';
-import '../../../src/form-group.scss';
-import '../../../src/message-page.scss';
-import '../../../src/object-marker.scss';
+import "../../../src/upload-collection.scss";
+import "../../../src/list.scss";
+import "../../../src/icon.scss";
+import "../../../src/link.scss";
+import "../../../src/button.scss";
+import "../../../src/object-status.scss";
+import "../../../src/input.scss";
+import "../../../src/form-group.scss";
+import "../../../src/message-page.scss";
+import "../../../src/object-marker.scss";
 export default {
-  title: 'Components/Upload Collection',
+  title: "Components/Upload Collection",
   parameters: {
     description: `
 The upload collection control allows users to upload single or multiple files from a device (desktop, tablet, or phone) to the SAP Fiori app. Typically, uploaded files appear in an Attachments tab. However, files can also be displayed elsewhere.
@@ -49,40 +49,40 @@ Modifier/Class | Description
 \`fd-upload-collection__form-item\` | Form item element.
 \`fd-upload-collection__extension\` | File extension element for the upload collection.
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
-  }
+    tags: ["f3", "a11y", "theme", "development"],
+  },
 };
 export const Standard = () => standardExampleHtml;
-Standard.storyName = 'Default';
+Standard.storyName = "Default";
 Standard.parameters = {
   docs: {
     story: {
-      iframeHeight: 785
+      iframeHeight: 785,
     },
     description: {
-      story: 'The default upload collection.'
-    }
-  }
+      story: "The default upload collection.",
+    },
+  },
 };
 export const Edit = () => editExampleHtml;
 Edit.parameters = {
   docs: {
     story: {
-      iframeHeight: 785
+      iframeHeight: 785,
     },
     description: {
-      story: 'Users can activate edit mode where the file name can be changed.'
-    }
-  }
+      story: "Users can activate edit mode where the file name can be changed.",
+    },
+  },
 };
 export const NoData = () => noDataExampleHtml;
 NoData.parameters = {
   docs: {
     story: {
-      iframeHeight: 785
+      iframeHeight: 785,
     },
     description: {
-      story: 'Use a message page component when the user has yet to upload any files.'
-    }
-  }
+      story: "Use a message page component when the user has yet to upload any files.",
+    },
+  },
 };

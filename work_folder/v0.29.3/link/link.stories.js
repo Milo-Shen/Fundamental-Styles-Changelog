@@ -1,7 +1,7 @@
-import '../../../src/icon.scss';
-import '../../../src/link.scss';
+import "../../../src/icon.scss";
+import "../../../src/link.scss";
 export default {
-  title: 'Components/Link',
+  title: "Components/Link",
   parameters: {
     description: `A link (also known as hyperlink) is an interactive text element that allows users to navigate to another page or trigger a certain event.
 
@@ -22,8 +22,8 @@ export default {
 Use a meaningful link text that indicates what will happen when the user interacts with the link i.e. *Open Sales Order*.
 Avoid texts such as *Click Here* or *Link*, as these do not make it clear to the user what the purpose of the link is.
 `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 const localStyles = `
 <style>
@@ -110,11 +110,11 @@ export const Primary = () => `${localStyles}
     </a>
 </div>
 `;
-Primary.storyName = 'Types';
+Primary.storyName = "Types";
 Primary.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
       story: `There are different types of links for various use cases.
@@ -133,7 +133,7 @@ You can display a link with an icon placed on either side of the link text.
 | ----------: | :-------------|
 | Left Arrow | \`sap-icon--slim-arrow-left sap-icon--s\` |
 | Right Arrow | \`sap-icon--slim-arrow-right sap-icon--s\` |
-`
-    }
-  }
+`,
+    },
+  },
 };

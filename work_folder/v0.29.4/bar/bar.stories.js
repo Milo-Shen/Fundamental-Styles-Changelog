@@ -6,15 +6,15 @@ import headerExampleHtml from "./header.example.html?raw";
 import responsiveExampleHtml from "./responsive.example.html?raw";
 import cozyExampleHtml from "./cozy.example.html?raw";
 import defaultExampleHtml from "./default.example.html?raw";
-import '../../../src/button.scss';
-import '../../../src/icon.scss';
-import '../../../src/input.scss';
-import '../../../src/segmented-button.scss';
-import '../../../src/avatar.scss';
-import '../../../src/bar.scss';
-import '../../../src/title.scss';
+import "../../../src/button.scss";
+import "../../../src/icon.scss";
+import "../../../src/input.scss";
+import "../../../src/segmented-button.scss";
+import "../../../src/avatar.scss";
+import "../../../src/bar.scss";
+import "../../../src/title.scss";
 export default {
-  title: 'Components/Bar',
+  title: "Components/Bar",
   parameters: {
     description: `The bar component is a container that holds titles, buttons and input controls. Its contents are distributed into three areas: left, middle and right. This component’s primary function is to display page **headers** and **footers**. It is mainly used to construct a **Page**, and acts as a building block for other components like **Dialog**, **Popover** etc.
         <br><br>
@@ -62,94 +62,102 @@ Modifier classes are available to adjust the paddings of the bar when it is bein
 | XL | &nbsp;&nbsp; 3rem | \`--page-xl\` |
 | XL | &nbsp;&nbsp; 3rem | \`--home-page-xl\` |
         `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const Default = () => defaultExampleHtml;
 Default.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
+      iframeHeight: 200,
     },
     description: {
-      story: 'The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode.'
-    }
-  }
+      story:
+        "The default bar contains a back button, page title, segmented button and product switch button. It can be displayed by using the `fd-bar` class, and is responsive to desktop screen sizes. The default bar is in compact mode.",
+    },
+  },
 };
 export const Cozy = () => cozyExampleHtml;
 Cozy.parameters = {
   docs: {
     story: {
-      iframeHeight: 100
+      iframeHeight: 100,
     },
     description: {
-      story: 'The cozy bar contains a back button, icon buttons, segmented button and product switch button. It is responsive to tablet and mobile screen sizes. To apply cozy mode, add the `--cozy` modifier class to the container element.'
-    }
-  }
+      story:
+        "The cozy bar contains a back button, icon buttons, segmented button and product switch button. It is responsive to tablet and mobile screen sizes. To apply cozy mode, add the `--cozy` modifier class to the container element.",
+    },
+  },
 };
 export const Responsive = () => responsiveExampleHtml;
 Responsive.parameters = {
   docs: {
     story: {
-      iframeHeight: 100
+      iframeHeight: 100,
     },
     description: {
-      story: 'The bar can be made responsive with the `--responsive-paddings` modifier class. The paddings will automatically change with the screen size.'
-    }
-  }
+      story:
+        "The bar can be made responsive with the `--responsive-paddings` modifier class. The paddings will automatically change with the screen size.",
+    },
+  },
 };
 export const Header = () => headerExampleHtml;
 Header.parameters = {
   docs: {
     story: {
-      iframeHeight: 350
+      iframeHeight: 350,
     },
     description: {
-      story: 'The header bar contains actions that impact the entire page. It can be displayed by adding the `--header` modifier class to the container element.'
-    }
-  }
+      story:
+        "The header bar contains actions that impact the entire page. It can be displayed by adding the `--header` modifier class to the container element.",
+    },
+  },
 };
 export const Subheader = () => subheaderExampleHtml;
 Subheader.parameters = {
   docs: {
     story: {
-      iframeHeight: 450
+      iframeHeight: 450,
     },
     description: {
-      story: 'To change the header bar into a subheader, add the `--subheader` modifier class to the container element.'
-    }
-  }
+      story:
+        "To change the header bar into a subheader, add the `--subheader` modifier class to the container element.",
+    },
+  },
 };
 export const HeaderWithSubheader = () => headerWithSubheaderExampleHtml;
 HeaderWithSubheader.parameters = {
   docs: {
     story: {
-      iframeHeight: 250
+      iframeHeight: 250,
     },
     description: {
-      story: 'To add a subheader under a header bar, the container element should have the `--header-with-subheader` modifier class, which will remove the element’s box shadow.'
-    }
-  }
+      story:
+        "To add a subheader under a header bar, the container element should have the `--header-with-subheader` modifier class, which will remove the element’s box shadow.",
+    },
+  },
 };
 export const Footer = () => footerExampleHtml;
 Footer.parameters = {
   docs: {
     story: {
-      iframeHeight: 150
+      iframeHeight: 150,
     },
     description: {
-      story: 'The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. It can be displayed by adding the `--footer` modifier class to the container element.'
-    }
-  }
+      story:
+        "The footer bar should display only closing and finalizing action buttons that impact the entire page such as *Save* or *Cancel*. It can be displayed by adding the `--footer` modifier class to the container element.",
+    },
+  },
 };
 export const FloatingFooter = () => floatingFooterExampleHtml;
 FloatingFooter.parameters = {
   docs: {
     story: {
-      iframeHeight: 150
+      iframeHeight: 150,
     },
     description: {
-      story: 'The floating footer bar should also display only finalizing action buttons that impact the entire page. This type floats above the page at the bottom of the screen and is always visible when scrolling. It can be displayed by adding the `--floating-footer` modifier class to the container element.'
-    }
-  }
+      story:
+        "The floating footer bar should also display only finalizing action buttons that impact the entire page. This type floats above the page at the bottom of the screen and is always visible when scrolling. It can be displayed by adding the `--floating-footer` modifier class to the container element.",
+    },
+  },
 };

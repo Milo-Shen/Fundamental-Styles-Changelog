@@ -3,16 +3,16 @@ import selectionWithNavigationExampleHtml from "./selection-with-navigation.exam
 import selectionExampleHtml from "./selection.example.html?raw";
 import navigationExampleHtml from "./navigation.example.html?raw";
 import standartExampleHtml from "./standart.example.html?raw";
-import '../../../src/list.scss';
-import '../../../src/icon.scss';
-import '../../../src/object-identifier.scss';
-import '../../../src/avatar.scss';
-import '../../../src/object-marker.scss';
-import '../../../src/object-number.scss';
-import '../../../src/object-status.scss';
-import '../../../src/object-list.scss';
+import "../../../src/list.scss";
+import "../../../src/icon.scss";
+import "../../../src/object-identifier.scss";
+import "../../../src/avatar.scss";
+import "../../../src/object-marker.scss";
+import "../../../src/object-number.scss";
+import "../../../src/object-status.scss";
+import "../../../src/object-list.scss";
 export default {
-  title: 'Components/Object List',
+  title: "Components/Object List",
   parameters: {
     description: `
 An object list is a type of list that consists of object list items, where each item provides a quick
@@ -72,61 +72,66 @@ Below are examples of how to add semantic statuses to the components:
            - \`fd-object-list__object-attribute\` object attribute element
 
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
-  }
+    tags: ["f3", "a11y", "theme", "development"],
+  },
 };
 export const Standart = () => standartExampleHtml;
 Standart.parameters = {
   docs: {
     story: {
-      iframeHeight: 785
+      iframeHeight: 785,
     },
     description: {
-      story: 'The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, therefore add the `fd-avatar--s` modifier class to the `fd-avatar` element.'
-    }
-  }
+      story:
+        "The standard object list item displays a title, introductory text, an avatar and object display components. It is recommended to display avatar in size S, therefore add the `fd-avatar--s` modifier class to the `fd-avatar` element.",
+    },
+  },
 };
 export const Navigation = () => navigationExampleHtml;
 Navigation.parameters = {
   docs: {
     story: {
-      iframeHeight: 355
+      iframeHeight: 355,
     },
     description: {
-      story: 'An object list can display links that the users can navigate to. To display a navigation object list, add the `fd-list--navigation-object` modifier class together with `fd-list--navigation` and the `fd-list__item--link` modifier class to the list elements that contain a link. All items should be navigable.'
-    }
-  }
+      story:
+        "An object list can display links that the users can navigate to. To display a navigation object list, add the `fd-list--navigation-object` modifier class together with `fd-list--navigation` and the `fd-list__item--link` modifier class to the list elements that contain a link. All items should be navigable.",
+    },
+  },
 };
 export const Selection = () => selectionExampleHtml;
 Selection.parameters = {
   docs: {
     story: {
-      iframeHeight: 305
+      iframeHeight: 305,
     },
     description: {
-      story: 'Object list items can be selectable by adding the `fd-list--selection` and `fd-list--selection-row` modifier classes to the main element.'
-    }
-  }
+      story:
+        "Object list items can be selectable by adding the `fd-list--selection` and `fd-list--selection-row` modifier classes to the main element.",
+    },
+  },
 };
 export const SelectionWithNavigation = () => selectionWithNavigationExampleHtml;
 SelectionWithNavigation.parameters = {
   docs: {
     story: {
-      iframeHeight: 305
+      iframeHeight: 305,
     },
     description: {
-      story: 'This object list is both selectable and navigable. To display selectable object list items with navigation, add the `fd-list--selection`, `fd-list--navigation` and `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.'
-    }
-  }
+      story:
+        "This object list is both selectable and navigable. To display selectable object list items with navigation, add the `fd-list--selection`, `fd-list--navigation` and `fd-list--navigation-object` modifier classes to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.",
+    },
+  },
 };
 export const Borderless = () => borderlessExampleHtml;
 Borderless.parameters = {
   docs: {
     story: {
-      iframeHeight: 305
+      iframeHeight: 305,
     },
     description: {
-      story: 'Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.'
-    }
-  }
+      story:
+        "Object list items can be displayed without borders. To display a borderless list, add the `fd-list--no-border` modifier class to the list element.",
+    },
+  },
 };

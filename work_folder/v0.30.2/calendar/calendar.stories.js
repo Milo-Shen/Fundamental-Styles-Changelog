@@ -2,15 +2,15 @@ import calExampleHtml from "./cal.html?raw";
 import yearsExampleHtml from "./years.example.html?raw";
 import monthsExampleHtml from "./months.example.html?raw";
 import daysExampleHtml from "./days.example.html?raw";
-import '../../../src/bar.scss';
-import '../../../src/dialog.scss';
-import '../../../src/tile.scss';
-import '../../../src/calendar.scss';
-import '../../../src/button.scss';
-import '../../../src/segmented-button.scss';
-import '../../../src/icon.scss';
+import "../../../src/bar.scss";
+import "../../../src/dialog.scss";
+import "../../../src/tile.scss";
+import "../../../src/calendar.scss";
+import "../../../src/button.scss";
+import "../../../src/segmented-button.scss";
+import "../../../src/icon.scss";
 export default {
-  title: 'Components/Calendar',
+  title: "Components/Calendar",
   parameters: {
     description: `
 The calendar component allows users to navigate to a single date, multiple days, whole week(s), or a date range, showing all time-related data within a given timeframe.
@@ -99,37 +99,40 @@ These modifier classes are used to style various states of calendar grid element
 ### Special days
 The classes \`fd-calendar__item--legend-1\` ... \`fd-calendar__item--legend-20\` are used to style calendar grid elements with colors, which are identified by numeric modifier classes.\n
 `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const CalendarDays = () => calExampleHtml;
 CalendarDays.parameters = {
   docs: {
-    description: "Day Types"
-  }
-}
+    description: "Day Types",
+  },
+};
 
 export const Days = () => daysExampleHtml;
 Days.parameters = {
   docs: {
-   description: {
-      story: 'The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.'
-    }
-  }
+    description: {
+      story:
+        "The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.",
+    },
+  },
 };
 export const Months = () => monthsExampleHtml;
 Months.parameters = {
   docs: {
-   description: {
-      story: 'The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.'
-    }
-  }
+    description: {
+      story:
+        "The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.",
+    },
+  },
 };
 export const Years = () => yearsExampleHtml;
 Years.parameters = {
   docs: {
-   description: {
-      story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
-    }
-  }
+    description: {
+      story:
+        "The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.",
+    },
+  },
 };

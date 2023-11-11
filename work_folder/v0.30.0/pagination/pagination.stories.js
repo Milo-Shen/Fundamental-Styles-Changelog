@@ -3,16 +3,16 @@ import perPageExampleHtml from "./per-page.example.html?raw";
 import lastPageExampleHtml from "./last-page.example.html?raw";
 import middlePageExampleHtml from "./middle-page.example.html?raw";
 import firstPageExampleHtml from "./first-page.example.html?raw";
-import '../../../src/select.scss';
-import '../../../src/button.scss';
-import '../../../src/icon.scss';
-import '../../../src/form-label.scss';
-import '../../../src/input.scss';
-import '../../../src/pagination.scss';
-import '../../../src/popover.scss';
-import '../../../src/list.scss';
+import "../../../src/select.scss";
+import "../../../src/button.scss";
+import "../../../src/icon.scss";
+import "../../../src/form-label.scss";
+import "../../../src/input.scss";
+import "../../../src/pagination.scss";
+import "../../../src/popover.scss";
+import "../../../src/list.scss";
 export default {
-  title: 'Components/Pagination',
+  title: "Components/Pagination",
   parameters: {
     description: `Pagination allows users to separate their content into discrete pages, making it easier to digest and navigate through. Pagination is commonly used for tables and tiles.
 
@@ -50,50 +50,50 @@ Per page label | \`fd-pagination__per-page-label\` | Per page section label. Hid
 <br>
 <br>
       `,
-    tags: ['btp',]
-  }
+    tags: ["btp"],
+  },
 };
 export const FirstPage = () => firstPageExampleHtml;
-FirstPage.storyName = 'First page';
+FirstPage.storyName = "First page";
 FirstPage.parameters = {
   docs: {
     description: {
       story: `First and Previous page buttons are disabled when first page is active.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const MiddlePage = () => middlePageExampleHtml;
-MiddlePage.storyName = 'Middle pages';
+MiddlePage.storyName = "Middle pages";
 MiddlePage.parameters = {
   docs: {
     description: {
       story: `Pagination can display middle pages to increase reachability.
         The ellipsis will not only display before the last page but also after the first page, showing two pages before & two after the current page.
         In sum 9 elements are shown: first page + more + 2 pages before + current page + 2 pages after + more + last page.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const LastPage = () => lastPageExampleHtml;
-LastPage.storyName = 'Last page';
+LastPage.storyName = "Last page";
 LastPage.parameters = {
   docs: {
     description: {
       story: `Last and Next page buttons are disabled when last page is active.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const PerPage = () => perPageExampleHtml;
-PerPage.storyName = 'Per page';
+PerPage.storyName = "Per page";
 PerPage.parameters = {
   docs: {
     description: {
       story: `Additionally, per page section can be displayed with select to specify which number of items should be shown on the every page.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Mobile = () => mobileExampleHtml;
 Mobile.parameters = {
@@ -101,7 +101,7 @@ Mobile.parameters = {
     description: {
       story: `Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do.
         If you want to display pagination component always in mobile mode please add \`.fd-pagination--mobile\` modifier class to the component.
-    `
-    }
-  }
+    `,
+    },
+  },
 };

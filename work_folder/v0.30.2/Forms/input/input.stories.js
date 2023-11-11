@@ -1,12 +1,12 @@
 import statesExampleHtml from "./states.example.html?raw";
 import primaryExampleHtml from "./primary.example.html?raw";
-import '../../../../src/form-item.scss';
-import '../../../../src/form-label.scss';
-import '../../../../src/input.scss';
-import '../../../../src/popover.scss';
-import '../../../../src/form-message.scss';
+import "../../../../src/form-item.scss";
+import "../../../../src/form-label.scss";
+import "../../../../src/input.scss";
+import "../../../../src/popover.scss";
+import "../../../../src/form-message.scss";
 export default {
-  title: 'Components/Forms/Input',
+  title: "Components/Forms/Input",
   parameters: {
     description: `Inputs are used to collect data from the user and should always be paired with a label. When a field is required, the label should include an asterisk (*).
 
@@ -25,17 +25,17 @@ Do not use the input field if:
 - The user needs to enter long texts. In this case, use the textarea.
 - The user needs to carry out a search. In this case, use the search field.
         `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const Primary = () => primaryExampleHtml;
-Primary.storyName = 'Default';
+Primary.storyName = "Default";
 Primary.parameters = {
   docs: {
-   description: {
-      story: 'The standard input component can be displayed by using `fd-input` class'
-    }
-  }
+    description: {
+      story: "The standard input component can be displayed by using `fd-input` class",
+    },
+  },
 };
 export const States = () => statesExampleHtml;
 States.parameters = {
@@ -50,6 +50,6 @@ States.parameters = {
 - **Disabled**: This indicates the field is not editable. A common use case is that this field is dependent on a previous entry or selection within the form.
 - **Read Only**: Used to display static information in the context of a form.
 
-Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`
-  }
+Along with Error and Warning, error messages should be displayed below the field so the user can correct the error and move forward.`,
+  },
 };

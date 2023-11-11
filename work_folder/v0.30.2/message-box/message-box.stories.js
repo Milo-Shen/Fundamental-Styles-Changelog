@@ -1,14 +1,14 @@
 import responsiveExampleHtml from "./responsive.example.html?raw";
 import typesExampleHtml from "./types.example.html?raw";
 import structureExampleHtml from "./structure.example.html?raw";
-import '../../../src/message-box.scss';
-import '../../../src/title.scss';
-import '../../../src/bar.scss';
-import '../../../src/button.scss';
-import '../../../src/link.scss';
-import '../../../src/icon.scss';
+import "../../../src/message-box.scss";
+import "../../../src/title.scss";
+import "../../../src/bar.scss";
+import "../../../src/button.scss";
+import "../../../src/link.scss";
+import "../../../src/icon.scss";
 export default {
-  title: 'Components/Message Box',
+  title: "Components/Message Box",
   parameters: {
     description: `
 The message box displays a dialog with a simple message to the user. Contrary to the **Popover**, message box can relay messages unrelated to the UI, such as technical errors. This component inherits the look and behavior of the **Dialog** (excluding dragging/resizing).
@@ -53,22 +53,22 @@ Note: Include two action buttons in the message box when the user's decision is 
         - \`.fd-message-box__footer\`: Footer
             - \`.fd-message-box__decisive-button\`: Action buttons in footer
         `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const Structure = () => structureExampleHtml;
-Structure.storyName = 'Default';
+Structure.storyName = "Default";
 Structure.parameters = {
   docs: {
     description: {
       story: `
 The default message box displays a small dialog with a title, message text and action buttons. Use the default if the message does not fit with one of the semantic types.
-    `
-    }
-  }
+    `,
+    },
+  },
 };
 export const Types = () => typesExampleHtml;
-Types.storyName = 'Semantic types';
+Types.storyName = "Semantic types";
 Types.parameters = {
   docs: {
     description: {
@@ -83,9 +83,9 @@ Success | \`fd-message-box--success\` | Success messages give feedback to the us
 Warning | \`fd-message-box--warning\` | Warning messages highlight potential issues, but the user can still continue. This includes unintended data loss scenarios.
 Information | \`fd-message-box--information\` | Information messages provide information the user needs to acknowledge, but which does not involve a decision. The message provides information that is useful and relevant, but never critical.
 
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Responsive = () => responsiveExampleHtml;
 Responsive.parameters = {
@@ -106,7 +106,7 @@ Modifier class | rem | Screen width
 ####Mobile
 
 Enable cozy mode when message box is being displayed on mobile. To display message box in cozy mode, add the \`fd-bar--cozy\` modifier class to the header and footer (this will also apply to the buttons). It's also important to note that the content container should always take the full height and width of mobile screens. To achieve this, add the \`fd-message-box__content--mobile\` modifier class to the content container.
-         `
-    }
-  }
+         `,
+    },
+  },
 };

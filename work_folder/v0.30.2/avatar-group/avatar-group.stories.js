@@ -4,24 +4,24 @@ import groupTypeVerticalExampleHtml from "./group-type-vertical.example.html?raw
 import groupTypeExampleHtml from "./group-type.example.html?raw";
 import individualTypeVerticalExampleHtml from "./individual-type-vertical.example.html?raw";
 import individualTypeExampleHtml from "./individual-type.example.html?raw";
-import '../../../src/avatar-group.scss';
-import '../../../src/avatar.scss';
-import '../../../src/icon.scss';
-import '../../../src/button.scss';
-import '../../../src/popover.scss';
-import '../../../src/bar.scss';
-import '../../../src/layout-grid.scss';
-import '../../../src/title.scss';
-import '../../../src/quick-view.scss';
-import '../../../src/title.scss';
-import '../../../src/link.scss';
-import '../../../src/form-layout-grid.scss';
-import '../../../src/form-group.scss';
-import '../../../src/form-item.scss';
-import '../../../src/form-label.scss';
-import '../../../src/input.scss';
+import "../../../src/avatar-group.scss";
+import "../../../src/avatar.scss";
+import "../../../src/icon.scss";
+import "../../../src/button.scss";
+import "../../../src/popover.scss";
+import "../../../src/bar.scss";
+import "../../../src/layout-grid.scss";
+import "../../../src/title.scss";
+import "../../../src/quick-view.scss";
+import "../../../src/title.scss";
+import "../../../src/link.scss";
+import "../../../src/form-layout-grid.scss";
+import "../../../src/form-group.scss";
+import "../../../src/form-item.scss";
+import "../../../src/form-label.scss";
+import "../../../src/input.scss";
 export default {
-  title: 'Components/Avatar Group',
+  title: "Components/Avatar Group",
   parameters: {
     description: `The avatar group displays a number of avatars, which act as a digital representation of a user. This control is useful for visualizing a team, project team members, or a group of employees, for example. <br />
         For detailed information check Fiori Design Guidelines for <a target="_blank" href="https://experience.sap.com/internal/fiori-design-web/avatar-group/">Avatar Group</a> component. 
@@ -71,67 +71,61 @@ The **AvatarGroup** is available in two orientations:
 
 `,
     docs: {
-      story: {
-      }
+      story: {},
     },
-    tags: ['a11y', 'f3', 'theme']
-  }
+    tags: ["a11y", "f3", "theme"],
+  },
 };
 export const IndividualType = () => individualTypeExampleHtml;
 IndividualType.parameters = {
   docs: {
-    story: {
-    },
+    story: {},
     description: {
-      story: `The avatar individual type consists of avatars and an overflow shape, depending on the use case. Each displayed avatar and the overflow shape have their own, individual click area. <br>For Individual type add the \`fd-avatar-group--individual-type\` modifier class to the \`fd-avatar-group\` base class.`
-    }
-  }
+      story: `The avatar individual type consists of avatars and an overflow shape, depending on the use case. Each displayed avatar and the overflow shape have their own, individual click area. <br>For Individual type add the \`fd-avatar-group--individual-type\` modifier class to the \`fd-avatar-group\` base class.`,
+    },
+  },
 };
 export const IndividualTypeVertical = () => individualTypeVerticalExampleHtml;
 IndividualTypeVertical.parameters = {
   docs: {
-    story: {
-    },
+    story: {},
     description: {
-      story: `For vertical orientation of the Avatar Group add the \`fd-avatar-group--vertical\` modifier class to the \`fd-avatar-group\` base class.`
-    }
-  }
+      story: `For vertical orientation of the Avatar Group add the \`fd-avatar-group--vertical\` modifier class to the \`fd-avatar-group\` base class.`,
+    },
+  },
 };
 export const GroupType = () => groupTypeExampleHtml;
 GroupType.parameters = {
   docs: {
-    story: {
-    },
+    story: {},
     description: {
-      story: `The avatar group type is one single click/tap area. This means that the entire control is the click/tap area. <br>For Group type add the \`fd-avatar-group--group-type\` modifier class to the \`fd-avatar-group\` base class.`
-    }
-  }
+      story: `The avatar group type is one single click/tap area. This means that the entire control is the click/tap area. <br>For Group type add the \`fd-avatar-group--group-type\` modifier class to the \`fd-avatar-group\` base class.`,
+    },
+  },
 };
 export const GroupTypeVertical = () => groupTypeVerticalExampleHtml;
 GroupTypeVertical.parameters = {
   docs: {
-    story: {
-    },
+    story: {},
     description: {
-      story: `For vertical orientation of the Avatar Group add the \`fd-avatar-group--vertical\` modifier class to the \`fd-avatar-group\` base class.`
-    }
-  }
+      story: `For vertical orientation of the Avatar Group add the \`fd-avatar-group--vertical\` modifier class to the \`fd-avatar-group\` base class.`,
+    },
+  },
 };
 export const GroupTypeInteractionStates = () => groupTypeInteractionStatesExampleHtml;
 GroupTypeInteractionStates.parameters = {
   docs: {
-    story: {
-    },
+    story: {},
     description: {
-      story: ``
-    }
-  }
+      story: ``,
+    },
+  },
 };
 export const Overflow = () => overflowExampleHtml;
 Overflow.parameters = {
   docs: {
     description: {
-      story: `The overflow Avatar inherits the styling of the secondary regular Button control. Applications can also choose to set the background color to a random or specific color from the Avatar. The span element has a \`role="button"\` and \`fd-avatar--overflow\` modifier class. `
-    }
-  }
+      story: `The overflow Avatar inherits the styling of the secondary regular Button control. Applications can also choose to set the background color to a random or specific color from the Avatar. The span element has a \`role="button"\` and \`fd-avatar--overflow\` modifier class. `,
+    },
+  },
 };

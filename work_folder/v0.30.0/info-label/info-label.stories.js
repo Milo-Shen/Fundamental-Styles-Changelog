@@ -1,10 +1,10 @@
 import displayModeInfoLabelExampleHtml from "./display-only-info-label.example.html?raw";
 import infoLabelWithIconExampleHtml from "./info-label-with-icon.example.html?raw";
 import colorFlavorsExampleHtml from "./color-flavors.example.html?raw";
-import '../../../src/info-label.scss';
-import '../../../src/icon.scss';
+import "../../../src/info-label.scss";
+import "../../../src/icon.scss";
 export default {
-  title: 'Components/Info Label',
+  title: "Components/Info Label",
   parameters: {
     description: `
 Info Label is a small non-interactive numeric or text-based label.
@@ -27,8 +27,8 @@ Use the Info Label base class with following modifiers:
 <br><br>
 For <code>Display</code> mode add the <code>fd-info-label--display</code> modifier class.
       `,
-    tags: ['btp']
-  }
+    tags: ["btp"],
+  },
 };
 export const ColorFlavors = () => colorFlavorsExampleHtml;
 

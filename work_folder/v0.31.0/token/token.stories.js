@@ -1,8 +1,8 @@
 import primaryExampleHtml from "./primary.example.html?raw";
-import '../../../src/input.scss';
-import '../../../src/token.scss';
+import "../../../src/input.scss";
+import "../../../src/token.scss";
 export default {
-  title: 'Components/Token',
+  title: "Components/Token",
   parameters: {
     description: `Tokens are small items of information (similar to tags) that mainly serve to visualize previously selected items. The tokenizer is the container that handles the tokens. Tokens can be added, removed, selected, or deselected.
 
@@ -17,16 +17,16 @@ The default token is displayed in grey with text, and a close button that will r
 | \`fd-token--disabled\` | change to disabled coursor |
 | \`fd-token--readonly\` | displayed as read-only, indicating that they cannot be interacted with. Read-only tokens should not contain a close button |
         `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const Primary = () => primaryExampleHtml;
-Primary.storyName = 'Tokens';
+Primary.storyName = "Tokens";
 Primary.parameters = {
   docs: {
     description: {
       story: `The default token is displayed in grey with text, and a close button that will remove the token when selected. It is displayed in cozy mode, which is ideal for mobile and tablet screens.
-        `
-    }
-  }
+        `,
+    },
+  },
 };

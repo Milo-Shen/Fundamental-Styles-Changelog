@@ -66,10 +66,15 @@ const gitToTag = (tag) => {
 
     IO.walk(versioned_story_folder, (_path) => {
       const extname = path.extname(_path);
+      const relative_path = path.relative(dirname, _path);
+      const formatter = Config.Formatter[extname.substring(1)];
       const file = fs.readFileSync(_path, encoding);
-      if (extname === ".js") {
-        const formatted_file = prettier.format(file, Config.Formatter.js);
-        console.log(formatted_file);
+      try {
+        const formatted_file = prettier.format(file, formatter);
+        fs.writeFileSync(_path, formatted_file, encoding);
+        console.log(chalk.bold.green(`Info: file ${relative_path} has been formatted !`));
+      } catch (e) {
+        console.log(chalk.bold.yellow(`Warning: file ${relative_path} has format issue...`));
       }
     });
   }

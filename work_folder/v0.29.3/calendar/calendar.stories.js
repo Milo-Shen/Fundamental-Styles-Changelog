@@ -3,15 +3,15 @@ import landscapeMobileExampleHtml from "./landscape-mobile.example.html?raw";
 import yearsExampleHtml from "./years.example.html?raw";
 import monthsExampleHtml from "./months.example.html?raw";
 import daysExampleHtml from "./days.example.html?raw";
-import '../../../src/bar.scss';
-import '../../../src/dialog.scss';
-import '../../../src/tile.scss';
-import '../../../src/calendar.scss';
-import '../../../src/button.scss';
-import '../../../src/segmented-button.scss';
-import '../../../src/icon.scss';
+import "../../../src/bar.scss";
+import "../../../src/dialog.scss";
+import "../../../src/tile.scss";
+import "../../../src/calendar.scss";
+import "../../../src/button.scss";
+import "../../../src/segmented-button.scss";
+import "../../../src/icon.scss";
 export default {
-  title: 'Components/Calendar',
+  title: "Components/Calendar",
   parameters: {
     description: `
 The calendar component allows users to navigate to a single date, multiple days, whole week(s), or a date range, showing all time-related data within a given timeframe.
@@ -131,48 +131,51 @@ These classes are used to style calendar grid elements with colors, which are id
     | <code>fd-calendar__special-day--20</code> | <div  class="fd-calendar__item fd-calendar__special-day--20"><span class="fd-calendar__text" role="button">30</span></div> |
 </div>
 `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const Days = () => daysExampleHtml;
 Days.parameters = {
   docs: {
     story: {
-      iframeHeight: 400
+      iframeHeight: 400,
     },
     description: {
-      story: 'The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.'
-    }
-  }
+      story:
+        "The calendar component can display days of the month by adding the `fd-calendar__content--dates` class to the container element.",
+    },
+  },
 };
 export const Months = () => monthsExampleHtml;
 Months.parameters = {
   docs: {
     story: {
-      iframeHeight: 400
+      iframeHeight: 400,
     },
     description: {
-      story: 'The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.'
-    }
-  }
+      story:
+        "The calendar component can display months in a year by adding the `fd-calendar__content--months` class to the container element.",
+    },
+  },
 };
 export const Years = () => yearsExampleHtml;
 Years.parameters = {
   docs: {
     story: {
-      iframeHeight: 700
+      iframeHeight: 700,
     },
     description: {
-      story: 'The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.'
-    }
-  }
+      story:
+        "The calendar component can display a range of years in various ways: short-term, long-term, year ranges etc. Add the `fd-calendar__content--years` class to the container element, and adjust the number of columns, rows, and content to fit your use case.",
+    },
+  },
 };
 export const LandscapeMobile = () => landscapeMobileExampleHtml;
-LandscapeMobile.storyName = 'Landscape (mobile)';
+LandscapeMobile.storyName = "Landscape (mobile)";
 LandscapeMobile.parameters = {
   docs: {
     story: {
-      iframeHeight: 500
+      iframeHeight: 500,
     },
     description: {
       story: `
@@ -184,16 +187,16 @@ Note: For landscape mode, no dialog header element should be used. However, a di
 
 - \`fd-calendar__navigation\` requires the \`fd-calendar__navigation--main\` class.
 - the dismiss button requires the \`fd-calendar__close-button--navigation\` class.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const PortraitMobile = () => portraitMobileExampleHtml;
-PortraitMobile.storyName = 'Portrait (mobile)';
+PortraitMobile.storyName = "Portrait (mobile)";
 PortraitMobile.parameters = {
   docs: {
     story: {
-      iframeHeight: 500
+      iframeHeight: 500,
     },
     description: {
       story: `
@@ -201,7 +204,7 @@ While using a mobile in portrait mode, the calendar component is displayed from 
 
 Note: For portrait mode, dialog header should always be used and the footer remains optional.
 
-`
-    }
-  }
+`,
+    },
+  },
 };

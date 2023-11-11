@@ -1,10 +1,9 @@
-
 import splitMenuButtonExampleHtml from "./split-menu-button.example.html?raw";
-import '../../../src/icon.scss';
-import '../../../src/button.scss';
-import '../../../src/button-split.scss';
+import "../../../src/icon.scss";
+import "../../../src/button.scss";
+import "../../../src/button-split.scss";
 export default {
-  title: 'Components/Buttons/Button Split',
+  title: "Components/Buttons/Button Split",
   parameters: {
     description: `The split menu button has two separate areas: the text label and the arrow down icon.
 The separator between them indicates that each area results in a different action, giving the user two choices: trigger the main action or open the menu.
@@ -18,16 +17,16 @@ The split menu button can behave in two different ways:
     
 The split menu button can be displayed by using container with \`fd-button-split\` class with \`role=”group”\` and the \`aria-label=”button-split”\` attribute.
 `,
-tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const SplitMenuButton = () => splitMenuButtonExampleHtml;
-SplitMenuButton.storyName = 'Split menu button';
+SplitMenuButton.storyName = "Split menu button";
 SplitMenuButton.parameters = {
   docs: {
     description: {
       story: `
-`
-    }
-  }
+`,
+    },
+  },
 };

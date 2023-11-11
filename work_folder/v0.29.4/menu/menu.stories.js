@@ -9,77 +9,79 @@ import segmentedButtonExampleHtml from "./segmented-button.example.html?raw";
 import toggleButtonExampleHtml from "./toggle-button.example.html?raw";
 import inputExampleHtml from "./input.example.html?raw";
 import buttonsExampleHtml from "./buttons.example.html?raw";
-import '../../../src/bar.scss';
-import '../../../src/button.scss';
-import '../../../src/dialog.scss';
-import '../../../src/icon.scss';
-import '../../../src/menu.scss';
-import '../../../src/title.scss';
-import '../../../src/input.scss';
+import "../../../src/bar.scss";
+import "../../../src/button.scss";
+import "../../../src/dialog.scss";
+import "../../../src/icon.scss";
+import "../../../src/menu.scss";
+import "../../../src/title.scss";
+import "../../../src/input.scss";
 export default {
-  title: 'Components/Menu',
+  title: "Components/Menu",
   parameters: {
-    tags: ['f3', 'a11y', 'theme', 'development'],
+    tags: ["f3", "a11y", "theme", "development"],
     description: `
 The menu component is the listing structure with optional headers to create menus.
 
 Commonly used as the contents when composing "dropdowns", "contextual menus", etc, when paired with the popover component.
-`
-  }
+`,
+  },
 };
 export const Default = () => defaultExampleHtml;
 Default.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
       story: `The basic structure of a menu. Place the menu item title in a \`<span>\` tag using class \`fd-menu__title\` and wrap it in the \`fd-menu__link\` and \`fd-menu__item\` classes as shown.
-               <br><b>Note:</b>Use compact menus for the Desktop and use cozy for the Tablet mode.`
-    }
-  }
+               <br><b>Note:</b>Use compact menus for the Desktop and use cozy for the Tablet mode.`,
+    },
+  },
 };
 export const Overflow = () => overflowExampleHtml;
-Overflow.storyName = 'Vertical overflow';
+Overflow.storyName = "Vertical overflow";
 Overflow.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
-      story: 'The `fd-menu--overflow` modifier class will clip the content and add a vertical scroll to the element. You need to manually set the max-height of the element on the `fd-menu` level. For example: `style="max-height: 120px;"`. <br><b>Important: </b>this modifier class cannot be used in cases where the menu has a submenu.'
-    }
-  }
+      story:
+        'The `fd-menu--overflow` modifier class will clip the content and add a vertical scroll to the element. You need to manually set the max-height of the element on the `fd-menu` level. For example: `style="max-height: 120px;"`. <br><b>Important: </b>this modifier class cannot be used in cases where the menu has a submenu.',
+    },
+  },
 };
 export const MobileMode = () => mobileModeExampleHtml;
 MobileMode.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
-      story: 'The basic structure of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu\'s item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device\'s back button takes one back to the parent menu fullscreen dialog.'
-    }
-  }
+      story:
+        "The basic structure of a menu in mobile where it opens as a dialog. Use class `fd-menu--mobile` on menu container level. Example shows the parent menu's item in active state to simulate a pressed/touched event. Submenu appears in its own fullscreen dialog in mobile devices. The device's back button takes one back to the parent menu fullscreen dialog.",
+    },
+  },
 };
 export const SeperatedItems = () => seperatedItemsExampleHtml;
-SeperatedItems.storyName = 'List with separated items';
+SeperatedItems.storyName = "List with separated items";
 SeperatedItems.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
-      story: `Separators can be added between Menu Items by adding the \`has-separator\` class to the element with class \`fd-menu__item\`. The separator will appear under this item.`
-    }
-  }
+      story: `Separators can be added between Menu Items by adding the \`has-separator\` class to the element with class \`fd-menu__item\`. The separator will appear under this item.`,
+    },
+  },
 };
 export const DifferentStates = () => differentStatesExampleHtml;
-DifferentStates.storyName = 'List different states';
+DifferentStates.storyName = "List different states";
 DifferentStates.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
       story: `
@@ -91,16 +93,16 @@ Simulate different states to show state behaviour between the items.
 - For simulating selected-hover state, use classes \`is-selected is-hover\` on the menu item.
 - For simulating disabled state, use class \`is-disabled\` on the menu item.
 
-To remove default box shadow from menu containers use \`fd-menu__list--no-shadow\` or \`fd-menu__sublist--no-shadow\`.`
-    }
-  }
+To remove default box shadow from menu containers use \`fd-menu__list--no-shadow\` or \`fd-menu__sublist--no-shadow\`.`,
+    },
+  },
 };
 export const MenuIcon = () => menuIconExampleHtml;
-MenuIcon.storyName = 'List with Icon';
+MenuIcon.storyName = "List with Icon";
 MenuIcon.parameters = {
   docs: {
     story: {
-      iframeHeight: 220
+      iframeHeight: 220,
     },
     description: {
       story: `
@@ -108,15 +110,15 @@ To create an addon before or after \`fd-menu__title\` element, use elements with
 - \`fd-menu__addon-before\`   - styles addon befotre \`fd-menu__title\`
 - \`fd-menu__addon-after\`    - styles addon after \`fd-menu__title\`
 - \`fd-menu__shortcut\`       - styles shortcut placed after \`fd-menu__title\`
-According to Fiori3 design shortcuts should be on desktop devices.`
-    }
-  }
+According to Fiori3 design shortcuts should be on desktop devices.`,
+    },
+  },
 };
 export const WithSubmenu = () => withSubmenuExampleHtml;
 WithSubmenu.parameters = {
   docs: {
     story: {
-      iframeHeight: 400
+      iframeHeight: 400,
     },
     description: {
       story: `
@@ -127,68 +129,68 @@ For a submenu, do the following:
 - Create an addon indicating submenu level using \`fd-menu__addon-after--submenu\` class and an icon.
 - After the end of the \`fd-menu__link\` container, use \`fd-menu__sublist\` class in its own \`<ul>\`
 - Follow the same template for submenu as you would for a normal menu. The same \`fd-menu__item\` and \`fd-menu__link\` works for the subitems too.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const SegmentedButton = () => segmentedButtonExampleHtml;
-SegmentedButton.storyName = 'Extended Menu List Items (Segmented Button)';
+SegmentedButton.storyName = "Extended Menu List Items (Segmented Button)";
 SegmentedButton.parameters = {
   docs: {
     story: {
-      iframeHeight: 400
+      iframeHeight: 400,
     },
     description: {
       story: `Each view of the segmented button gets its own menu item. The selected Button in the Segmented Button gets the Active Dot in front of the Menu List Item and is always separated with a separator.
       The ‘segmented button menu items’ cannot have an icon in front. Instead, the place is reserved for the Active Dot.
-`
-    }
-  }
+`,
+    },
+  },
 };
 
 export const ToggleButton = () => toggleButtonExampleHtml;
-ToggleButton.storyName = 'Extended Menu List Items (Toggle Button)';
+ToggleButton.storyName = "Extended Menu List Items (Toggle Button)";
 ToggleButton.parameters = {
   docs: {
     story: {
-      iframeHeight: 400
+      iframeHeight: 400,
     },
     description: {
       story: `The toggle button gets “transformed” into a menu item which can be toggled and untoggled. If the toggle button is toggled, then a checkmark appears in front of the text (on position of an icon).
       If it’s not toggled, then the space is empty.
       It is not possible to show an icon for the toggle button in the menu. This spot is reserved for the checkmark.
-`
-    }
-  }
+`,
+    },
+  },
 };
 
 export const Input = () => inputExampleHtml;
-Input.storyName = 'Extended Menu List Items (Input)';
+Input.storyName = "Extended Menu List Items (Input)";
 Input.parameters = {
   docs: {
     story: {
-      iframeHeight: 400
+      iframeHeight: 400,
     },
     description: {
       story: `An Input field can be placed in a menu item.
       When an input is placed in a menu item, the text serves as a label. 
       When there is enough space on desktop-based devices, then the input field is positioned next to the text. If there’s not enough space, it moves to the next line. 
       The input field is always positioned below the label on mobile devices.
-`
-    }
-  }
+`,
+    },
+  },
 };
 
 export const Buttons = () => buttonsExampleHtml;
-Buttons.storyName = 'Extended Menu List Items (Buttons as Menu Items)';
+Buttons.storyName = "Extended Menu List Items (Buttons as Menu Items)";
 Buttons.parameters = {
   docs: {
     story: {
-      iframeHeight: 400
+      iframeHeight: 400,
     },
     description: {
       story: `The buttons are “transformed” into menu items. It is optional to add an icon and those could be replaced by product teams.
-`
-    }
-  }
+`,
+    },
+  },
 };

@@ -3,48 +3,48 @@ import expandExampleHtml from "./expand.example.html?raw";
 import maxLinesExampleHtml from "./max-lines.example.html?raw";
 import whitespaceExampleHtml from "./whitespace.example.html?raw";
 import defaultExampleExampleHtml from "./default-example.example.html?raw";
-import '../../../src/text.scss';
-import '../../../src/link.scss';
+import "../../../src/text.scss";
+import "../../../src/link.scss";
 export default {
-  title: 'Components/Text',
+  title: "Components/Text",
   parameters: {
     description: `The text component displays text inside a form, table, or any other content area.
         It is generally used throughout the entire application and is responsive to all screen sizes.`,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const DefaultExample = () => defaultExampleExampleHtml;
-DefaultExample.storyName = 'Default';
+DefaultExample.storyName = "Default";
 DefaultExample.parameters = {
   docs: {
     story: {
-      iframeHeight: 100
+      iframeHeight: 100,
     },
     description: {
       story: `The default text component can display lines of text that wrap to the next line
-        once they reach the end of the content container width.`
-    }
-  }
+        once they reach the end of the content container width.`,
+    },
+  },
 };
 export const Whitespace = () => whitespaceExampleHtml;
 Whitespace.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
       story: `The text component has a property that allows browsers to render specified indents and
         whitespace. To display indents and/or whitespace, add a
-        \`fd-text--pre-wrap\` modifier class to the main element.`
-    }
-  }
+        \`fd-text--pre-wrap\` modifier class to the main element.`,
+    },
+  },
 };
 export const MaxLines = () => maxLinesExampleHtml;
-MaxLines.storyName = 'Max lines';
+MaxLines.storyName = "Max lines";
 MaxLines.parameters = {
   docs: {
     story: {
-      iframeHeight: 300
+      iframeHeight: 300,
     },
     description: {
       story: `The text component can be displayed with a maximum number of lines.
@@ -55,27 +55,27 @@ three lines of text.
 
 **Note**: The property \`-webkit-line-clamp\` doesn't work in IE11 and should be changed
 to \`height\`. For example, \`style="height: 200px;"\`.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const Expand = () => expandExampleHtml;
 Expand.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
+      iframeHeight: 200,
     },
     description: {
       story: `Along with max lines, text component can display "MORE" and "LESS" links that can show
-more or less of the text.`
-    }
-  }
+more or less of the text.`,
+    },
+  },
 };
 export const Hyphenation = () => hyphenationExampleHtml;
 Hyphenation.parameters = {
   docs: {
     story: {
-      iframeHeight: 200
+      iframeHeight: 200,
     },
     description: {
       story: `The text component can display words that are broken at appropriate hyphenation
@@ -90,7 +90,7 @@ Even if the line is not actually broken at that point, the hyphen is still displ
 - Shy: An invisible, "soft" hyphen. Although this character is not visible, it marks a place
 where the browser should break the word if hyphenation is necessary.
 
-In HTML, add the \`&shy;\` Unicode to insert a soft hyphen.`
-    }
-  }
+In HTML, add the \`&shy;\` Unicode to insert a soft hyphen.`,
+    },
+  },
 };

@@ -1,7 +1,7 @@
 import defaultExampleExampleHtml from "./default-example.example.html?raw";
-import '../../../src/scrollbar.scss';
+import "../../../src/scrollbar.scss";
 export default {
-  title: 'Components/Scrollbar',
+  title: "Components/Scrollbar",
   parameters: {
     description: `
 Themeable scrollbar is the scrollbar component made accordingly to the Fiori 3 design guidelines.
@@ -9,16 +9,16 @@ Using the themeable scrollbar is preferred over the browser's default in the com
 Themeable scrollbar works in Chrome, Safari, and other WebKit-based browsers and partially works in Firefox (no hover effects).
 Component not working in the IE, default scrollbar is shown instead.
             `,
-    tags: ['f3', 'theme', 'development']
-  }
+    tags: ["f3", "theme", "development"],
+  },
 };
 export const DefaultExample = () => defaultExampleExampleHtml;
-DefaultExample.storyName = 'Default';
+DefaultExample.storyName = "Default";
 DefaultExample.parameters = {
   docs: {
     description: {
       story: `To use themeable scrollbar use \`fd-scrollbar\` class on scrollable element.
-`
-    }
-  }
+`,
+    },
+  },
 };

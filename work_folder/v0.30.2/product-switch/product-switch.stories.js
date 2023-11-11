@@ -1,13 +1,13 @@
 import smallExampleHtml from "./small.example.html?raw";
 import mediumExampleHtml from "./medium.example.html?raw";
 import largeExampleHtml from "./large.example.html?raw";
-import '../../../src/product-switch.scss';
-import '../../../src/popover.scss';
-import '../../../src/button.scss';
-import '../../../src/icon.scss';
-import '../../../src/shellbar.scss';
+import "../../../src/product-switch.scss";
+import "../../../src/popover.scss";
+import "../../../src/button.scss";
+import "../../../src/icon.scss";
+import "../../../src/shellbar.scss";
 export default {
-  title: 'Components/Product Switch',
+  title: "Components/Product Switch",
   parameters: {
     description: `The product switch provides users with role-based access to several products or lines of businesses (LoBs). The product switch displays an icon button that triggers a **Popover** with the products or LoBs. Because it is designed to be as simple as possible, the product switch only has one level of navigation.
 
@@ -21,8 +21,8 @@ export default {
 
 -	You want your users to navigate within the current product. In this case, use a product menu (see **Shellbar**).
         `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 const localStyles = `
 <style>
@@ -156,33 +156,34 @@ Shellbar.parameters = {
   docs: {
     description: {
       story: `The product switch button is typically displayed within a **Shellbar** on the far-right side.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Large = () => largeExampleHtml;
 Large.parameters = {
   docs: {
     description: {
-      story: 'Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.',
-    }
-  }
+      story:
+        "Product switch is displayed with a maximum of 4 columns on large desktop screens. When the popover contains too many items, it will grow until the maximum is reached. Once the maximum is reached, the popover can be scrolled vertically.",
+    },
+  },
 };
 export const Medium = () => mediumExampleHtml;
 Medium.parameters = {
   docs: {
     description: {
       story: `If there are 6 (or less) items to display, it is recommended to use the 3-column layout (medium). To display a medium-sized product switch, add the \`fd-product-switchbody--col-3\` modifier class to the main element.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Small = () => smallExampleHtml;
 Small.parameters = {
   docs: {
     description: {
       story: `For smaller screens (mobile), the product switch is displayed in list format. To achieve this style, add the \`fd-product-switch__body--mobile\` modifier class to the main element.
-        `
-    }
-  }
+        `,
+    },
+  },
 };

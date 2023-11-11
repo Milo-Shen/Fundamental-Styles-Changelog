@@ -4,13 +4,13 @@ import carouselNoNavigationExampleHtml from "./carousel-no-navigation.example.ht
 import carouselBackgroundsExampleHtml from "./carousel-backgrounds.example.html?raw";
 import carouselTopExampleHtml from "./carousel-top.example.html?raw";
 import carouselBottomExampleHtml from "./carousel-bottom.example.html?raw";
-import '../../../src/carousel.scss';
-import '../../../src/button.scss';
-import '../../../src/icon.scss';
-import '../../../src/message-page.scss';
-import '../../../src/link.scss';
+import "../../../src/carousel.scss";
+import "../../../src/button.scss";
+import "../../../src/icon.scss";
+import "../../../src/message-page.scss";
+import "../../../src/link.scss";
 export default {
-  title: 'Components/Carousel',
+  title: "Components/Carousel",
   parameters: {
     description: `The carousel component is used for browsing through a set of images. One or several items can be displayed at a time, and the user can navigate to either the next or the previous item.
 
@@ -52,65 +52,67 @@ To ensure that the carousel is accessible, a div element with class \`fd-carouse
     * \`fd-carousel__page-indicators\` The carousel page indicators list.
       * \`fd-carousel__page-indicator-item\` The carousel page indicator item.
 `,
-    tags: ['f3', 'a11y', 'theme', 'development']
-  }
+    tags: ["f3", "a11y", "theme", "development"],
+  },
 };
 export const CarouselBottom = () => carouselBottomExampleHtml;
-CarouselBottom.storyName = 'Bottom page indicator';
+CarouselBottom.storyName = "Bottom page indicator";
 CarouselBottom.parameters = {
   docs: {
     description: {
-      story: 'The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.'
-    }
-  }
+      story:
+        "The bottom page indicator carousel displays a content area, navigation buttons and a page indicator at the bottom. The page indicator wraps onto the next line if the content is too long, and after the pages reach a count of 8, the dots are replaced by numerical representation i.e. *1 of 4*.",
+    },
+  },
 };
 export const CarouselTop = () => carouselTopExampleHtml;
-CarouselTop.storyName = 'Top page indicator';
+CarouselTop.storyName = "Top page indicator";
 CarouselTop.parameters = {
   docs: {
     description: {
       story: `The top page indicator carousel displays a content area, navigation buttons and a page indicator at the top.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const CarouselNoNavigation = () => carouselNoNavigationExampleHtml;
-CarouselNoNavigation.storyName = 'Hidden navigation buttons';
+CarouselNoNavigation.storyName = "Hidden navigation buttons";
 CarouselNoNavigation.parameters = {
   docs: {
     description: {
       story: `Carousel can also be displayed without navigation buttons. To hide them, add the \`fd-carousel--no-navigation\` modifier class to the \`fd-carousel\` class. On touchable devices, the user can navigate with a swipe gesture.
-`
-    }
-  }
+`,
+    },
+  },
 };
 
 export const CarouselBackgrounds = () => carouselBackgroundsExampleHtml;
-CarouselBackgrounds.storyName = 'Background modifiers';
+CarouselBackgrounds.storyName = "Background modifiers";
 CarouselBackgrounds.parameters = {
   docs: {
     description: {
-      story: `The background of the Carousel Content and Page Indicator Container can be changed by modifier classes. <br><b>Carousel Content</b><br>The <b>default</b> background for the Carousel Content is <b>translucent</b>. For <b>transparent</b> background apply \`fd-carousel__content--transparent\` modifier class. For <b>solid</b> background apply \`fd-carousel__content--solid\` modifier class to the \`fd-carousel__content\` base class.<br><br><b>Page Indicator Container</b><br>The <b>default</b> background for the container is <b>solid</b>. For <b>transparent</b> background apply \`fd-carousel__page-indicator-container--transparent\` modifier class. For <b>translucent</b> background apply \`fd-carousel__page-indicator-container--translucent\` modifier class to the \`fd-carousel__page-indicator-container\` base class. The  \`fd-carousel__page-indicator-container--no-border\` will remove the border top or bottom of the container. `
-    }
-  }
+      story: `The background of the Carousel Content and Page Indicator Container can be changed by modifier classes. <br><b>Carousel Content</b><br>The <b>default</b> background for the Carousel Content is <b>translucent</b>. For <b>transparent</b> background apply \`fd-carousel__content--transparent\` modifier class. For <b>solid</b> background apply \`fd-carousel__content--solid\` modifier class to the \`fd-carousel__content\` base class.<br><br><b>Page Indicator Container</b><br>The <b>default</b> background for the container is <b>solid</b>. For <b>transparent</b> background apply \`fd-carousel__page-indicator-container--transparent\` modifier class. For <b>translucent</b> background apply \`fd-carousel__page-indicator-container--translucent\` modifier class to the \`fd-carousel__page-indicator-container\` base class. The  \`fd-carousel__page-indicator-container--no-border\` will remove the border top or bottom of the container. `,
+    },
+  },
 };
 
 export const HorizontalCarousel = () => horizontalCarouselExampleHtml;
-HorizontalCarousel.storyName = 'Items in horizontal direction';
+HorizontalCarousel.storyName = "Items in horizontal direction";
 HorizontalCarousel.parameters = {
   docs: {
     description: {
       story: `Carousel will have items which will spread horizontally and will be visible on navigation. For translate animation effect to work, all items should be in DOM.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const Error = () => errorExampleHtml;
-Error.storyName = 'Items loading error';
+Error.storyName = "Items loading error";
 Error.parameters = {
   docs: {
     description: {
-      story: 'Error message can be displayed when items could not be loaded. Error message can be composed using Message page component.'
-    }
-  }
+      story:
+        "Error message can be displayed when items could not be loaded. Error message can be composed using Message page component.",
+    },
+  },
 };

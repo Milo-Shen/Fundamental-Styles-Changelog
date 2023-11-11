@@ -42,11 +42,11 @@ triggered from.
 
 ## Responsive paddings
 
-These modifier classes will add horizontal paddings to the content and can be applied on the \`fd-wizard__progress-bar\`
-level, the \`fd-wizard__content\`, and/or the \`fd-wizard__step-content-container\` level.
+These modifier classes will add horizontal paddings to the content and can be applied on the \`fd-wizard**progress-bar\`
+level, the \`fd-wizard**content\`, and/or the \`fd-wizard\_\_step-content-container\` level.
 
 | **rem** | **Min-width** | **Max-width** | **Modifier class**                                                                                 |
-|:--------|:--------------|:--------------|:---------------------------------------------------------------------------------------------------|
+| :------ | :------------ | :------------ | :------------------------------------------------------------------------------------------------- |
 | 1rem    | _n/a_         | 599px         | `fd-wizard__progress-bar--sm` / `fd-wizard__content--sm` / `fd-wizard__step-content-container--sm` |
 | 2rem    | 600px         | 1023px        | `fd-wizard__progress-bar--md` / `fd-wizard__content--md` / `fd-wizard__step-content-container--md` |
 | 2rem    | 1024px        | 1439px        | `fd-wizard__progress-bar--lg` / `fd-wizard__content--lg` / `fd-wizard__step-content-container--lg` |
@@ -55,7 +55,7 @@ level, the \`fd-wizard__content\`, and/or the \`fd-wizard__step-content-containe
 ## Modifiers
 
 | **Steps**      | **Modifier class**             |
-|:---------------|:-------------------------------|
+| :------------- | :----------------------------- |
 | Completed      | `fd-wizard__step--completed`   |
 | Current        | `fd-wizard__step--current`     |
 | Upcoming       | `fd-wizard__step--upcoming`    |
@@ -69,7 +69,7 @@ level, the \`fd-wizard__content\`, and/or the \`fd-wizard__step-content-containe
 There are multiple connector types that can be displayed depending on the steps involved.
 
 | **Connector type** | **Connection**                                  | **Class/Modifier**                |
-|:-------------------|:------------------------------------------------|:----------------------------------|
+| :----------------- | :---------------------------------------------- | :-------------------------------- |
 | Default            | Inactive step (or Active step) to Inactive step | `fd-wizard__connector`            |
 | Active             | Active step to Active step                      | `fd-wizard__connector--active`    |
 | Branching          | Branching step to Inactive step or no step      | `fd-wizard__connector--branching` |
@@ -77,15 +77,15 @@ There are multiple connector types that can be displayed depending on the steps 
 ## Truncation rules
 
 | **Type**                 | <div style="min-width: 6rem; margin-left: 2rem;">**Max lines** | **Modifier class**                                                                                                                                                               |
-|:-------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Label                    | 2                                                              | Text truncates when it exceeds the maximum space available. When a step has optional text, the label can only accommodate 1 line.                                                |
-| Label with optional text | 1                                                              | Text truncates when it exceeds the maximum space available. The \`fd-wizard__label-container--optional\` modifier class is applied together with \`fd-wizard__label-container\`. |
+| Label with optional text | 1                                                              | Text truncates when it exceeds the maximum space available. The \`fd-wizard**label-container--optional\` modifier class is applied together with \`fd-wizard**label-container\`. |
 | Optional text            | 2                                                              | Text truncates when it exceeds the maximum space available.                                                                                                                      |
 
 ## Content background
 
 | **Type**    | **Modifier class**                 |
-|:------------|:-----------------------------------|
+| :---------- | :--------------------------------- |
 | Solid       | ` fd-wizard__content--solid`       |
 | List        | ` fd-wizard__content--list`        |
 | Transparent | ` fd-wizard__content--transparent` |

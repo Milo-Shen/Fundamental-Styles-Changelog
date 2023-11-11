@@ -1,10 +1,10 @@
 import inlineExampleHtml from "./inline.example.html?raw";
 import requiredExampleHtml from "./required.example.html?raw";
-import '../../../../src/form-label.scss';
-import '../../../../src/checkbox.scss';
-import '../../../../src/fieldset.scss';
+import "../../../../src/form-label.scss";
+import "../../../../src/checkbox.scss";
+import "../../../../src/fieldset.scss";
 export default {
-  title: 'Components/Forms/Checkbox',
+  title: "Components/Forms/Checkbox",
   parameters: {
     description: `A checkbox lets the user set a binary value such as “true/false”. When the user selects the checkbox, it toggles between:
 
@@ -29,8 +29,8 @@ Note: With checkboxes, all options are visible, and the user can make one or mor
 - The user needs to perform instantaneous actions that do not need reviewing or confirming. Consider using a **Switch** instead.
 - There is not enough space available on the screen. Use a **Combo Box** instead.
         `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 const localStyles = `
 <style>
@@ -42,11 +42,11 @@ const localStyles = `
 export const Required = () => requiredExampleHtml;
 Required.parameters = {
   docs: {
-   description: {
+    description: {
       story: `To show that a checkbox input is required, use the \`fd-checkbox__label--required\` class.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const Default = () => `
 ${localStyles}
@@ -120,15 +120,16 @@ ${localStyles}
 </fieldset>
 `;
 Default.parameters = {
-  docs: {}
+  docs: {},
 };
 export const Inline = () => inlineExampleHtml;
 Inline.parameters = {
   docs: {
-   description: {
-      story: 'Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.'
-    }
-  }
+    description: {
+      story:
+        "Checkboxes can display horizontally in a line. To display them this way, add the `fd-checkbox__label--inline` modifier class to the element.",
+    },
+  },
 };
 export const States = () => `
 ${localStyles}
@@ -379,7 +380,7 @@ ${localStyles}
 `;
 States.parameters = {
   docs: {
-   description: {
+    description: {
       story: `Checkboxes can display several interaction states to communicate semantic meaning to the users. To display different states, add the classes below to the \`fd-form-item\`:
 
 | States | Class |
@@ -389,9 +390,9 @@ States.parameters = {
 | Warning | \`fd-checkbox is-warning\` |
 | Information | \`fd-checkbox is-information\` |
 | Disabled | \`fd-checkbox is-disabled\` |
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const TextTruncation = () => `
 ${localStyles}
@@ -430,11 +431,11 @@ ${localStyles}
 `;
 TextTruncation.parameters = {
   docs: {
-   description: {
+    description: {
       story: `By default, long checkbox label truncates with ellipsis. For this behaviour no modifier class is needed. For checkbox label that wraps on a new line to show the entire content, use \`.fd-checkbox__label--wrap\` modifier class applied with \`.fd-checkbox__label\`. Keep in mind that for this to work <b>max-width</b> should be set on the label. For a <b>top-left aligned</b> label use the \`.fd-checkbox__label--wrap-top-aligned\` modifier class.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 
 export const DisplayOnly = () => `
@@ -474,9 +475,9 @@ ${localStyles}
 `;
 DisplayOnly.parameters = {
   docs: {
-   description: {
+    description: {
       story: `In the Display Only Mode, the checkbox is replaced by two icons to represent the checked and unchecked states. The control becomes a simple icon. <br>Add the <code>.is-display</code> modifier class to <code>.fd-checkbox</code> for Display Only Mode.
-        `
-    }
-  }
+        `,
+    },
+  },
 };

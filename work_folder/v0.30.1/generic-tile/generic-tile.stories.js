@@ -8,13 +8,13 @@ import launchTileExampleHtml from "./launch-tile.example.html?raw";
 import genericTileContentColumnsExampleHtml from "./generic-tile-content-columns.example.html?raw";
 import genericTileLayoutExampleHtml from "./generic-tile-layout.example.html?raw";
 import genericTileSizesExampleHtml from "./generic-tile-sizes.example.html?raw";
-import '../../../src/tile.scss';
-import '../../../src/badge.scss';
-import '../../../src/button.scss';
-import '../../../src/numeric-content.scss';
-import '../../../src/icon.scss';
+import "../../../src/tile.scss";
+import "../../../src/badge.scss";
+import "../../../src/button.scss";
+import "../../../src/numeric-content.scss";
+import "../../../src/icon.scss";
 export default {
-  title: 'Components/Generic Tiles',
+  title: "Components/Generic Tiles",
   parameters: {
     description: `
 The generic tile is a container that represents an app on the SAP Fiori launchpad home page. They can display types of content based on the data supplied from the app. In addition, they can contain an icon, information text, a title, KPIs, counters and charts. Tiles move to the next row if there is insufficient horizontal screen space to display them all.
@@ -69,11 +69,11 @@ Critical | \`fd-numeric-content__scale--critical\`
 Informative | \`fd-numeric-content__scale—-informative\`
 <br>
       `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 export const GenericTileSizes = () => genericTileSizesExampleHtml;
-GenericTileSizes.storyName = 'Sizes';
+GenericTileSizes.storyName = "Sizes";
 GenericTileSizes.parameters = {
   docs: {
     description: {
@@ -86,12 +86,12 @@ Generic tiles can be displayed in two tile dimensions: the default 1x1, and 2x1 
 - Large tile (2 x 1) - 22.5 x 11rem
 - Small tile (1 x 1) - 9.25 x 9.25rem
 - Small tile (2 x 1) - 19 x 9.25rem
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const GenericTileLayout = () => genericTileLayoutExampleHtml;
-GenericTileLayout.storyName = 'Layout';
+GenericTileLayout.storyName = "Layout";
 GenericTileLayout.parameters = {
   docs: {
     description: {
@@ -109,12 +109,12 @@ Content (optional) | \`fd-tile__content\` | Generic tile can display content if 
 Footer (optional) | \`fd-tile__footer\` | The footer can contain a refresh icon \`sap-icon--refresh\` and/or status.
 
 **Note:** In the example below, the background color (and class names) illustrate the placement of elements within tiles.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const GenericTileContentColumns = () => genericTileContentColumnsExampleHtml;
-GenericTileContentColumns.storyName = 'Columns';
+GenericTileContentColumns.storyName = "Columns";
 GenericTileContentColumns.parameters = {
   docs: {
     description: {
@@ -132,12 +132,12 @@ The header, content and footer of generic tile can be split into two columns wit
     - Section \`fd-tile__section\`
 
 **Note:** In the example below, the background color illustrates the column sections for generic tiles.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const LaunchTile = () => launchTileExampleHtml;
-LaunchTile.storyName = 'Launch tile';
+LaunchTile.storyName = "Launch tile";
 LaunchTile.parameters = {
   docs: {
     description: {
@@ -150,12 +150,12 @@ Tile size | Maximum...
 S | 8 characters can be displayed within numeric content.
 M | 6 characters can be displayed within numeric content.
 L | 4 characters can be displayed within numeric content.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const KpiTile = () => kpiTileExampleHtml;
-KpiTile.storyName = 'KPI tile';
+KpiTile.storyName = "KPI tile";
 KpiTile.parameters = {
   docs: {
     description: {
@@ -163,44 +163,44 @@ KpiTile.parameters = {
 A KPI tile displays key performance indicators that are used to measure and monitor a company’s performance at a strategic and operational level. The tile displays the KPI values as large, easy-to-recognize digits. In addition, you can show deviation arrows, semantic values, and scaling factors. The number of digits is limited by the size of the tiles. To display a KPI tile, add the \`fd-tile--kpi\` modifier class to the main element.
 
 **Note:** The KPI tile supports a limited number of characters, which varies depending on the tile size (see launch tile above for more details).
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const FeedTile = () => feedTileExampleHtml;
-FeedTile.storyName = 'Feed tile';
+FeedTile.storyName = "Feed tile";
 FeedTile.parameters = {
   docs: {
     description: {
       story: `The feed tile displays a news feed with a news headline, the source, and a time stamp. It shows new notifications in 10-second intervals, and tile content is updated every five minutes. If there are no new notifications, the most recent notifications are displayed. The feed tile’s headline uses the full width of the container and does not contain an icon. To display a feed tile, add the \`fd-tile--feed\` modifier class to the main element.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const BadgeTile = () => badgeTileExampleHtml;
-BadgeTile.storyName = 'Badge tile';
+BadgeTile.storyName = "Badge tile";
 BadgeTile.parameters = {
   docs: {
     description: {
       story: `The badge tile displays very short and important information at the top right corner of the tile. It's recommended to add a badge to a tile when it has been newly added. Badges are not displayed when in action/edit mode.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const SlideTile = () => slideTileExampleHtml;
-SlideTile.storyName = 'Slide tile';
+SlideTile.storyName = "Slide tile";
 SlideTile.parameters = {
   docs: {
     description: {
       story: `
 The slide tile displays a news headline, a background image, the news source, and a time stamp. A start and pause button are always displayed on touch devices and can be revealed on desktops by hovering the mouse over the tile. The dots on the bottom of each tile identify the number of pages they contain.
 To display a slide tile, add the \`fd-tile--slide\` modifier class to the main element.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const LinkTile = () => linkTileExampleHtml;
-LinkTile.storyName = 'Link tile';
+LinkTile.storyName = "Link tile";
 LinkTile.parameters = {
   docs: {
     description: {
@@ -229,18 +229,18 @@ The link tile can be displayed in cozy (default) and compact mode. To display li
 ####Action mode
 When in action mode, default (floating) link tiles display the actions and close button immediately after the text. However, when they are in list format, link tiles display the actions and close button along the right side of the container. To display link tile in action mode, add \`fd-tile__action-container\` after the header element. Gradient masking is also supported in edit mode.
 
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const TileInActionMode = () => tileInActionModeExampleHtml;
-TileInActionMode.storyName = 'Action mode';
+TileInActionMode.storyName = "Action mode";
 TileInActionMode.parameters = {
   docs: {
     description: {
       story: `
 While a tile is in action mode, a close button is displayed on the top right-hand corner of the tile. The action icon is displayed on the bottom right-hand corner, and is only an indicator. The click/touch area fills the entire tile, excluding the area reserved for the close button. To display generic tile in action mode, add the \`fd-tile--action\` modifier class to the main element.
-        `
-    }
-  }
+        `,
+    },
+  },
 };

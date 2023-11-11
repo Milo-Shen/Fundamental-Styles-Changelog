@@ -2,11 +2,11 @@ import resizerAppearanceExampleHtml from "./resizer-appearance.example.html?raw"
 import paginationExampleHtml from "./pagination.example.html?raw";
 import mixedAndNestedExampleHtml from "./mixed-and-nested.example.html?raw";
 import defaultExampleHtml from "./default.example.html?raw";
-import '../../../src/splitter.scss';
-import '../../../src/icon.scss';
-import '../../../src/button.scss';
+import "../../../src/splitter.scss";
+import "../../../src/icon.scss";
+import "../../../src/button.scss";
 export default {
-  title: 'Components/Splitter',
+  title: "Components/Splitter",
   parameters: {
     description: `
 The responsive splitter layout structures complex applications into defined areas. These areas may be resizable and are either distributed on one screen or across different areas, which may also be off-canvas. This depends on the device class and the requirements and settings of the application.
@@ -30,8 +30,8 @@ Elements structure:
       * \`fd-splitter__pagination-item--active\` Modifier class for the active pagination item.
         * \`fd-splitter__pagination-item-dot\` Pagination item dot element.
 `,
-    tags: ['f3', 'theme']
-  }
+    tags: ["f3", "theme"],
+  },
 };
 export const Default = () => defaultExampleHtml;
 Default.parameters = {
@@ -41,9 +41,9 @@ Default.parameters = {
 Content can be split by the vertical areas (columns) or by the horizontal areas (rows).
 
 **Note:** You should explicitly set the dimensions of the splitter component and of the every area otherwise it will be set to the size of the content.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const MixedAndNested = () => mixedAndNestedExampleHtml;
 MixedAndNested.parameters = {
@@ -51,9 +51,9 @@ MixedAndNested.parameters = {
     description: {
       story: `
 Splitter may contain nested containers with different orientations.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const Pagination = () => paginationExampleHtml;
 Pagination.parameters = {
@@ -66,9 +66,9 @@ There should be only one or two root panes. In case there is only one on-canvas 
 Otherwise navigation will be shown below the right root pane.
 
 **Note:** Navigation logic you should implement yourself.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const ResizerAppearance = () => resizerAppearanceExampleHtml;
 ResizerAppearance.parameters = {
@@ -79,7 +79,7 @@ While panes have transparent background resizer has its own by default
 but it's possible to pick one from several options. To do that apply modifier class to the resizer element:
 * \`fd-splitter__resizer--translucent\` Translucent appearance
 * \`fd-splitter__resizer--transparent\` Transparent appearance
-`
-    }
-  }
+`,
+    },
+  },
 };

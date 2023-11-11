@@ -3,19 +3,19 @@ import singleSelectRightModeExampleHtml from "./single-select-right-mode.example
 import singleSelectLeftModeExampleHtml from "./single-select-left-mode.example.html?raw";
 import singleSelectMasterModeExampleHtml from "./single-select-master-mode.example.html?raw";
 import noneModeExampleHtml from "./none-mode.example.html?raw";
-import '../../../../src/grid-list.scss';
-import '../../../../src/layout-grid.scss';
-import '../../../../src/toolbar.scss';
-import '../../../../src/button.scss';
-import '../../../../src/icon.scss';
-import '../../../../src/title.scss';
-import '../../../../src/radio.scss';
-import '../../../../src/checkbox.scss';
-import '../../../../src/avatar.scss';
-import '../../../../src/link.scss';
-import '../../../../src/object-status.scss';
+import "../../../../src/grid-list.scss";
+import "../../../../src/layout-grid.scss";
+import "../../../../src/toolbar.scss";
+import "../../../../src/button.scss";
+import "../../../../src/icon.scss";
+import "../../../../src/title.scss";
+import "../../../../src/radio.scss";
+import "../../../../src/checkbox.scss";
+import "../../../../src/avatar.scss";
+import "../../../../src/link.scss";
+import "../../../../src/object-status.scss";
 export default {
-  title: 'Components/Grid List/Selection',
+  title: "Components/Grid List/Selection",
   parameters: {
     description: `
 As with the list and the responsive table, the grid list displays a set of items. In contrast to both controls, the grid list displays the items not in rows, but in a grid.
@@ -39,64 +39,76 @@ The grid list is usually used as an alternative view for a list or table. It is 
 - You just need it for layout reasons. In this case, use a layout container such as the CSSGrid.
 - You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a table.
     `,
-    tags: ['f3', 'a11y', 'theme', 'development'],
-    components: ['grid-list', 'layout-grid', 'toolbar', 'button', 'icon', 'title', 'radio', 'checkbox', 'avatar', 'link', 'object-status']
-  }
+    tags: ["f3", "a11y", "theme", "development"],
+    components: [
+      "grid-list",
+      "layout-grid",
+      "toolbar",
+      "button",
+      "icon",
+      "title",
+      "radio",
+      "checkbox",
+      "avatar",
+      "link",
+      "object-status",
+    ],
+  },
 };
 export const NoneMode = () => noneModeExampleHtml;
-NoneMode.storyName = 'None mode';
+NoneMode.storyName = "None mode";
 NoneMode.parameters = {
   docs: {
     description: {
-      story: 'Items cannot be selected but can still use "navigation", which allows click handling on specific items.'
-    }
-  }
+      story: 'Items cannot be selected but can still use "navigation", which allows click handling on specific items.',
+    },
+  },
 };
 export const SingleSelectMasterMode = () => singleSelectMasterModeExampleHtml;
-SingleSelectMasterMode.storyName = 'Single select mode';
+SingleSelectMasterMode.storyName = "Single select mode";
 SingleSelectMasterMode.parameters = {
   docs: {
     description: {
       story: `
 One item in the grid list can be selected. Need click on an item to select it.
 To turn on the Single select mode, add the \`fd-grid-list--mode-single-select\` modifier class to the main element.
-        `
-    }
-  }
+        `,
+    },
+  },
 };
 export const SingleSelectLeftMode = () => singleSelectLeftModeExampleHtml;
-SingleSelectLeftMode.storyName = 'Single select left mode';
+SingleSelectLeftMode.storyName = "Single select left mode";
 SingleSelectLeftMode.parameters = {
   docs: {
     description: {
       story: `
 One item in the grid list can be selected. For this, the grid list provides radio buttons on the left side of each item toolbar.
 To turn on the Single select left mode, add the \`fd-grid-list--mode-single-select-left\` modifier class to the main element.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const SingleSelectRightMode = () => singleSelectRightModeExampleHtml;
-SingleSelectRightMode.storyName = 'Single select right mode';
+SingleSelectRightMode.storyName = "Single select right mode";
 SingleSelectRightMode.parameters = {
   docs: {
     description: {
       story: `
 One item in the grid list can be selected. For this, the grid list provides radio buttons on the left side of each item toolbar.
 To turn on the Single select right mode, add the \`fd-grid-list--mode-single-select-right\` modifier class to the main element.
-`
-    }
-  }
+`,
+    },
+  },
 };
 export const MultiSelectMode = () => multiSelectModeExampleHtml;
-MultiSelectMode.storyName = 'Multi select mode';
+MultiSelectMode.storyName = "Multi select mode";
 MultiSelectMode.parameters = {
   docs: {
     description: {
       story: `
 Users can select one or more items. For this, the grid list provides checkboxes on the left side of each item toolbar.
 To turn on the Multi select mode, add the \`fd-grid-list--mode-multi-select\` modifier class to the main element.
-`
-    }
-  }
+`,
+    },
+  },
 };

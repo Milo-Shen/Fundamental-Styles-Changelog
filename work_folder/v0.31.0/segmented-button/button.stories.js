@@ -1,33 +1,33 @@
 import segmentedButtonExampleHtml from "./segmented-button.example.html?raw";
 import segmentedButtonVerticalExampleHtml from "./segmented-button-vertical.example.html?raw";
-import '../../../src/segmented-button.scss';
-import '../../../src/icon.scss';
-import '../../../src/button.scss';
-import '../../../src/message-strip.scss';
+import "../../../src/segmented-button.scss";
+import "../../../src/icon.scss";
+import "../../../src/button.scss";
+import "../../../src/message-strip.scss";
 export default {
-  title: 'Components/Buttons/Segmented Button',
+  title: "Components/Buttons/Segmented Button",
   parameters: {
     description: `The segmented button displays a group of options. Only one option can be active at a time, while the others remain or become inactive when the initial option is selected.
 This button type was previously known as "button group" and is comparable to a radio button group.
 It can be displayed by using the container with \`fd-segmented-button\` class with \`role="group"\` and the \`aria-label="Group label"\` attribute.
 Active button should have \`aria-pressed="true"\` and \`fd-button--toggled\` class and inactive buttons should have \`aria-pressed="false"\`.
     `,
-    tags: ['f3', 'a11y', 'theme']
-  }
+    tags: ["f3", "a11y", "theme"],
+  },
 };
 
 export const SegmentedButton = () => segmentedButtonExampleHtml;
-SegmentedButton.storyName = 'Segmented button';
+SegmentedButton.storyName = "Segmented button";
 SegmentedButton.parameters = {
   docs: {
     description: {
-      story: ``
-    }
-  }
+      story: ``,
+    },
+  },
 };
 
 export const Vertical = () => segmentedButtonVerticalExampleHtml;
-Vertical.storyName = 'Vertical alignment';
+Vertical.storyName = "Vertical alignment";
 Vertical.parameters = {
   docs: {
     description: {
@@ -37,7 +37,7 @@ Vertical.parameters = {
           Vertical segmented button should only be used with icon-only buttons.
         </b>
       </div>
-      `
-    }
-  }
+      `,
+    },
+  },
 };
