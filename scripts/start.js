@@ -23,8 +23,8 @@ const work_folder = path.resolve(dirname, "work_folder");
 const EOL = os.EOL;
 const encoding = "utf8";
 
-const gitToTag = (tag) =>
-  new Promise((resolve) => {
+const gitToTag = (tag) => {
+  return new Promise((resolve) => {
     process.chdir(fundamental_folder);
     simpleGit().checkout(tag, undefined, () => {
       simpleGit().clean(simpleGit.CleanOptions.FORCE);
@@ -33,6 +33,7 @@ const gitToTag = (tag) =>
       resolve();
     });
   });
+};
 
 (async function () {
   // git clone fundamental style repo
