@@ -5,11 +5,13 @@ const path = require("path");
 
 // Import Third Party Libs
 const chalk = require("chalk");
+const prettier = require("prettier");
 const simpleGit = require("simple-git");
 
 // Import self code
 const IO = require("./io");
 const { execCommand, geMinVersion } = require("./util");
+const Config = require("./config");
 
 // Paths
 const build_version = +new Date();
@@ -29,7 +31,6 @@ const gitToTag = (tag) => {
     simpleGit().checkout(tag, undefined, () => {
       simpleGit().clean(simpleGit.CleanOptions.FORCE);
       process.chdir(dirname);
-      console.log(tag);
       resolve();
     });
   });
@@ -56,8 +57,20 @@ const gitToTag = (tag) => {
   IO.resetFolderRecursive(work_folder);
 
   for (let i = 0; i < released_versions.length; i++) {
+    // switch to the specify tag
     const tag = `v${released_versions[i]}`;
     await gitToTag(tag);
-    IO.copyFileRecursive(fiori_stories, path.resolve(work_folder, tag));
+
+    const versioned_story_folder = path.resolve(work_folder, tag);
+    IO.copyFileRecursive(fiori_stories, versioned_story_folder);
+
+    IO.walk(versioned_story_folder, (_path) => {
+      const extname = path.extname(_path);
+      const file = fs.readFileSync(_path, encoding);
+      if (extname === ".js") {
+        const formatted_file = prettier.format(file, Config.Formatter.js);
+        console.log(formatted_file);
+      }
+    });
   }
 })();
