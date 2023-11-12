@@ -47,8 +47,12 @@ const init_json = (new_ver_folder, version_pair) => {
     analyze[version] = analyze[version] || {};
 
     let cur_analyze = analyze[version];
-    for (let i = 1; i < json_level_keys.length; i++) {
+    let json_len = json_level_keys.length;
+
+    for (let i = 1; i < json_len; i++) {
       let key = json_level_keys[i];
+      let is_last = i === json_len - 1;
+
       if (cur_analyze[key] === undefined) {
         cur_analyze[key] = {};
         cur_analyze = cur_analyze[key];
