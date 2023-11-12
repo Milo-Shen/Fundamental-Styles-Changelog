@@ -1,6 +1,5 @@
 // Import Nodejs
 const fs = require("fs");
-const os = require("os");
 const path = require("path");
 
 // Import Third Party Libs
@@ -14,7 +13,7 @@ const { execCommand, geMinVersion } = require("./util");
 const Config = require("./config");
 
 // Import Static Files
-const analyze = require("../analyze/analyze.json");
+let analyze = require("../analyze/analyze.json");
 
 // Paths
 const build_version = +new Date();
@@ -23,6 +22,7 @@ const fundamental_repo = "https://github.com/SAP/fundamental-styles.git";
 const fundamental_folder = path.resolve(dirname, "fundamental-styles");
 const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories/Components");
 const work_folder = path.resolve(dirname, "work_folder");
+const analyze_json = path.resolve(dirname, "analyze/analyze.json");
 
 // Constant
 const encoding = "utf8";
@@ -35,6 +35,27 @@ const gitToTag = (tag) => {
       process.chdir(dirname);
       resolve();
     });
+  });
+};
+
+const init_json = (new_ver_folder, version_pair) => {
+  IO.walk(new_ver_folder, (_path) => {
+    const relative_path = path.relative(work_folder, _path);
+    const json_level_keys = relative_path.split(path.sep);
+
+    const version = version_pair;
+    analyze[version] = analyze[version] || {};
+
+    let cur_analyze = analyze[version];
+    for (let i = 1; i < json_level_keys.length; i++) {
+      let key = json_level_keys[i];
+      if (cur_analyze[key] === undefined) {
+        cur_analyze[key] = {};
+        cur_analyze = cur_analyze[key];
+      } else {
+        cur_analyze = cur_analyze[key];
+      }
+    }
   });
 };
 
@@ -101,7 +122,12 @@ const fileDiff = (source, target) => {};
 
   // compare the same example between different released versions
   for (let i = 0; i < version_pair_arr.length; i++) {
-    let [old_ver, new_ver] = version_pair_arr[i].split("-");
-    console.log([old_ver, new_ver]);
+    const version_pair = version_pair_arr[i];
+    let [old_ver, new_ver] = version_pair.split("-");
+    const new_ver_folder = path.resolve(work_folder, new_ver);
+
+    init_json(new_ver_folder, version_pair);
+    let formatted_analyze = prettier.format(JSON.stringify(analyze), Config.Formatter.json);
+    fs.writeFileSync(analyze_json, formatted_analyze, encoding);
   }
 })();
