@@ -56,7 +56,13 @@ const fileDiff = (source, target) => {};
 
   // get version pair
   let version_pair = {};
-  for (let i = 0; i < versions_count; i++) {}
+  for (let i = 0; i < versions_count; i++) {
+    for (let j = i + 1; j < versions_count; j++) {
+      version_pair[`v${released_versions[i]}-v${released_versions[j]}`] = false;
+    }
+  }
+
+  console.log(version_pair);
 
   // download each version of fundamental-styles to work folder
   IO.mkFolderSyncRecursive(work_folder);
