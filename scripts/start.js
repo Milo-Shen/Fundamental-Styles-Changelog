@@ -51,10 +51,9 @@ const gitToTag = (tag) => {
   released_versions = JSON.parse(released_versions);
   released_versions = released_versions.filter((x) => !x.includes("rc"));
   released_versions = released_versions.filter(geMinVersion);
-  console.log(released_versions);
 
   // download each version of fundamental-styles to work folder
-  IO.resetFolderRecursive(work_folder);
+  IO.mkFolderSyncRecursive(work_folder);
 
   for (let i = 0; i < released_versions.length; i++) {
     // switch to the specify tag
@@ -62,6 +61,10 @@ const gitToTag = (tag) => {
     await gitToTag(tag);
 
     const versioned_story_folder = path.resolve(work_folder, tag);
+    if (fs.existsSync(versioned_story_folder)) {
+      continue;
+    }
+
     IO.copyFileRecursive(fiori_stories, versioned_story_folder);
 
     IO.walk(versioned_story_folder, (_path) => {
