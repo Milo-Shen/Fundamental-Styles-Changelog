@@ -8,10 +8,13 @@ const chalk = require("chalk");
 const prettier = require("prettier");
 const simpleGit = require("simple-git");
 
-// Import self code
+// Import Self Code
 const IO = require("./io");
 const { execCommand, geMinVersion } = require("./util");
 const Config = require("./config");
+
+// Import Static Files
+const analyze = require("../analyze/analyze.json");
 
 // Paths
 const build_version = +new Date();
@@ -56,13 +59,14 @@ const fileDiff = (source, target) => {};
 
   // get version pair
   let version_pair = {};
+  let version_pair_arr = [];
   for (let i = 0; i < versions_count; i++) {
     for (let j = i + 1; j < versions_count; j++) {
-      version_pair[`v${released_versions[i]}-v${released_versions[j]}`] = false;
+      let pair_name = `v${released_versions[i]}-v${released_versions[j]}`;
+      version_pair[pair_name] = false;
+      version_pair_arr.push(pair_name);
     }
   }
-
-  console.log(version_pair);
 
   // download each version of fundamental-styles to work folder
   IO.mkFolderSyncRecursive(work_folder);
@@ -79,8 +83,8 @@ const fileDiff = (source, target) => {};
 
     IO.copyFileRecursive(fiori_stories, versioned_story_folder);
 
+    // format the story example
     IO.walk(versioned_story_folder, (_path) => {
-      // format the story example
       const extname = path.extname(_path);
       const relative_path = path.relative(dirname, _path);
       const formatter = Config.Formatter[extname.substring(1)];
@@ -93,5 +97,11 @@ const fileDiff = (source, target) => {};
         console.log(chalk.bold.yellow(`Warning: file ${relative_path} has format issue...`));
       }
     });
+  }
+
+  // compare the same example between different released versions
+  for (let i = 0; i < version_pair_arr.length; i++) {
+    let [old_ver, new_ver] = version_pair_arr[i].split("-");
+    console.log([old_ver, new_ver]);
   }
 })();
