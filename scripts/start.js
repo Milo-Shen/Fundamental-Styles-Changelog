@@ -56,7 +56,7 @@ const generate_analyze = (new_ver_folder, version_pair) => {
     if (is_exist) {
       const new_file = fs.readFileSync(_path, encoding);
       const old_file = fs.readFileSync(old_path, encoding);
-      has_diff = diff(old_file, new_file);
+      has_diff = diff(old_file, new_file).length !== 1;
     }
 
     let cur_analyze = analyze[version];
@@ -67,19 +67,20 @@ const generate_analyze = (new_ver_folder, version_pair) => {
       let is_last = i === json_len - 1;
 
       if (cur_analyze[key] === undefined) {
-        if (!is_last) {
-          cur_analyze[key] = {};
-          cur_analyze = cur_analyze[key];
-        } else {
-          cur_analyze[key] = {
-            exist: is_exist,
-            has_diff: has_diff,
-            new_ver_path: _path,
-            old_ver_path: is_exist ? old_path : "",
-          };
-        }
+        cur_analyze[key] = {};
+        cur_analyze = cur_analyze[key];
       } else {
         cur_analyze = cur_analyze[key];
+      }
+
+      // todo: this function has issues
+      if (is_last) {
+        cur_analyze = {
+          exist: is_exist,
+          has_diff: has_diff,
+          new_ver_path: _path,
+          old_ver_path: is_exist ? old_path : "",
+        };
       }
     }
   });
