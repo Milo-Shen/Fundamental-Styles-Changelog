@@ -1,6 +1,7 @@
 // Import Nodejs
 const fs = require("fs");
 const path = require("path");
+const diff = require("fast-diff");
 
 // Import Third Party Libs
 const chalk = require("chalk");
@@ -39,13 +40,24 @@ const gitToTag = (tag) => {
   });
 };
 
-const init_json = (new_ver_folder, version_pair) => {
+const generate_analyze = (new_ver_folder, version_pair) => {
   IO.walk(new_ver_folder, (_path) => {
     const relative_path = path.relative(work_folder, _path);
     const json_level_keys = relative_path.split(path.sep);
 
     const version = version_pair;
     analyze[version] = analyze[version] || {};
+
+    let [old_ver, new_ver] = version_pair.split("-");
+    const old_path = _path.replace(new_ver, old_ver);
+    let is_exist = fs.existsSync(old_path);
+    let has_diff = false;
+
+    if (is_exist) {
+      const new_file = fs.readFileSync(_path, encoding);
+      const old_file = fs.readFileSync(old_path, encoding);
+      has_diff = diff(old_file, new_file);
+    }
 
     let cur_analyze = analyze[version];
     let json_len = json_level_keys.length;
@@ -60,10 +72,10 @@ const init_json = (new_ver_folder, version_pair) => {
           cur_analyze = cur_analyze[key];
         } else {
           cur_analyze[key] = {
-            exist: false,
-            has_diff: false,
-            new_ver_path: "",
-            old_ver_path: "",
+            exist: is_exist,
+            has_diff: has_diff,
+            new_ver_path: _path,
+            old_ver_path: is_exist ? old_path : "",
           };
         }
       } else {
@@ -134,13 +146,14 @@ const fileDiff = (source, target) => {};
     });
   }
 
+  version_pair_arr.length = 1;
   // compare the same example between different released versions
   for (let i = 0; i < version_pair_arr.length; i++) {
     const version_pair = version_pair_arr[i];
     let [old_ver, new_ver] = version_pair.split("-");
     const new_ver_folder = path.resolve(work_folder, new_ver);
 
-    init_json(new_ver_folder, version_pair);
+    generate_analyze(new_ver_folder, version_pair);
 
     let formatted_analyze = prettier.format(JSON.stringify(analyze), Config.Formatter.json);
     fs.writeFileSync(analyze_detail, formatted_analyze, encoding);
