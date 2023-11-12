@@ -22,7 +22,6 @@ const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories/
 const work_folder = path.resolve(dirname, "work_folder");
 
 // Constant
-const EOL = os.EOL;
 const encoding = "utf8";
 
 const gitToTag = (tag) => {
@@ -35,6 +34,8 @@ const gitToTag = (tag) => {
     });
   });
 };
+
+const fileDiff = () => {};
 
 (async function () {
   // git clone fundamental style repo
@@ -68,6 +69,7 @@ const gitToTag = (tag) => {
     IO.copyFileRecursive(fiori_stories, versioned_story_folder);
 
     IO.walk(versioned_story_folder, (_path) => {
+      // format the story example
       const extname = path.extname(_path);
       const relative_path = path.relative(dirname, _path);
       const formatter = Config.Formatter[extname.substring(1)];
