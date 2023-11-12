@@ -13,7 +13,7 @@ const { execCommand, geMinVersion } = require("./util");
 const Config = require("./config");
 
 // Import Static Files
-let analyze = require("../analyze/analyze.json");
+let analyze = require("../analyze/analyze_detail.json");
 
 // Paths
 const build_version = +new Date();
@@ -22,7 +22,8 @@ const fundamental_repo = "https://github.com/SAP/fundamental-styles.git";
 const fundamental_folder = path.resolve(dirname, "fundamental-styles");
 const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories/Components");
 const work_folder = path.resolve(dirname, "work_folder");
-const analyze_json = path.resolve(dirname, "analyze/analyze.json");
+const analyze_detail = path.resolve(dirname, "analyze/analyze_detail.json");
+const analyze_lite = path.resolve(dirname, "analyze/analyze_lite.json");
 
 // Constant
 const encoding = "utf8";
@@ -54,8 +55,17 @@ const init_json = (new_ver_folder, version_pair) => {
       let is_last = i === json_len - 1;
 
       if (cur_analyze[key] === undefined) {
-        cur_analyze[key] = {};
-        cur_analyze = cur_analyze[key];
+        if (!is_last) {
+          cur_analyze[key] = {};
+          cur_analyze = cur_analyze[key];
+        } else {
+          cur_analyze[key] = {
+            exist: false,
+            has_diff: false,
+            new_ver_path: "",
+            old_ver_path: "",
+          };
+        }
       } else {
         cur_analyze = cur_analyze[key];
       }
@@ -131,7 +141,8 @@ const fileDiff = (source, target) => {};
     const new_ver_folder = path.resolve(work_folder, new_ver);
 
     init_json(new_ver_folder, version_pair);
+
     let formatted_analyze = prettier.format(JSON.stringify(analyze), Config.Formatter.json);
-    fs.writeFileSync(analyze_json, formatted_analyze, encoding);
+    fs.writeFileSync(analyze_detail, formatted_analyze, encoding);
   }
 })();
