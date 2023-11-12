@@ -35,7 +35,7 @@ const gitToTag = (tag) => {
   });
 };
 
-const fileDiff = () => {};
+const fileDiff = (source, target) => {};
 
 (async function () {
   // git clone fundamental style repo
@@ -52,6 +52,11 @@ const fileDiff = () => {};
   released_versions = JSON.parse(released_versions);
   released_versions = released_versions.filter((x) => !x.includes("rc"));
   released_versions = released_versions.filter(geMinVersion);
+  const versions_count = released_versions.length;
+
+  // get version pair
+  let version_pair = {};
+  for (let i = 0; i < versions_count; i++) {}
 
   // download each version of fundamental-styles to work folder
   IO.mkFolderSyncRecursive(work_folder);
