@@ -64,25 +64,18 @@ const generate_analyze = (new_ver_folder, version_pair) => {
 
     for (let i = 1; i < json_len; i++) {
       let key = json_level_keys[i];
-      let is_last = i === json_len - 1;
 
       if (cur_analyze[key] === undefined) {
         cur_analyze[key] = {};
-        cur_analyze = cur_analyze[key];
-      } else {
-        cur_analyze = cur_analyze[key];
       }
 
-      // todo: this function has issues
-      if (is_last) {
-        cur_analyze = {
-          exist: is_exist,
-          has_diff: has_diff,
-          new_ver_path: _path,
-          old_ver_path: is_exist ? old_path : "",
-        };
-      }
+      cur_analyze = cur_analyze[key];
     }
+
+    cur_analyze.exist = is_exist;
+    cur_analyze.has_diff = has_diff;
+    cur_analyze.new_ver_path = _path;
+    cur_analyze.old_ver_path = is_exist ? old_path : "";
   });
 };
 
