@@ -14,7 +14,7 @@ const { execCommand, geMinVersion } = require("./util");
 const Config = require("./config");
 
 // Import Static Files
-let analyze = require("../analyze/analyze_detail.json");
+let analyze_detail = require("../analyze/analyze_detail.json");
 
 // Paths
 const build_version = +new Date();
@@ -23,8 +23,8 @@ const fundamental_repo = "https://github.com/SAP/fundamental-styles.git";
 const fundamental_folder = path.resolve(dirname, "fundamental-styles");
 const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories/Components");
 const work_folder = path.resolve(dirname, "work_folder");
-const analyze_detail = path.resolve(dirname, "analyze/analyze_detail.json");
-const analyze_lite = path.resolve(dirname, "analyze/analyze_lite.json");
+const analyze_detail_path = path.resolve(dirname, "analyze/analyze_detail.json");
+const analyze_lite_path = path.resolve(dirname, "analyze/analyze_lite.json");
 
 // Constant
 const encoding = "utf8";
@@ -46,7 +46,7 @@ const generate_analyze = (new_ver_folder, version_pair) => {
     const json_level_keys = relative_path.split(path.sep);
 
     const version = version_pair;
-    analyze[version] = analyze[version] || {};
+    analyze_detail[version] = analyze_detail[version] || {};
 
     let [old_ver, new_ver] = version_pair.split("-");
     const old_path = _path.replace(new_ver, old_ver);
@@ -59,7 +59,7 @@ const generate_analyze = (new_ver_folder, version_pair) => {
       has_diff = diff(old_file, new_file).length !== 1;
     }
 
-    let cur_analyze = analyze[version];
+    let cur_analyze = analyze_detail[version];
     let json_len = json_level_keys.length;
 
     for (let i = 1; i < json_len; i++) {
@@ -148,7 +148,7 @@ const fileDiff = (source, target) => {};
 
     generate_analyze(new_ver_folder, version_pair);
 
-    let formatted_analyze = prettier.format(JSON.stringify(analyze), Config.Formatter.json);
-    fs.writeFileSync(analyze_detail, formatted_analyze, encoding);
+    let formatted_analyze = prettier.format(JSON.stringify(analyze_detail), Config.Formatter.json);
+    fs.writeFileSync(analyze_detail_path, formatted_analyze, encoding);
   }
 })();
