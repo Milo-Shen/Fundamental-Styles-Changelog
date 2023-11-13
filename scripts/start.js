@@ -15,6 +15,7 @@ const Config = require("./config");
 
 // Import Static Files
 let analyze_detail = require("../analyze/analyze_detail.json");
+let analyze_lite = require("../analyze/analyze_lite.json");
 
 // Paths
 const build_version = +new Date();
@@ -40,16 +41,17 @@ const gitToTag = (tag) => {
   });
 };
 
-const generate_analyze = (version_pair) => {
+const generate_analyze = (version_pair, mode) => {
   let [old_ver, new_ver] = version_pair.split("-");
   const new_ver_folder = path.resolve(work_folder, new_ver);
+  let analyze = mode === "full" ? analyze_detail : analyze_lite;
 
   IO.walk(new_ver_folder, (_path) => {
     const relative_path = path.relative(work_folder, _path);
     const json_level_keys = relative_path.split(path.sep);
 
     const version = version_pair;
-    analyze_detail[version] = analyze_detail[version] || {};
+    analyze[version] = analyze[version] || {};
 
     const old_path = _path.replace(new_ver, old_ver);
     let is_exist = fs.existsSync(old_path);
@@ -61,7 +63,11 @@ const generate_analyze = (version_pair) => {
       has_diff = diff(old_file, new_file).length !== 1;
     }
 
-    let cur_analyze = analyze_detail[version];
+    if (mode !== "full" && (!is_exist || !has_diff)) {
+      return;
+    }
+
+    let cur_analyze = analyze[version];
     let json_len = json_level_keys.length;
 
     for (let i = 1; i < json_len; i++) {
@@ -146,9 +152,13 @@ const fileDiff = (source, target) => {};
   for (let i = 0; i < version_pair_arr.length; i++) {
     const version_pair = version_pair_arr[i];
 
-    generate_analyze(version_pair);
+    generate_analyze(version_pair, "full");
+    generate_analyze(version_pair, "lite");
 
-    let formatted_analyze = prettier.format(JSON.stringify(analyze_detail), Config.Formatter.json);
-    fs.writeFileSync(analyze_detail_path, formatted_analyze, encoding);
+    let formatted_analyze_detail = prettier.format(JSON.stringify(analyze_detail), Config.Formatter.json);
+    let formatted_analyze_lite = prettier.format(JSON.stringify(analyze_lite), Config.Formatter.json);
+
+    fs.writeFileSync(analyze_detail_path, formatted_analyze_detail, encoding);
+    fs.writeFileSync(analyze_lite_path, formatted_analyze_lite, encoding);
   }
 })();
