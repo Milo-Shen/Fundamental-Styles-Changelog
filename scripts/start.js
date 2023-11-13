@@ -40,7 +40,10 @@ const gitToTag = (tag) => {
   });
 };
 
-const generate_analyze = (new_ver_folder, version_pair) => {
+const generate_analyze = (version_pair) => {
+  let [old_ver, new_ver] = version_pair.split("-");
+  const new_ver_folder = path.resolve(work_folder, new_ver);
+
   IO.walk(new_ver_folder, (_path) => {
     const relative_path = path.relative(work_folder, _path);
     const json_level_keys = relative_path.split(path.sep);
@@ -48,7 +51,6 @@ const generate_analyze = (new_ver_folder, version_pair) => {
     const version = version_pair;
     analyze_detail[version] = analyze_detail[version] || {};
 
-    let [old_ver, new_ver] = version_pair.split("-");
     const old_path = _path.replace(new_ver, old_ver);
     let is_exist = fs.existsSync(old_path);
     let has_diff = false;
@@ -143,10 +145,8 @@ const fileDiff = (source, target) => {};
   // compare the same example between different released versions
   for (let i = 0; i < version_pair_arr.length; i++) {
     const version_pair = version_pair_arr[i];
-    let [old_ver, new_ver] = version_pair.split("-");
-    const new_ver_folder = path.resolve(work_folder, new_ver);
 
-    generate_analyze(new_ver_folder, version_pair);
+    generate_analyze(version_pair);
 
     let formatted_analyze = prettier.format(JSON.stringify(analyze_detail), Config.Formatter.json);
     fs.writeFileSync(analyze_detail_path, formatted_analyze, encoding);
