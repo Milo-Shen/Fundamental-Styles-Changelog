@@ -74,8 +74,8 @@ const generate_analyze = (new_ver_folder, version_pair) => {
 
     cur_analyze.exist = is_exist;
     cur_analyze.has_diff = has_diff;
-    cur_analyze.new_ver_path = _path;
-    cur_analyze.old_ver_path = is_exist ? old_path : "";
+    cur_analyze.new_ver_path = path.relative(dirname, _path);
+    cur_analyze.old_ver_path = is_exist ? path.relative(dirname, old_path) : "";
   });
 };
 
@@ -140,7 +140,6 @@ const fileDiff = (source, target) => {};
     });
   }
 
-  version_pair_arr.length = 1;
   // compare the same example between different released versions
   for (let i = 0; i < version_pair_arr.length; i++) {
     const version_pair = version_pair_arr[i];
