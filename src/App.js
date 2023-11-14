@@ -18,6 +18,9 @@ import { Layout, Menu, theme } from "antd";
 // Import analyze data
 import analyze_lite from "./analyze/analyze_lite.json";
 
+// Import Utils
+import { process_analyze_data } from "./utils";
+
 const { Header, Content, Footer, Sider } = Layout;
 
 const items = [
@@ -35,8 +38,12 @@ const items = [
   label: `nav ${index + 1}`,
 }));
 
+let result = [];
+let test = { "v0.30.2-v0.31.0": analyze_lite["v0.30.2-v0.31.0"] };
+console.log(test);
+console.log(process_analyze_data(test, result, null));
+
 const App = () => {
-  console.log(analyze_lite);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
