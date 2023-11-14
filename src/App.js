@@ -15,6 +15,9 @@ import {
 
 import { Layout, Menu, theme } from "antd";
 
+// Import analyze data
+import analyze_lite from "./analyze/analyze_lite.json";
+
 const { Header, Content, Footer, Sider } = Layout;
 
 const items = [
@@ -33,6 +36,7 @@ const items = [
 }));
 
 const App = () => {
+  console.log(analyze_lite);
   const {
     token: { colorBgContainer },
   } = theme.useToken();

@@ -14,8 +14,8 @@ const { execCommand, geMinVersion } = require("./util");
 const Config = require("./config");
 
 // Import Static Files
-let analyze_detail = require("../analyze/analyze_detail.json");
-let analyze_lite = require("../analyze/analyze_lite.json");
+let analyze_detail = require("../src/analyze/analyze_detail.json");
+let analyze_lite = require("../src/analyze/analyze_lite.json");
 
 // Paths
 const build_version = +new Date();
@@ -23,9 +23,9 @@ const dirname = path.dirname(__dirname);
 const fundamental_repo = "https://github.com/SAP/fundamental-styles.git";
 const fundamental_folder = path.resolve(dirname, "fundamental-styles");
 const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories/Components");
-const work_folder = path.resolve(dirname, "work_folder");
-const analyze_detail_path = path.resolve(dirname, "analyze/analyze_detail.json");
-const analyze_lite_path = path.resolve(dirname, "analyze/analyze_lite.json");
+const work_folder = path.resolve(dirname, "./src/work_folder");
+const analyze_detail_path = path.resolve(dirname, "./src/analyze/analyze_detail.json");
+const analyze_lite_path = path.resolve(dirname, "./src/analyze/analyze_lite.json");
 
 // Constant
 const encoding = "utf8";
