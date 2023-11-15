@@ -41,7 +41,7 @@ const items = [
 let result = [];
 let test = { "v0.30.2-v0.31.0": analyze_lite["v0.30.2-v0.31.0"] };
 console.log(test);
-console.log(process_analyze_data(test, result, null));
+console.log(process_analyze_data(test));
 
 const App = () => {
   const {
