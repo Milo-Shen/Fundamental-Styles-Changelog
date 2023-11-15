@@ -47,7 +47,7 @@ export function fetchFile(url) {
     fetch(url)
       .then((r) => r.text())
       .then((text) => {
-        resolve(text);
+        resolve(`${text}`);
       });
   });
 }
