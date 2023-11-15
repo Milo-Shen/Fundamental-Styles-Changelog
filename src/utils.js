@@ -24,7 +24,7 @@ function single_analyze_data(data, result, path) {
 
       if (!root.children.find((x) => x.label === key)) {
         root.children.push({
-          key: [...path, key].join("-"),
+          key: [...path, key].join("_"),
           label: key,
           children: [],
         });

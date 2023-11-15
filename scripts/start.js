@@ -23,7 +23,8 @@ const dirname = path.dirname(__dirname);
 const fundamental_repo = "https://github.com/SAP/fundamental-styles.git";
 const fundamental_folder = path.resolve(dirname, "fundamental-styles");
 const fiori_stories = path.resolve(fundamental_folder, "packages/styles/stories/Components");
-const work_folder = path.resolve(dirname, "./src/work_folder");
+const public_folder = path.resolve(dirname, "public");
+const work_folder = path.resolve(dirname, "./public/work_folder");
 const analyze_detail_path = path.resolve(dirname, "./src/analyze/analyze_detail.json");
 const analyze_lite_path = path.resolve(dirname, "./src/analyze/analyze_lite.json");
 
@@ -82,8 +83,8 @@ const generate_analyze = (version_pair, mode) => {
 
     cur_analyze.exist = is_exist;
     cur_analyze.has_diff = has_diff;
-    cur_analyze.new_ver_path = path.relative(dirname, _path);
-    cur_analyze.old_ver_path = is_exist ? path.relative(dirname, old_path) : "";
+    cur_analyze.new_ver_path = path.relative(public_folder, _path);
+    cur_analyze.old_ver_path = is_exist ? path.relative(public_folder, old_path) : "";
   });
 };
 

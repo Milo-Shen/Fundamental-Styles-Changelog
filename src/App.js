@@ -37,7 +37,21 @@ const App = () => {
         }}
       >
         <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]} items={processed_lite.children} />
+        <Menu
+          theme="dark"
+          mode="inline"
+          defaultSelectedKeys={["4"]}
+          items={processed_lite.children}
+          onSelect={async ({ key }) => {
+            let path = key.split("_");
+            let root = analyze_lite;
+            for (let i = 0; i < path.length; i++) {
+              root = root[path[i]];
+            }
+            console.log(root);
+            debugger;
+          }}
+        />
       </Sider>
       <Layout
         className="site-layout"
