@@ -21,6 +21,9 @@ import analyze_lite from "./analyze/analyze_lite.json";
 // Import Utils
 import { process_analyze_data } from "./utils";
 
+// Import CSS
+import "./index.css";
+
 const { Header, Content, Footer, Sider } = Layout;
 
 const items = [
@@ -38,10 +41,8 @@ const items = [
   label: `nav ${index + 1}`,
 }));
 
-let result = [];
-let test = { "v0.30.2-v0.31.0": analyze_lite["v0.30.2-v0.31.0"] };
-console.log(test);
-console.log(process_analyze_data(test));
+const processed_lite = process_analyze_data(analyze_lite);
+console.log(processed_lite);
 
 const App = () => {
   const {
@@ -60,7 +61,7 @@ const App = () => {
         }}
       >
         <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]} items={items} />
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]} items={processed_lite.children} />
       </Sider>
       <Layout
         className="site-layout"
