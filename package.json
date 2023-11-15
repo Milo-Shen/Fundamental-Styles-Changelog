@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compare": "node scripts/start.js"
+    "compare": "node scripts/start.js",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
