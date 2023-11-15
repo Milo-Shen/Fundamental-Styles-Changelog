@@ -88,8 +88,6 @@ const generate_analyze = (version_pair, mode) => {
   });
 };
 
-const fileDiff = (source, target) => {};
-
 (async function () {
   // git clone fundamental style repo
   const git = simpleGit();
