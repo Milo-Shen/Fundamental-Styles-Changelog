@@ -1,5 +1,5 @@
 // Import React Framework
-import React from "react";
+import React, { useState } from "react";
 
 // Import Third Party Lib
 import { Layout, Menu, theme } from "antd";
@@ -11,7 +11,7 @@ import DiffComponent from "./component/DiffComponent/DiffComponent";
 import analyze_lite from "./analyze/analyze_lite.json";
 
 // Import Utils
-import { process_analyze_data } from "./utils";
+import { process_analyze_data, fetchFile } from "./utils";
 
 // Import CSS
 import "./index.css";
@@ -24,6 +24,9 @@ const App = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  const [code, set_code] = useState(["", ""]);
+
   return (
     <Layout hasSider>
       <Sider
@@ -48,8 +51,14 @@ const App = () => {
             for (let i = 0; i < path.length; i++) {
               root = root[path[i]];
             }
-            console.log(root);
-            debugger;
+
+            let { old_ver_path, new_ver_path } = root;
+            console.log(old_ver_path, new_ver_path);
+            let [old_text, new_text] = await Promise.all([
+              await fetchFile(old_ver_path),
+              await fetchFile(new_ver_path),
+            ]);
+            set_code([old_text, new_text]);
           }}
         />
       </Sider>
@@ -78,8 +87,8 @@ const App = () => {
             fileListToggle={true}
             diffDataList={[
               {
-                prevData: "app",
-                newData: "ppp",
+                prevData: code[0],
+                newData: code[1],
               },
             ]}
             outputFormat="side-by-side"
@@ -90,7 +99,7 @@ const App = () => {
             textAlign: "center",
           }}
         >
-          Ant Design ©2023 Created by Ant UED
+          Created By Hubery
         </Footer>
       </Layout>
     </Layout>

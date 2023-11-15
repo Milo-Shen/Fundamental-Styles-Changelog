@@ -41,3 +41,13 @@ function single_analyze_data(data, result, path) {
     delete root.children;
   }
 }
+
+export function fetchFile(url) {
+  return new Promise((resolve) => {
+    fetch(url)
+      .then((r) => r.text())
+      .then((text) => {
+        resolve(text);
+      });
+  });
+}
