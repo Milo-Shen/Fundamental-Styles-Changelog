@@ -1,19 +1,11 @@
 // Import React Framework
 import React from "react";
 
-// Import Ant Design
-import {
-  AppstoreOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  ShopOutlined,
-  TeamOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-
+// Import Third Party Lib
 import { Layout, Menu, theme } from "antd";
+
+// Import Customized Component
+import DiffComponent from "./component/DiffComponent/DiffComponent";
 
 // Import analyze data
 import analyze_lite from "./analyze/analyze_lite.json";
@@ -26,23 +18,7 @@ import "./index.css";
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const items = [
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  AppstoreOutlined,
-  TeamOutlined,
-  ShopOutlined,
-].map((icon, index) => ({
-  key: String(index + 1),
-  icon: React.createElement(icon),
-  label: `nav ${index + 1}`,
-}));
-
 const processed_lite = process_analyze_data(analyze_lite);
-console.log(processed_lite);
 
 const App = () => {
   const {
@@ -81,29 +57,19 @@ const App = () => {
             overflow: "initial",
           }}
         >
-          <div
-            style={{
-              padding: 24,
-              textAlign: "center",
-              background: colorBgContainer,
-            }}
-          >
-            <p>long content</p>
-            {
-              // indicates very long content
-              Array.from(
-                {
-                  length: 100,
-                },
-                (_, index) => (
-                  <React.Fragment key={index}>
-                    {index % 20 === 0 && index ? "more" : "..."}
-                    <br />
-                  </React.Fragment>
-                )
-              )
-            }
-          </div>
+          <div>334</div>
+          <DiffComponent
+            isUseUi={true}
+            id={"diff-ui-multi"}
+            fileListToggle={true}
+            diffDataList={[
+              {
+                prevData: "app",
+                newData: "ppp",
+              },
+            ]}
+            outputFormat="side-by-side"
+          />
         </Content>
         <Footer
           style={{

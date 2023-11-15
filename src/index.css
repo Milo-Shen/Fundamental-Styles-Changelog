@@ -4,6 +4,10 @@
   max-width: 300px !important;
 }
 
+.ant-layout-sider + .ant-layout{
+  margin-left: 300px !important;
+}
+
 .ant-menu-item-only-child {
   padding-left: 24px !important;
   text-align: right;
