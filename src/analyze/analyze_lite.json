@@ -7404,5 +7404,2939 @@
         "old_ver_path": "work_folder/v0.30.2/rating-indicator/rating-indicator.stories.js"
       }
     }
+  },
+  "v0.29.3-v0.32.0": {
+    "Forms": {
+      "checkbox": {
+        "checkbox.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/checkbox.stories.js",
+          "old_ver_path": "work_folder/v0.29.3/Forms/checkbox/checkbox.stories.js"
+        },
+        "inline.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/inline.example.html",
+          "old_ver_path": "work_folder/v0.29.3/Forms/checkbox/inline.example.html"
+        },
+        "required.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/required.example.html",
+          "old_ver_path": "work_folder/v0.29.3/Forms/checkbox/required.example.html"
+        }
+      },
+      "form-fieldset": {
+        "checkbox-groups.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/form-fieldset/checkbox-groups.example.html",
+          "old_ver_path": "work_folder/v0.29.3/Forms/form-fieldset/checkbox-groups.example.html"
+        },
+        "form-fieldset.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/form-fieldset/form-fieldset.stories.js",
+          "old_ver_path": "work_folder/v0.29.3/Forms/form-fieldset/form-fieldset.stories.js"
+        }
+      },
+      "form-grid": {
+        "form-grid.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/form-grid/form-grid.stories.js",
+          "old_ver_path": "work_folder/v0.29.3/Forms/form-grid/form-grid.stories.js"
+        }
+      },
+      "input": {
+        "input.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/input.stories.js",
+          "old_ver_path": "work_folder/v0.29.3/Forms/input/input.stories.js"
+        },
+        "primary.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/primary.example.html",
+          "old_ver_path": "work_folder/v0.29.3/Forms/input/primary.example.html"
+        }
+      },
+      "input-group": {
+        "input-group.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input-group/input-group.stories.js",
+          "old_ver_path": "work_folder/v0.29.3/Forms/input-group/input-group.stories.js"
+        },
+        "states.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input-group/states.example.html",
+          "old_ver_path": "work_folder/v0.29.3/Forms/input-group/states.example.html"
+        }
+      },
+      "radio": {
+        "radio.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/radio/radio.stories.js",
+          "old_ver_path": "work_folder/v0.29.3/Forms/radio/radio.stories.js"
+        }
+      },
+      "textarea": {
+        "textarea.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/textarea/textarea.stories.js",
+          "old_ver_path": "work_folder/v0.29.3/Forms/textarea/textarea.stories.js"
+        }
+      }
+    },
+    "Grid List": {
+      "list-grid-select": {
+        "multi-select-mode.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Grid List/list-grid-select/multi-select-mode.example.html",
+          "old_ver_path": "work_folder/v0.29.3/Grid List/list-grid-select/multi-select-mode.example.html"
+        }
+      }
+    },
+    "Icons": {
+      "icon": {
+        "BusinessSuiteInAppSymbols": {
+          "dataBusinessSuite.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json",
+            "old_ver_path": "work_folder/v0.29.3/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json"
+          },
+          "iconBusinessSuite.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/BusinessSuiteInAppSymbols/iconBusinessSuite.stories.js",
+            "old_ver_path": "work_folder/v0.29.3/Icons/icon/BusinessSuiteInAppSymbols/iconBusinessSuite.stories.js"
+          }
+        },
+        "SAPIcons": {
+          "data.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/data.json",
+            "old_ver_path": "work_folder/v0.29.3/Icons/icon/SAPIcons/data.json"
+          },
+          "icon.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/icon.stories.js",
+            "old_ver_path": "work_folder/v0.29.3/Icons/icon/SAPIcons/icon.stories.js"
+          }
+        },
+        "TNTIcons": {
+          "dataTNT.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/dataTNT.json",
+            "old_ver_path": "work_folder/v0.29.3/Icons/icon/TNTIcons/dataTNT.json"
+          },
+          "iconTnt.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/iconTnt.stories.js",
+            "old_ver_path": "work_folder/v0.29.3/Icons/icon/TNTIcons/iconTnt.stories.js"
+          }
+        }
+      }
+    },
+    "List": {
+      "list": {
+        "byline": {
+          "byline-list.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/byline-list.stories.js",
+            "old_ver_path": "work_folder/v0.29.3/List/list/byline/byline-list.stories.js"
+          },
+          "long-text.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/long-text.example.html",
+            "old_ver_path": "work_folder/v0.29.3/List/list/byline/long-text.example.html"
+          },
+          "selection-and-navigation.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/selection-and-navigation.example.html",
+            "old_ver_path": "work_folder/v0.29.3/List/list/byline/selection-and-navigation.example.html"
+          },
+          "selection.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/selection.example.html",
+            "old_ver_path": "work_folder/v0.29.3/List/list/byline/selection.example.html"
+          },
+          "unread-notification.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/unread-notification.example.html",
+            "old_ver_path": "work_folder/v0.29.3/List/list/byline/unread-notification.example.html"
+          }
+        },
+        "standard": {
+          "selection.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/standard/selection.example.html",
+            "old_ver_path": "work_folder/v0.29.3/List/list/standard/selection.example.html"
+          },
+          "standard-list.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/standard/standard-list.stories.js",
+            "old_ver_path": "work_folder/v0.29.3/List/list/standard/standard-list.stories.js"
+          }
+        }
+      }
+    },
+    "action-sheet": {
+      "action-sheet.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/action-sheet/action-sheet.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/action-sheet/action-sheet.stories.js"
+      }
+    },
+    "avatar": {
+      "avatar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar/avatar.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/avatar/avatar.stories.js"
+      }
+    },
+    "avatar-group": {
+      "avatar-group.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar-group/avatar-group.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/avatar-group/avatar-group.stories.js"
+      },
+      "group-type-vertical.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar-group/group-type-vertical.example.html",
+        "old_ver_path": "work_folder/v0.29.3/avatar-group/group-type-vertical.example.html"
+      },
+      "individual-type-vertical.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar-group/individual-type-vertical.example.html",
+        "old_ver_path": "work_folder/v0.29.3/avatar-group/individual-type-vertical.example.html"
+      }
+    },
+    "bar": {
+      "bar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/bar.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/bar/bar.stories.js"
+      },
+      "default.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/default.example.html",
+        "old_ver_path": "work_folder/v0.29.3/bar/default.example.html"
+      },
+      "floating-footer.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/floating-footer.example.html",
+        "old_ver_path": "work_folder/v0.29.3/bar/floating-footer.example.html"
+      },
+      "footer.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/footer.example.html",
+        "old_ver_path": "work_folder/v0.29.3/bar/footer.example.html"
+      },
+      "header-with-subheader.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/header-with-subheader.example.html",
+        "old_ver_path": "work_folder/v0.29.3/bar/header-with-subheader.example.html"
+      },
+      "header.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/header.example.html",
+        "old_ver_path": "work_folder/v0.29.3/bar/header.example.html"
+      },
+      "subheader.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/subheader.example.html",
+        "old_ver_path": "work_folder/v0.29.3/bar/subheader.example.html"
+      }
+    },
+    "breadcrumb": {
+      "breadcrumb.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/breadcrumb/breadcrumb.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/breadcrumb/breadcrumb.stories.js"
+      }
+    },
+    "busy-indicator": {
+      "busy-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-dialog.example.html",
+        "old_ver_path": "work_folder/v0.29.3/busy-indicator/busy-dialog.example.html"
+      },
+      "busy-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/busy-indicator/busy-indicator.stories.js"
+      }
+    },
+    "button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/button.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/button/button.stories.js"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.29.3/button/icon-and-text.example.html"
+      },
+      "styles.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/styles.example.html",
+        "old_ver_path": "work_folder/v0.29.3/button/styles.example.html"
+      }
+    },
+    "calendar": {
+      "calendar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/calendar.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/calendar/calendar.stories.js"
+      },
+      "days.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/days.example.html",
+        "old_ver_path": "work_folder/v0.29.3/calendar/days.example.html"
+      },
+      "months.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/months.example.html",
+        "old_ver_path": "work_folder/v0.29.3/calendar/months.example.html"
+      },
+      "years.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/years.example.html",
+        "old_ver_path": "work_folder/v0.29.3/calendar/years.example.html"
+      }
+    },
+    "card": {
+      "card.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/card/card.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/card/card.stories.js"
+      }
+    },
+    "carousel": {
+      "carousel-bottom.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/carousel/carousel-bottom.example.html",
+        "old_ver_path": "work_folder/v0.29.3/carousel/carousel-bottom.example.html"
+      },
+      "carousel.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/carousel/carousel.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/carousel/carousel.stories.js"
+      }
+    },
+    "dialog": {
+      "default-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/default-dialog.example.html",
+        "old_ver_path": "work_folder/v0.29.3/dialog/default-dialog.example.html"
+      },
+      "dialog.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/dialog.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/dialog/dialog.stories.js"
+      },
+      "selectable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/selectable.example.html",
+        "old_ver_path": "work_folder/v0.29.3/dialog/selectable.example.html"
+      }
+    },
+    "feed-input": {
+      "feed-input.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/feed-input/feed-input.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/feed-input/feed-input.stories.js"
+      }
+    },
+    "file-uploader": {
+      "file-uploader.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/file-uploader/file-uploader.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/file-uploader/file-uploader.stories.js"
+      }
+    },
+    "generic-tag": {
+      "generic-tag.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/generic-tag/generic-tag.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/generic-tag/generic-tag.stories.js"
+      }
+    },
+    "generic-tile": {
+      "generic-tile.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/generic-tile/generic-tile.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/generic-tile/generic-tile.stories.js"
+      }
+    },
+    "icon-tab-bar": {
+      "badge.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/badge.example.html",
+        "old_ver_path": "work_folder/v0.29.3/icon-tab-bar/badge.example.html"
+      },
+      "icon-tab-bar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/icon-tab-bar.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/icon-tab-bar/icon-tab-bar.stories.js"
+      },
+      "multi-click.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/multi-click.example.html",
+        "old_ver_path": "work_folder/v0.29.3/icon-tab-bar/multi-click.example.html"
+      },
+      "overflow.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/overflow.example.html",
+        "old_ver_path": "work_folder/v0.29.3/icon-tab-bar/overflow.example.html"
+      },
+      "single-click.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/single-click.example.html",
+        "old_ver_path": "work_folder/v0.29.3/icon-tab-bar/single-click.example.html"
+      }
+    },
+    "illustrated-message": {
+      "illustrated-message.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/illustrated-message/illustrated-message.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/illustrated-message/illustrated-message.stories.js"
+      }
+    },
+    "info-label": {
+      "display-only-info-label.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/info-label/display-only-info-label.example.html",
+        "old_ver_path": "work_folder/v0.29.3/info-label/display-only-info-label.example.html"
+      },
+      "info-label-with-icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/info-label/info-label-with-icon.example.html",
+        "old_ver_path": "work_folder/v0.29.3/info-label/info-label-with-icon.example.html"
+      },
+      "info-label.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/info-label/info-label.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/info-label/info-label.stories.js"
+      }
+    },
+    "link": {
+      "link.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/link/link.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/link/link.stories.js"
+      }
+    },
+    "menu": {
+      "menu.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/menu/menu.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/menu/menu.stories.js"
+      }
+    },
+    "message-box": {
+      "message-box.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-box/message-box.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/message-box/message-box.stories.js"
+      }
+    },
+    "message-page": {
+      "message-page.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-page/message-page.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/message-page/message-page.stories.js"
+      }
+    },
+    "message-strip": {
+      "message-strip-with-link.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip-with-link.example.html",
+        "old_ver_path": "work_folder/v0.29.3/message-strip/message-strip-with-link.example.html"
+      },
+      "message-strip.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/message-strip/message-strip.stories.js"
+      }
+    },
+    "message-toast": {
+      "message-toast.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-toast/message-toast.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/message-toast/message-toast.stories.js"
+      }
+    },
+    "micro-process-flow": {
+      "micro-process-flow.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/micro-process-flow/micro-process-flow.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/micro-process-flow/micro-process-flow.stories.js"
+      }
+    },
+    "notification": {
+      "error.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/error.example.html",
+        "old_ver_path": "work_folder/v0.29.3/notification/error.example.html"
+      },
+      "information.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/information.example.html",
+        "old_ver_path": "work_folder/v0.29.3/notification/information.example.html"
+      },
+      "mobile.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/mobile.example.html",
+        "old_ver_path": "work_folder/v0.29.3/notification/mobile.example.html"
+      },
+      "notification.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/notification.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/notification/notification.stories.js"
+      },
+      "warning.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/warning.example.html",
+        "old_ver_path": "work_folder/v0.29.3/notification/warning.example.html"
+      }
+    },
+    "object-list": {
+      "object-list.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/object-list.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/object-list/object-list.stories.js"
+      },
+      "standart.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/standart.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-list/standart.example.html"
+      }
+    },
+    "object-marker": {
+      "object-marker.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-marker/object-marker.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/object-marker/object-marker.stories.js"
+      }
+    },
+    "object-status": {
+      "clickable-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/clickable-object-status.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/clickable-object-status.example.html"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/icon-and-text.example.html"
+      },
+      "icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/icon.example.html"
+      },
+      "inverted-indication.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted-indication.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/inverted-indication.example.html"
+      },
+      "inverted.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/inverted.example.html"
+      },
+      "large-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/large-object-status.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/large-object-status.example.html"
+      },
+      "object-status.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/object-status.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/object-status/object-status.stories.js"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/primary.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/primary.example.html"
+      },
+      "truncate-example.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/truncate-example.example.html",
+        "old_ver_path": "work_folder/v0.29.3/object-status/truncate-example.example.html"
+      }
+    },
+    "pagination": {
+      "mobile.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/pagination/mobile.example.html",
+        "old_ver_path": "work_folder/v0.29.3/pagination/mobile.example.html"
+      },
+      "pagination.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/pagination/pagination.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/pagination/pagination.stories.js"
+      },
+      "per-page.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/pagination/per-page.example.html",
+        "old_ver_path": "work_folder/v0.29.3/pagination/per-page.example.html"
+      }
+    },
+    "panel": {
+      "borderless.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/borderless.example.html",
+        "old_ver_path": "work_folder/v0.29.3/panel/borderless.example.html"
+      },
+      "expandable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/expandable.example.html",
+        "old_ver_path": "work_folder/v0.29.3/panel/expandable.example.html"
+      },
+      "fixed-height-content.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/fixed-height-content.example.html",
+        "old_ver_path": "work_folder/v0.29.3/panel/fixed-height-content.example.html"
+      },
+      "panel.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/panel.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/panel/panel.stories.js"
+      },
+      "transparent.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/transparent.example.html",
+        "old_ver_path": "work_folder/v0.29.3/panel/transparent.example.html"
+      }
+    },
+    "popover": {
+      "popover.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/popover/popover.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/popover/popover.stories.js"
+      }
+    },
+    "product-switch": {
+      "product-switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/product-switch/product-switch.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/product-switch/product-switch.stories.js"
+      }
+    },
+    "progress-indicator": {
+      "progress-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/progress-indicator/progress-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/progress-indicator/progress-indicator.stories.js"
+      },
+      "truncation.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/progress-indicator/truncation.example.html",
+        "old_ver_path": "work_folder/v0.29.3/progress-indicator/truncation.example.html"
+      }
+    },
+    "quick-view": {
+      "no-header.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/quick-view/no-header.example.html",
+        "old_ver_path": "work_folder/v0.29.3/quick-view/no-header.example.html"
+      },
+      "popover.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/quick-view/popover.example.html",
+        "old_ver_path": "work_folder/v0.29.3/quick-view/popover.example.html"
+      },
+      "quick-view.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/quick-view/quick-view.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/quick-view/quick-view.stories.js"
+      }
+    },
+    "rating-indicator": {
+      "disabled.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/disabled.example.html",
+        "old_ver_path": "work_folder/v0.29.3/rating-indicator/disabled.example.html"
+      },
+      "display-mode.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/display-mode.example.html",
+        "old_ver_path": "work_folder/v0.29.3/rating-indicator/display-mode.example.html"
+      },
+      "non-interactive.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/non-interactive.example.html",
+        "old_ver_path": "work_folder/v0.29.3/rating-indicator/non-interactive.example.html"
+      },
+      "rating-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/rating-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/rating-indicator/rating-indicator.stories.js"
+      }
+    },
+    "scrollbar": {
+      "scrollbar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/scrollbar/scrollbar.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/scrollbar/scrollbar.stories.js"
+      }
+    },
+    "select": {
+      "cozy.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/cozy.example.html",
+        "old_ver_path": "work_folder/v0.29.3/select/cozy.example.html"
+      },
+      "mobile-mode.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/mobile-mode.example.html",
+        "old_ver_path": "work_folder/v0.29.3/select/mobile-mode.example.html"
+      },
+      "select.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/select.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/select/select.stories.js"
+      },
+      "semantic-states.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/semantic-states.example.html",
+        "old_ver_path": "work_folder/v0.29.3/select/semantic-states.example.html"
+      }
+    },
+    "slider": {
+      "slider.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/slider/slider.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/slider/slider.stories.js"
+      }
+    },
+    "step-input": {
+      "step-input.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/step-input/step-input.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/step-input/step-input.stories.js"
+      }
+    },
+    "switch": {
+      "basic.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/basic.example.html",
+        "old_ver_path": "work_folder/v0.29.3/switch/basic.example.html"
+      },
+      "switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/switch.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/switch/switch.stories.js"
+      },
+      "with-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/with-text.example.html",
+        "old_ver_path": "work_folder/v0.29.3/switch/with-text.example.html"
+      }
+    },
+    "table": {
+      "table.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/table/table.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/table/table.stories.js"
+      }
+    },
+    "text": {
+      "text.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/text/text.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/text/text.stories.js"
+      }
+    },
+    "time": {
+      "time.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/time/time.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/time/time.stories.js"
+      }
+    },
+    "timepicker": {
+      "timepicker.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/timepicker/timepicker.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/timepicker/timepicker.stories.js"
+      }
+    },
+    "title": {
+      "title.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/title/title.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/title/title.stories.js"
+      }
+    },
+    "token": {
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/token/primary.example.html",
+        "old_ver_path": "work_folder/v0.29.3/token/primary.example.html"
+      },
+      "token.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/token/token.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/token/token.stories.js"
+      }
+    },
+    "toolbar": {
+      "alignment.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/alignment.example.html",
+        "old_ver_path": "work_folder/v0.29.3/toolbar/alignment.example.html"
+      },
+      "overflow.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/overflow.example.html",
+        "old_ver_path": "work_folder/v0.29.3/toolbar/overflow.example.html"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/primary.example.html",
+        "old_ver_path": "work_folder/v0.29.3/toolbar/primary.example.html"
+      },
+      "separator.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/separator.example.html",
+        "old_ver_path": "work_folder/v0.29.3/toolbar/separator.example.html"
+      },
+      "toolbar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/toolbar.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/toolbar/toolbar.stories.js"
+      },
+      "types.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/types.example.html",
+        "old_ver_path": "work_folder/v0.29.3/toolbar/types.example.html"
+      }
+    },
+    "tree": {
+      "selection.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/tree/selection.example.html",
+        "old_ver_path": "work_folder/v0.29.3/tree/selection.example.html"
+      },
+      "tree.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/tree/tree.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/tree/tree.stories.js"
+      }
+    },
+    "upload-collection": {
+      "upload-collection.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/upload-collection/upload-collection.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/upload-collection/upload-collection.stories.js"
+      }
+    },
+    "variant-management": {
+      "variant-management.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/variant-management/variant-management.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/variant-management/variant-management.stories.js"
+      }
+    },
+    "vertical-navigation": {
+      "vertical-navigation.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/vertical-navigation/vertical-navigation.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/vertical-navigation/vertical-navigation.stories.js"
+      }
+    },
+    "wizard": {
+      "wizard.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/wizard/wizard.stories.js",
+        "old_ver_path": "work_folder/v0.29.3/wizard/wizard.stories.js"
+      }
+    }
+  },
+  "v0.29.4-v0.32.0": {
+    "Forms": {
+      "checkbox": {
+        "checkbox.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/checkbox.stories.js",
+          "old_ver_path": "work_folder/v0.29.4/Forms/checkbox/checkbox.stories.js"
+        },
+        "inline.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/inline.example.html",
+          "old_ver_path": "work_folder/v0.29.4/Forms/checkbox/inline.example.html"
+        },
+        "required.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/required.example.html",
+          "old_ver_path": "work_folder/v0.29.4/Forms/checkbox/required.example.html"
+        }
+      },
+      "form-fieldset": {
+        "checkbox-groups.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/form-fieldset/checkbox-groups.example.html",
+          "old_ver_path": "work_folder/v0.29.4/Forms/form-fieldset/checkbox-groups.example.html"
+        },
+        "form-fieldset.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/form-fieldset/form-fieldset.stories.js",
+          "old_ver_path": "work_folder/v0.29.4/Forms/form-fieldset/form-fieldset.stories.js"
+        }
+      },
+      "form-grid": {
+        "form-grid.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/form-grid/form-grid.stories.js",
+          "old_ver_path": "work_folder/v0.29.4/Forms/form-grid/form-grid.stories.js"
+        }
+      },
+      "input": {
+        "input.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/input.stories.js",
+          "old_ver_path": "work_folder/v0.29.4/Forms/input/input.stories.js"
+        },
+        "primary.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/primary.example.html",
+          "old_ver_path": "work_folder/v0.29.4/Forms/input/primary.example.html"
+        }
+      },
+      "input-group": {
+        "input-group.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input-group/input-group.stories.js",
+          "old_ver_path": "work_folder/v0.29.4/Forms/input-group/input-group.stories.js"
+        },
+        "states.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input-group/states.example.html",
+          "old_ver_path": "work_folder/v0.29.4/Forms/input-group/states.example.html"
+        }
+      },
+      "radio": {
+        "radio.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/radio/radio.stories.js",
+          "old_ver_path": "work_folder/v0.29.4/Forms/radio/radio.stories.js"
+        }
+      },
+      "textarea": {
+        "textarea.stories.js": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/textarea/textarea.stories.js",
+          "old_ver_path": "work_folder/v0.29.4/Forms/textarea/textarea.stories.js"
+        }
+      }
+    },
+    "Grid List": {
+      "list-grid-select": {
+        "multi-select-mode.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Grid List/list-grid-select/multi-select-mode.example.html",
+          "old_ver_path": "work_folder/v0.29.4/Grid List/list-grid-select/multi-select-mode.example.html"
+        }
+      }
+    },
+    "Icons": {
+      "icon": {
+        "BusinessSuiteInAppSymbols": {
+          "dataBusinessSuite.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json",
+            "old_ver_path": "work_folder/v0.29.4/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json"
+          },
+          "iconBusinessSuite.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/BusinessSuiteInAppSymbols/iconBusinessSuite.stories.js",
+            "old_ver_path": "work_folder/v0.29.4/Icons/icon/BusinessSuiteInAppSymbols/iconBusinessSuite.stories.js"
+          }
+        },
+        "SAPIcons": {
+          "data.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/data.json",
+            "old_ver_path": "work_folder/v0.29.4/Icons/icon/SAPIcons/data.json"
+          },
+          "icon.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/icon.stories.js",
+            "old_ver_path": "work_folder/v0.29.4/Icons/icon/SAPIcons/icon.stories.js"
+          }
+        },
+        "TNTIcons": {
+          "dataTNT.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/dataTNT.json",
+            "old_ver_path": "work_folder/v0.29.4/Icons/icon/TNTIcons/dataTNT.json"
+          },
+          "iconTnt.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/iconTnt.stories.js",
+            "old_ver_path": "work_folder/v0.29.4/Icons/icon/TNTIcons/iconTnt.stories.js"
+          }
+        }
+      }
+    },
+    "List": {
+      "list": {
+        "byline": {
+          "byline-list.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/byline-list.stories.js",
+            "old_ver_path": "work_folder/v0.29.4/List/list/byline/byline-list.stories.js"
+          },
+          "long-text.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/long-text.example.html",
+            "old_ver_path": "work_folder/v0.29.4/List/list/byline/long-text.example.html"
+          },
+          "selection-and-navigation.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/selection-and-navigation.example.html",
+            "old_ver_path": "work_folder/v0.29.4/List/list/byline/selection-and-navigation.example.html"
+          },
+          "selection.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/selection.example.html",
+            "old_ver_path": "work_folder/v0.29.4/List/list/byline/selection.example.html"
+          },
+          "unread-notification.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/byline/unread-notification.example.html",
+            "old_ver_path": "work_folder/v0.29.4/List/list/byline/unread-notification.example.html"
+          }
+        },
+        "standard": {
+          "selection.example.html": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/standard/selection.example.html",
+            "old_ver_path": "work_folder/v0.29.4/List/list/standard/selection.example.html"
+          },
+          "standard-list.stories.js": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/List/list/standard/standard-list.stories.js",
+            "old_ver_path": "work_folder/v0.29.4/List/list/standard/standard-list.stories.js"
+          }
+        }
+      }
+    },
+    "action-sheet": {
+      "action-sheet.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/action-sheet/action-sheet.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/action-sheet/action-sheet.stories.js"
+      }
+    },
+    "avatar": {
+      "avatar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar/avatar.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/avatar/avatar.stories.js"
+      }
+    },
+    "avatar-group": {
+      "avatar-group.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar-group/avatar-group.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/avatar-group/avatar-group.stories.js"
+      },
+      "group-type-vertical.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar-group/group-type-vertical.example.html",
+        "old_ver_path": "work_folder/v0.29.4/avatar-group/group-type-vertical.example.html"
+      },
+      "individual-type-vertical.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/avatar-group/individual-type-vertical.example.html",
+        "old_ver_path": "work_folder/v0.29.4/avatar-group/individual-type-vertical.example.html"
+      }
+    },
+    "bar": {
+      "bar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/bar.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/bar/bar.stories.js"
+      },
+      "default.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/default.example.html",
+        "old_ver_path": "work_folder/v0.29.4/bar/default.example.html"
+      },
+      "floating-footer.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/floating-footer.example.html",
+        "old_ver_path": "work_folder/v0.29.4/bar/floating-footer.example.html"
+      },
+      "footer.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/footer.example.html",
+        "old_ver_path": "work_folder/v0.29.4/bar/footer.example.html"
+      },
+      "header-with-subheader.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/header-with-subheader.example.html",
+        "old_ver_path": "work_folder/v0.29.4/bar/header-with-subheader.example.html"
+      },
+      "header.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/header.example.html",
+        "old_ver_path": "work_folder/v0.29.4/bar/header.example.html"
+      },
+      "subheader.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/bar/subheader.example.html",
+        "old_ver_path": "work_folder/v0.29.4/bar/subheader.example.html"
+      }
+    },
+    "breadcrumb": {
+      "breadcrumb.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/breadcrumb/breadcrumb.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/breadcrumb/breadcrumb.stories.js"
+      }
+    },
+    "busy-indicator": {
+      "busy-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-dialog.example.html",
+        "old_ver_path": "work_folder/v0.29.4/busy-indicator/busy-dialog.example.html"
+      },
+      "busy-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/busy-indicator/busy-indicator.stories.js"
+      }
+    },
+    "button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/button.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/button/button.stories.js"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.29.4/button/icon-and-text.example.html"
+      },
+      "styles.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/styles.example.html",
+        "old_ver_path": "work_folder/v0.29.4/button/styles.example.html"
+      }
+    },
+    "calendar": {
+      "calendar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/calendar.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/calendar/calendar.stories.js"
+      },
+      "days.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/days.example.html",
+        "old_ver_path": "work_folder/v0.29.4/calendar/days.example.html"
+      },
+      "months.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/months.example.html",
+        "old_ver_path": "work_folder/v0.29.4/calendar/months.example.html"
+      },
+      "years.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/years.example.html",
+        "old_ver_path": "work_folder/v0.29.4/calendar/years.example.html"
+      }
+    },
+    "card": {
+      "card.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/card/card.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/card/card.stories.js"
+      }
+    },
+    "carousel": {
+      "carousel-bottom.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/carousel/carousel-bottom.example.html",
+        "old_ver_path": "work_folder/v0.29.4/carousel/carousel-bottom.example.html"
+      },
+      "carousel.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/carousel/carousel.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/carousel/carousel.stories.js"
+      }
+    },
+    "dialog": {
+      "default-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/default-dialog.example.html",
+        "old_ver_path": "work_folder/v0.29.4/dialog/default-dialog.example.html"
+      },
+      "dialog.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/dialog.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/dialog/dialog.stories.js"
+      },
+      "selectable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/selectable.example.html",
+        "old_ver_path": "work_folder/v0.29.4/dialog/selectable.example.html"
+      }
+    },
+    "feed-input": {
+      "feed-input.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/feed-input/feed-input.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/feed-input/feed-input.stories.js"
+      }
+    },
+    "file-uploader": {
+      "file-uploader.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/file-uploader/file-uploader.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/file-uploader/file-uploader.stories.js"
+      }
+    },
+    "generic-tag": {
+      "generic-tag.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/generic-tag/generic-tag.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/generic-tag/generic-tag.stories.js"
+      }
+    },
+    "generic-tile": {
+      "generic-tile.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/generic-tile/generic-tile.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/generic-tile/generic-tile.stories.js"
+      }
+    },
+    "icon-tab-bar": {
+      "badge.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/badge.example.html",
+        "old_ver_path": "work_folder/v0.29.4/icon-tab-bar/badge.example.html"
+      },
+      "icon-tab-bar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/icon-tab-bar.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/icon-tab-bar/icon-tab-bar.stories.js"
+      },
+      "multi-click.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/multi-click.example.html",
+        "old_ver_path": "work_folder/v0.29.4/icon-tab-bar/multi-click.example.html"
+      },
+      "overflow.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/overflow.example.html",
+        "old_ver_path": "work_folder/v0.29.4/icon-tab-bar/overflow.example.html"
+      },
+      "single-click.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/single-click.example.html",
+        "old_ver_path": "work_folder/v0.29.4/icon-tab-bar/single-click.example.html"
+      }
+    },
+    "illustrated-message": {
+      "illustrated-message.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/illustrated-message/illustrated-message.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/illustrated-message/illustrated-message.stories.js"
+      }
+    },
+    "info-label": {
+      "display-only-info-label.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/info-label/display-only-info-label.example.html",
+        "old_ver_path": "work_folder/v0.29.4/info-label/display-only-info-label.example.html"
+      },
+      "info-label-with-icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/info-label/info-label-with-icon.example.html",
+        "old_ver_path": "work_folder/v0.29.4/info-label/info-label-with-icon.example.html"
+      },
+      "info-label.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/info-label/info-label.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/info-label/info-label.stories.js"
+      }
+    },
+    "link": {
+      "link.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/link/link.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/link/link.stories.js"
+      }
+    },
+    "menu": {
+      "menu.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/menu/menu.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/menu/menu.stories.js"
+      }
+    },
+    "message-box": {
+      "message-box.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-box/message-box.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/message-box/message-box.stories.js"
+      }
+    },
+    "message-page": {
+      "message-page.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-page/message-page.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/message-page/message-page.stories.js"
+      }
+    },
+    "message-strip": {
+      "message-strip-with-link.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip-with-link.example.html",
+        "old_ver_path": "work_folder/v0.29.4/message-strip/message-strip-with-link.example.html"
+      },
+      "message-strip.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/message-strip/message-strip.stories.js"
+      }
+    },
+    "message-toast": {
+      "message-toast.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-toast/message-toast.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/message-toast/message-toast.stories.js"
+      }
+    },
+    "micro-process-flow": {
+      "micro-process-flow.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/micro-process-flow/micro-process-flow.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/micro-process-flow/micro-process-flow.stories.js"
+      }
+    },
+    "notification": {
+      "error.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/error.example.html",
+        "old_ver_path": "work_folder/v0.29.4/notification/error.example.html"
+      },
+      "information.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/information.example.html",
+        "old_ver_path": "work_folder/v0.29.4/notification/information.example.html"
+      },
+      "mobile.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/mobile.example.html",
+        "old_ver_path": "work_folder/v0.29.4/notification/mobile.example.html"
+      },
+      "notification.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/notification.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/notification/notification.stories.js"
+      },
+      "warning.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/notification/warning.example.html",
+        "old_ver_path": "work_folder/v0.29.4/notification/warning.example.html"
+      }
+    },
+    "object-list": {
+      "object-list.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/object-list.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/object-list/object-list.stories.js"
+      },
+      "standart.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/standart.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-list/standart.example.html"
+      }
+    },
+    "object-marker": {
+      "object-marker.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-marker/object-marker.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/object-marker/object-marker.stories.js"
+      }
+    },
+    "object-status": {
+      "clickable-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/clickable-object-status.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/clickable-object-status.example.html"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/icon-and-text.example.html"
+      },
+      "icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/icon.example.html"
+      },
+      "inverted-indication.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted-indication.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/inverted-indication.example.html"
+      },
+      "inverted.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/inverted.example.html"
+      },
+      "large-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/large-object-status.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/large-object-status.example.html"
+      },
+      "object-status.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/object-status.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/object-status/object-status.stories.js"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/primary.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/primary.example.html"
+      },
+      "truncate-example.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/truncate-example.example.html",
+        "old_ver_path": "work_folder/v0.29.4/object-status/truncate-example.example.html"
+      }
+    },
+    "pagination": {
+      "mobile.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/pagination/mobile.example.html",
+        "old_ver_path": "work_folder/v0.29.4/pagination/mobile.example.html"
+      },
+      "pagination.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/pagination/pagination.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/pagination/pagination.stories.js"
+      },
+      "per-page.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/pagination/per-page.example.html",
+        "old_ver_path": "work_folder/v0.29.4/pagination/per-page.example.html"
+      }
+    },
+    "panel": {
+      "borderless.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/borderless.example.html",
+        "old_ver_path": "work_folder/v0.29.4/panel/borderless.example.html"
+      },
+      "expandable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/expandable.example.html",
+        "old_ver_path": "work_folder/v0.29.4/panel/expandable.example.html"
+      },
+      "fixed-height-content.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/fixed-height-content.example.html",
+        "old_ver_path": "work_folder/v0.29.4/panel/fixed-height-content.example.html"
+      },
+      "panel.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/panel.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/panel/panel.stories.js"
+      },
+      "transparent.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/transparent.example.html",
+        "old_ver_path": "work_folder/v0.29.4/panel/transparent.example.html"
+      }
+    },
+    "popover": {
+      "popover.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/popover/popover.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/popover/popover.stories.js"
+      }
+    },
+    "product-switch": {
+      "product-switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/product-switch/product-switch.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/product-switch/product-switch.stories.js"
+      }
+    },
+    "progress-indicator": {
+      "progress-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/progress-indicator/progress-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/progress-indicator/progress-indicator.stories.js"
+      },
+      "truncation.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/progress-indicator/truncation.example.html",
+        "old_ver_path": "work_folder/v0.29.4/progress-indicator/truncation.example.html"
+      }
+    },
+    "quick-view": {
+      "no-header.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/quick-view/no-header.example.html",
+        "old_ver_path": "work_folder/v0.29.4/quick-view/no-header.example.html"
+      },
+      "popover.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/quick-view/popover.example.html",
+        "old_ver_path": "work_folder/v0.29.4/quick-view/popover.example.html"
+      },
+      "quick-view.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/quick-view/quick-view.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/quick-view/quick-view.stories.js"
+      }
+    },
+    "rating-indicator": {
+      "disabled.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/disabled.example.html",
+        "old_ver_path": "work_folder/v0.29.4/rating-indicator/disabled.example.html"
+      },
+      "display-mode.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/display-mode.example.html",
+        "old_ver_path": "work_folder/v0.29.4/rating-indicator/display-mode.example.html"
+      },
+      "non-interactive.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/non-interactive.example.html",
+        "old_ver_path": "work_folder/v0.29.4/rating-indicator/non-interactive.example.html"
+      },
+      "rating-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/rating-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/rating-indicator/rating-indicator.stories.js"
+      }
+    },
+    "scrollbar": {
+      "scrollbar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/scrollbar/scrollbar.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/scrollbar/scrollbar.stories.js"
+      }
+    },
+    "select": {
+      "cozy.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/cozy.example.html",
+        "old_ver_path": "work_folder/v0.29.4/select/cozy.example.html"
+      },
+      "mobile-mode.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/mobile-mode.example.html",
+        "old_ver_path": "work_folder/v0.29.4/select/mobile-mode.example.html"
+      },
+      "select.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/select.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/select/select.stories.js"
+      },
+      "semantic-states.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/semantic-states.example.html",
+        "old_ver_path": "work_folder/v0.29.4/select/semantic-states.example.html"
+      }
+    },
+    "slider": {
+      "slider.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/slider/slider.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/slider/slider.stories.js"
+      }
+    },
+    "step-input": {
+      "step-input.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/step-input/step-input.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/step-input/step-input.stories.js"
+      }
+    },
+    "switch": {
+      "basic.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/basic.example.html",
+        "old_ver_path": "work_folder/v0.29.4/switch/basic.example.html"
+      },
+      "switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/switch.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/switch/switch.stories.js"
+      },
+      "with-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/with-text.example.html",
+        "old_ver_path": "work_folder/v0.29.4/switch/with-text.example.html"
+      }
+    },
+    "table": {
+      "table.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/table/table.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/table/table.stories.js"
+      }
+    },
+    "text": {
+      "text.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/text/text.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/text/text.stories.js"
+      }
+    },
+    "time": {
+      "time.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/time/time.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/time/time.stories.js"
+      }
+    },
+    "timepicker": {
+      "timepicker.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/timepicker/timepicker.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/timepicker/timepicker.stories.js"
+      }
+    },
+    "title": {
+      "title.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/title/title.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/title/title.stories.js"
+      }
+    },
+    "token": {
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/token/primary.example.html",
+        "old_ver_path": "work_folder/v0.29.4/token/primary.example.html"
+      },
+      "token.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/token/token.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/token/token.stories.js"
+      }
+    },
+    "toolbar": {
+      "alignment.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/alignment.example.html",
+        "old_ver_path": "work_folder/v0.29.4/toolbar/alignment.example.html"
+      },
+      "overflow.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/overflow.example.html",
+        "old_ver_path": "work_folder/v0.29.4/toolbar/overflow.example.html"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/primary.example.html",
+        "old_ver_path": "work_folder/v0.29.4/toolbar/primary.example.html"
+      },
+      "separator.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/separator.example.html",
+        "old_ver_path": "work_folder/v0.29.4/toolbar/separator.example.html"
+      },
+      "toolbar.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/toolbar.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/toolbar/toolbar.stories.js"
+      },
+      "types.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/toolbar/types.example.html",
+        "old_ver_path": "work_folder/v0.29.4/toolbar/types.example.html"
+      }
+    },
+    "tree": {
+      "selection.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/tree/selection.example.html",
+        "old_ver_path": "work_folder/v0.29.4/tree/selection.example.html"
+      },
+      "tree.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/tree/tree.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/tree/tree.stories.js"
+      }
+    },
+    "upload-collection": {
+      "upload-collection.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/upload-collection/upload-collection.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/upload-collection/upload-collection.stories.js"
+      }
+    },
+    "variant-management": {
+      "variant-management.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/variant-management/variant-management.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/variant-management/variant-management.stories.js"
+      }
+    },
+    "vertical-navigation": {
+      "vertical-navigation.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/vertical-navigation/vertical-navigation.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/vertical-navigation/vertical-navigation.stories.js"
+      }
+    },
+    "wizard": {
+      "wizard.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/wizard/wizard.stories.js",
+        "old_ver_path": "work_folder/v0.29.4/wizard/wizard.stories.js"
+      }
+    }
+  },
+  "v0.30.0-v0.32.0": {
+    "Forms": {
+      "checkbox": {
+        "inline.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/inline.example.html",
+          "old_ver_path": "work_folder/v0.30.0/Forms/checkbox/inline.example.html"
+        }
+      },
+      "input": {
+        "primary.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/primary.example.html",
+          "old_ver_path": "work_folder/v0.30.0/Forms/input/primary.example.html"
+        }
+      }
+    },
+    "Icons": {
+      "icon": {
+        "BusinessSuiteInAppSymbols": {
+          "dataBusinessSuite.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json",
+            "old_ver_path": "work_folder/v0.30.0/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json"
+          }
+        },
+        "SAPIcons": {
+          "data.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/data.json",
+            "old_ver_path": "work_folder/v0.30.0/Icons/icon/SAPIcons/data.json"
+          }
+        },
+        "TNTIcons": {
+          "dataTNT.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/dataTNT.json",
+            "old_ver_path": "work_folder/v0.30.0/Icons/icon/TNTIcons/dataTNT.json"
+          }
+        }
+      }
+    },
+    "busy-indicator": {
+      "busy-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-dialog.example.html",
+        "old_ver_path": "work_folder/v0.30.0/busy-indicator/busy-dialog.example.html"
+      },
+      "busy-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.30.0/busy-indicator/busy-indicator.stories.js"
+      }
+    },
+    "button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/button.stories.js",
+        "old_ver_path": "work_folder/v0.30.0/button/button.stories.js"
+      }
+    },
+    "button-split": {
+      "split-menu-button.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button-split/split-menu-button.example.html",
+        "old_ver_path": "work_folder/v0.30.0/button-split/split-menu-button.example.html"
+      }
+    },
+    "calendar": {
+      "cal.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/cal.html",
+        "old_ver_path": "work_folder/v0.30.0/calendar/cal.html"
+      },
+      "days.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/days.example.html",
+        "old_ver_path": "work_folder/v0.30.0/calendar/days.example.html"
+      }
+    },
+    "dialog": {
+      "default-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/default-dialog.example.html",
+        "old_ver_path": "work_folder/v0.30.0/dialog/default-dialog.example.html"
+      },
+      "dialog.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/dialog.stories.js",
+        "old_ver_path": "work_folder/v0.30.0/dialog/dialog.stories.js"
+      }
+    },
+    "icon-tab-bar": {
+      "text-only-closable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/text-only-closable.example.html",
+        "old_ver_path": "work_folder/v0.30.0/icon-tab-bar/text-only-closable.example.html"
+      }
+    },
+    "message-strip": {
+      "message-strip-with-link.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip-with-link.example.html",
+        "old_ver_path": "work_folder/v0.30.0/message-strip/message-strip-with-link.example.html"
+      }
+    },
+    "object-list": {
+      "object-list.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/object-list.stories.js",
+        "old_ver_path": "work_folder/v0.30.0/object-list/object-list.stories.js"
+      },
+      "standart.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/standart.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-list/standart.example.html"
+      }
+    },
+    "object-status": {
+      "clickable-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/clickable-object-status.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/clickable-object-status.example.html"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/icon-and-text.example.html"
+      },
+      "icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/icon.example.html"
+      },
+      "inverted-states.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted-states.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/inverted-states.example.html"
+      },
+      "inverted.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/inverted.example.html"
+      },
+      "large-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/large-object-status.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/large-object-status.example.html"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/primary.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/primary.example.html"
+      },
+      "truncate-example.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/truncate-example.example.html",
+        "old_ver_path": "work_folder/v0.30.0/object-status/truncate-example.example.html"
+      }
+    },
+    "panel": {
+      "borderless.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/borderless.example.html",
+        "old_ver_path": "work_folder/v0.30.0/panel/borderless.example.html"
+      },
+      "expandable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/expandable.example.html",
+        "old_ver_path": "work_folder/v0.30.0/panel/expandable.example.html"
+      },
+      "fixed-height-content.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/fixed-height-content.example.html",
+        "old_ver_path": "work_folder/v0.30.0/panel/fixed-height-content.example.html"
+      },
+      "transparent.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/transparent.example.html",
+        "old_ver_path": "work_folder/v0.30.0/panel/transparent.example.html"
+      }
+    },
+    "rating-indicator": {
+      "disabled.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/disabled.example.html",
+        "old_ver_path": "work_folder/v0.30.0/rating-indicator/disabled.example.html"
+      },
+      "display-mode.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/display-mode.example.html",
+        "old_ver_path": "work_folder/v0.30.0/rating-indicator/display-mode.example.html"
+      },
+      "non-interactive.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/non-interactive.example.html",
+        "old_ver_path": "work_folder/v0.30.0/rating-indicator/non-interactive.example.html"
+      },
+      "rating-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/rating-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.30.0/rating-indicator/rating-indicator.stories.js"
+      }
+    },
+    "segmented-button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/segmented-button/button.stories.js",
+        "old_ver_path": "work_folder/v0.30.0/segmented-button/button.stories.js"
+      }
+    },
+    "select": {
+      "cozy.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/cozy.example.html",
+        "old_ver_path": "work_folder/v0.30.0/select/cozy.example.html"
+      }
+    },
+    "switch": {
+      "basic.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/basic.example.html",
+        "old_ver_path": "work_folder/v0.30.0/switch/basic.example.html"
+      },
+      "switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/switch.stories.js",
+        "old_ver_path": "work_folder/v0.30.0/switch/switch.stories.js"
+      },
+      "with-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/with-text.example.html",
+        "old_ver_path": "work_folder/v0.30.0/switch/with-text.example.html"
+      }
+    }
+  },
+  "v0.30.1-v0.32.0": {
+    "Forms": {
+      "checkbox": {
+        "inline.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/checkbox/inline.example.html",
+          "old_ver_path": "work_folder/v0.30.1/Forms/checkbox/inline.example.html"
+        }
+      },
+      "input": {
+        "primary.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/primary.example.html",
+          "old_ver_path": "work_folder/v0.30.1/Forms/input/primary.example.html"
+        }
+      }
+    },
+    "Icons": {
+      "icon": {
+        "BusinessSuiteInAppSymbols": {
+          "dataBusinessSuite.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json",
+            "old_ver_path": "work_folder/v0.30.1/Icons/icon/BusinessSuiteInAppSymbols/dataBusinessSuite.json"
+          }
+        },
+        "SAPIcons": {
+          "data.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/data.json",
+            "old_ver_path": "work_folder/v0.30.1/Icons/icon/SAPIcons/data.json"
+          }
+        },
+        "TNTIcons": {
+          "dataTNT.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/dataTNT.json",
+            "old_ver_path": "work_folder/v0.30.1/Icons/icon/TNTIcons/dataTNT.json"
+          }
+        }
+      }
+    },
+    "busy-indicator": {
+      "busy-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-dialog.example.html",
+        "old_ver_path": "work_folder/v0.30.1/busy-indicator/busy-dialog.example.html"
+      },
+      "busy-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/busy-indicator/busy-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.30.1/busy-indicator/busy-indicator.stories.js"
+      }
+    },
+    "button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/button.stories.js",
+        "old_ver_path": "work_folder/v0.30.1/button/button.stories.js"
+      }
+    },
+    "button-split": {
+      "split-menu-button.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button-split/split-menu-button.example.html",
+        "old_ver_path": "work_folder/v0.30.1/button-split/split-menu-button.example.html"
+      }
+    },
+    "calendar": {
+      "cal.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/cal.html",
+        "old_ver_path": "work_folder/v0.30.1/calendar/cal.html"
+      },
+      "days.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/days.example.html",
+        "old_ver_path": "work_folder/v0.30.1/calendar/days.example.html"
+      }
+    },
+    "dialog": {
+      "default-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/default-dialog.example.html",
+        "old_ver_path": "work_folder/v0.30.1/dialog/default-dialog.example.html"
+      },
+      "dialog.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/dialog.stories.js",
+        "old_ver_path": "work_folder/v0.30.1/dialog/dialog.stories.js"
+      }
+    },
+    "icon-tab-bar": {
+      "text-only-closable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/icon-tab-bar/text-only-closable.example.html",
+        "old_ver_path": "work_folder/v0.30.1/icon-tab-bar/text-only-closable.example.html"
+      }
+    },
+    "message-strip": {
+      "message-strip-with-link.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip-with-link.example.html",
+        "old_ver_path": "work_folder/v0.30.1/message-strip/message-strip-with-link.example.html"
+      }
+    },
+    "object-list": {
+      "object-list.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/object-list.stories.js",
+        "old_ver_path": "work_folder/v0.30.1/object-list/object-list.stories.js"
+      },
+      "standart.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/standart.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-list/standart.example.html"
+      }
+    },
+    "object-status": {
+      "clickable-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/clickable-object-status.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/clickable-object-status.example.html"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/icon-and-text.example.html"
+      },
+      "icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/icon.example.html"
+      },
+      "inverted-states.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted-states.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/inverted-states.example.html"
+      },
+      "inverted.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/inverted.example.html"
+      },
+      "large-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/large-object-status.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/large-object-status.example.html"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/primary.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/primary.example.html"
+      },
+      "truncate-example.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/truncate-example.example.html",
+        "old_ver_path": "work_folder/v0.30.1/object-status/truncate-example.example.html"
+      }
+    },
+    "panel": {
+      "borderless.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/borderless.example.html",
+        "old_ver_path": "work_folder/v0.30.1/panel/borderless.example.html"
+      },
+      "expandable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/expandable.example.html",
+        "old_ver_path": "work_folder/v0.30.1/panel/expandable.example.html"
+      },
+      "fixed-height-content.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/fixed-height-content.example.html",
+        "old_ver_path": "work_folder/v0.30.1/panel/fixed-height-content.example.html"
+      },
+      "transparent.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/transparent.example.html",
+        "old_ver_path": "work_folder/v0.30.1/panel/transparent.example.html"
+      }
+    },
+    "rating-indicator": {
+      "disabled.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/disabled.example.html",
+        "old_ver_path": "work_folder/v0.30.1/rating-indicator/disabled.example.html"
+      },
+      "display-mode.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/display-mode.example.html",
+        "old_ver_path": "work_folder/v0.30.1/rating-indicator/display-mode.example.html"
+      },
+      "non-interactive.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/non-interactive.example.html",
+        "old_ver_path": "work_folder/v0.30.1/rating-indicator/non-interactive.example.html"
+      },
+      "rating-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/rating-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.30.1/rating-indicator/rating-indicator.stories.js"
+      }
+    },
+    "segmented-button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/segmented-button/button.stories.js",
+        "old_ver_path": "work_folder/v0.30.1/segmented-button/button.stories.js"
+      }
+    },
+    "select": {
+      "cozy.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/cozy.example.html",
+        "old_ver_path": "work_folder/v0.30.1/select/cozy.example.html"
+      }
+    },
+    "switch": {
+      "basic.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/basic.example.html",
+        "old_ver_path": "work_folder/v0.30.1/switch/basic.example.html"
+      },
+      "switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/switch.stories.js",
+        "old_ver_path": "work_folder/v0.30.1/switch/switch.stories.js"
+      },
+      "with-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/with-text.example.html",
+        "old_ver_path": "work_folder/v0.30.1/switch/with-text.example.html"
+      }
+    }
+  },
+  "v0.30.2-v0.32.0": {
+    "Forms": {
+      "input": {
+        "primary.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/primary.example.html",
+          "old_ver_path": "work_folder/v0.30.2/Forms/input/primary.example.html"
+        }
+      }
+    },
+    "Icons": {
+      "icon": {
+        "SAPIcons": {
+          "data.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/data.json",
+            "old_ver_path": "work_folder/v0.30.2/Icons/icon/SAPIcons/data.json"
+          }
+        },
+        "TNTIcons": {
+          "dataTNT.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/dataTNT.json",
+            "old_ver_path": "work_folder/v0.30.2/Icons/icon/TNTIcons/dataTNT.json"
+          }
+        }
+      }
+    },
+    "button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/button.stories.js",
+        "old_ver_path": "work_folder/v0.30.2/button/button.stories.js"
+      }
+    },
+    "calendar": {
+      "cal.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/cal.html",
+        "old_ver_path": "work_folder/v0.30.2/calendar/cal.html"
+      },
+      "days.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/days.example.html",
+        "old_ver_path": "work_folder/v0.30.2/calendar/days.example.html"
+      }
+    },
+    "dialog": {
+      "default-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/default-dialog.example.html",
+        "old_ver_path": "work_folder/v0.30.2/dialog/default-dialog.example.html"
+      },
+      "dialog.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/dialog.stories.js",
+        "old_ver_path": "work_folder/v0.30.2/dialog/dialog.stories.js"
+      }
+    },
+    "message-strip": {
+      "message-strip-with-link.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip-with-link.example.html",
+        "old_ver_path": "work_folder/v0.30.2/message-strip/message-strip-with-link.example.html"
+      }
+    },
+    "object-list": {
+      "object-list.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/object-list.stories.js",
+        "old_ver_path": "work_folder/v0.30.2/object-list/object-list.stories.js"
+      },
+      "standart.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/standart.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-list/standart.example.html"
+      }
+    },
+    "object-status": {
+      "clickable-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/clickable-object-status.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/clickable-object-status.example.html"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/icon-and-text.example.html"
+      },
+      "icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/icon.example.html"
+      },
+      "inverted-states.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted-states.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/inverted-states.example.html"
+      },
+      "inverted.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/inverted.example.html"
+      },
+      "large-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/large-object-status.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/large-object-status.example.html"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/primary.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/primary.example.html"
+      },
+      "truncate-example.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/truncate-example.example.html",
+        "old_ver_path": "work_folder/v0.30.2/object-status/truncate-example.example.html"
+      }
+    },
+    "panel": {
+      "borderless.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/borderless.example.html",
+        "old_ver_path": "work_folder/v0.30.2/panel/borderless.example.html"
+      },
+      "expandable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/expandable.example.html",
+        "old_ver_path": "work_folder/v0.30.2/panel/expandable.example.html"
+      },
+      "fixed-height-content.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/fixed-height-content.example.html",
+        "old_ver_path": "work_folder/v0.30.2/panel/fixed-height-content.example.html"
+      },
+      "transparent.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/transparent.example.html",
+        "old_ver_path": "work_folder/v0.30.2/panel/transparent.example.html"
+      }
+    },
+    "rating-indicator": {
+      "disabled.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/disabled.example.html",
+        "old_ver_path": "work_folder/v0.30.2/rating-indicator/disabled.example.html"
+      },
+      "display-mode.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/display-mode.example.html",
+        "old_ver_path": "work_folder/v0.30.2/rating-indicator/display-mode.example.html"
+      },
+      "non-interactive.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/non-interactive.example.html",
+        "old_ver_path": "work_folder/v0.30.2/rating-indicator/non-interactive.example.html"
+      },
+      "rating-indicator.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/rating-indicator/rating-indicator.stories.js",
+        "old_ver_path": "work_folder/v0.30.2/rating-indicator/rating-indicator.stories.js"
+      }
+    },
+    "select": {
+      "cozy.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/cozy.example.html",
+        "old_ver_path": "work_folder/v0.30.2/select/cozy.example.html"
+      }
+    },
+    "switch": {
+      "basic.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/basic.example.html",
+        "old_ver_path": "work_folder/v0.30.2/switch/basic.example.html"
+      },
+      "switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/switch.stories.js",
+        "old_ver_path": "work_folder/v0.30.2/switch/switch.stories.js"
+      },
+      "with-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/with-text.example.html",
+        "old_ver_path": "work_folder/v0.30.2/switch/with-text.example.html"
+      }
+    }
+  },
+  "v0.31.0-v0.32.0": {
+    "Forms": {
+      "input": {
+        "primary.example.html": {
+          "exist": true,
+          "has_diff": true,
+          "new_ver_path": "work_folder/v0.32.0/Forms/input/primary.example.html",
+          "old_ver_path": "work_folder/v0.31.0/Forms/input/primary.example.html"
+        }
+      }
+    },
+    "Icons": {
+      "icon": {
+        "SAPIcons": {
+          "data.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/SAPIcons/data.json",
+            "old_ver_path": "work_folder/v0.31.0/Icons/icon/SAPIcons/data.json"
+          }
+        },
+        "TNTIcons": {
+          "dataTNT.json": {
+            "exist": true,
+            "has_diff": true,
+            "new_ver_path": "work_folder/v0.32.0/Icons/icon/TNTIcons/dataTNT.json",
+            "old_ver_path": "work_folder/v0.31.0/Icons/icon/TNTIcons/dataTNT.json"
+          }
+        }
+      }
+    },
+    "button": {
+      "button.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/button/button.stories.js",
+        "old_ver_path": "work_folder/v0.31.0/button/button.stories.js"
+      }
+    },
+    "calendar": {
+      "cal.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/cal.html",
+        "old_ver_path": "work_folder/v0.31.0/calendar/cal.html"
+      },
+      "days.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/calendar/days.example.html",
+        "old_ver_path": "work_folder/v0.31.0/calendar/days.example.html"
+      }
+    },
+    "dialog": {
+      "default-dialog.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/default-dialog.example.html",
+        "old_ver_path": "work_folder/v0.31.0/dialog/default-dialog.example.html"
+      },
+      "dialog.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/dialog/dialog.stories.js",
+        "old_ver_path": "work_folder/v0.31.0/dialog/dialog.stories.js"
+      }
+    },
+    "message-strip": {
+      "message-strip-with-link.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/message-strip/message-strip-with-link.example.html",
+        "old_ver_path": "work_folder/v0.31.0/message-strip/message-strip-with-link.example.html"
+      }
+    },
+    "object-list": {
+      "object-list.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/object-list.stories.js",
+        "old_ver_path": "work_folder/v0.31.0/object-list/object-list.stories.js"
+      },
+      "standart.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-list/standart.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-list/standart.example.html"
+      }
+    },
+    "object-status": {
+      "clickable-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/clickable-object-status.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/clickable-object-status.example.html"
+      },
+      "icon-and-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon-and-text.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/icon-and-text.example.html"
+      },
+      "icon.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/icon.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/icon.example.html"
+      },
+      "inverted-states.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted-states.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/inverted-states.example.html"
+      },
+      "inverted.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/inverted.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/inverted.example.html"
+      },
+      "large-object-status.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/large-object-status.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/large-object-status.example.html"
+      },
+      "primary.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/primary.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/primary.example.html"
+      },
+      "truncate-example.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/object-status/truncate-example.example.html",
+        "old_ver_path": "work_folder/v0.31.0/object-status/truncate-example.example.html"
+      }
+    },
+    "panel": {
+      "borderless.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/borderless.example.html",
+        "old_ver_path": "work_folder/v0.31.0/panel/borderless.example.html"
+      },
+      "expandable.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/expandable.example.html",
+        "old_ver_path": "work_folder/v0.31.0/panel/expandable.example.html"
+      },
+      "fixed-height-content.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/fixed-height-content.example.html",
+        "old_ver_path": "work_folder/v0.31.0/panel/fixed-height-content.example.html"
+      },
+      "transparent.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/panel/transparent.example.html",
+        "old_ver_path": "work_folder/v0.31.0/panel/transparent.example.html"
+      }
+    },
+    "select": {
+      "cozy.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/select/cozy.example.html",
+        "old_ver_path": "work_folder/v0.31.0/select/cozy.example.html"
+      }
+    },
+    "switch": {
+      "basic.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/basic.example.html",
+        "old_ver_path": "work_folder/v0.31.0/switch/basic.example.html"
+      },
+      "switch.stories.js": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/switch.stories.js",
+        "old_ver_path": "work_folder/v0.31.0/switch/switch.stories.js"
+      },
+      "with-text.example.html": {
+        "exist": true,
+        "has_diff": true,
+        "new_ver_path": "work_folder/v0.32.0/switch/with-text.example.html",
+        "old_ver_path": "work_folder/v0.31.0/switch/with-text.example.html"
+      }
+    }
   }
 }
